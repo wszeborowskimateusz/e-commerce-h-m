@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 07 Paź 2018, 20:19
--- Wersja serwera: 10.1.36-MariaDB
--- Wersja PHP: 7.2.10
+-- Generation Time: Oct 07, 2018 at 09:58 PM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Baza danych: `prestashop_hm`
+-- Database: `prestashop_hm`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_access`
+-- Table structure for table `ps_access`
 --
 
 CREATE TABLE `ps_access` (
@@ -34,7 +34,7 @@ CREATE TABLE `ps_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_access`
+-- Dumping data for table `ps_access`
 --
 
 INSERT INTO `ps_access` (`id_profile`, `id_authorization_role`) VALUES
@@ -518,6 +518,10 @@ INSERT INTO `ps_access` (`id_profile`, `id_authorization_role`) VALUES
 (1, 698),
 (1, 699),
 (1, 700),
+(1, 713),
+(1, 714),
+(1, 715),
+(1, 716),
 (2, 9),
 (2, 10),
 (2, 11),
@@ -766,7 +770,7 @@ INSERT INTO `ps_access` (`id_profile`, `id_authorization_role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_accessory`
+-- Table structure for table `ps_accessory`
 --
 
 CREATE TABLE `ps_accessory` (
@@ -777,7 +781,7 @@ CREATE TABLE `ps_accessory` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_address`
+-- Table structure for table `ps_address`
 --
 
 CREATE TABLE `ps_address` (
@@ -808,7 +812,7 @@ CREATE TABLE `ps_address` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_address`
+-- Dumping data for table `ps_address`
 --
 
 INSERT INTO `ps_address` (`id_address`, `id_country`, `id_state`, `id_customer`, `id_manufacturer`, `id_supplier`, `id_warehouse`, `alias`, `company`, `lastname`, `firstname`, `address1`, `address2`, `postcode`, `city`, `other`, `phone`, `phone_mobile`, `vat_number`, `dni`, `date_add`, `date_upd`, `active`, `deleted`) VALUES
@@ -820,7 +824,7 @@ INSERT INTO `ps_address` (`id_address`, `id_country`, `id_state`, `id_customer`,
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_address_format`
+-- Table structure for table `ps_address_format`
 --
 
 CREATE TABLE `ps_address_format` (
@@ -829,7 +833,7 @@ CREATE TABLE `ps_address_format` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_address_format`
+-- Dumping data for table `ps_address_format`
 --
 
 INSERT INTO `ps_address_format` (`id_country`, `format`) VALUES
@@ -1081,7 +1085,7 @@ INSERT INTO `ps_address_format` (`id_country`, `format`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_admin_filter`
+-- Table structure for table `ps_admin_filter`
 --
 
 CREATE TABLE `ps_admin_filter` (
@@ -1096,7 +1100,7 @@ CREATE TABLE `ps_admin_filter` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_advice`
+-- Table structure for table `ps_advice`
 --
 
 CREATE TABLE `ps_advice` (
@@ -1114,7 +1118,7 @@ CREATE TABLE `ps_advice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_advice`
+-- Dumping data for table `ps_advice`
 --
 
 INSERT INTO `ps_advice` (`id_advice`, `id_ps_advice`, `id_tab`, `ids_tab`, `validated`, `hide`, `location`, `selector`, `start_day`, `stop_day`, `weight`) VALUES
@@ -1146,7 +1150,7 @@ INSERT INTO `ps_advice` (`id_advice`, `id_ps_advice`, `id_tab`, `ids_tab`, `vali
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_advice_lang`
+-- Table structure for table `ps_advice_lang`
 --
 
 CREATE TABLE `ps_advice_lang` (
@@ -1156,7 +1160,7 @@ CREATE TABLE `ps_advice_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_advice_lang`
+-- Dumping data for table `ps_advice_lang`
 --
 
 INSERT INTO `ps_advice_lang` (`id_advice`, `id_lang`, `html`) VALUES
@@ -1189,7 +1193,7 @@ INSERT INTO `ps_advice_lang` (`id_advice`, `id_lang`, `html`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_alias`
+-- Table structure for table `ps_alias`
 --
 
 CREATE TABLE `ps_alias` (
@@ -1200,7 +1204,7 @@ CREATE TABLE `ps_alias` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_alias`
+-- Dumping data for table `ps_alias`
 --
 
 INSERT INTO `ps_alias` (`id_alias`, `alias`, `search`, `active`) VALUES
@@ -1210,7 +1214,7 @@ INSERT INTO `ps_alias` (`id_alias`, `alias`, `search`, `active`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_attachment`
+-- Table structure for table `ps_attachment`
 --
 
 CREATE TABLE `ps_attachment` (
@@ -1224,7 +1228,7 @@ CREATE TABLE `ps_attachment` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_attachment_lang`
+-- Table structure for table `ps_attachment_lang`
 --
 
 CREATE TABLE `ps_attachment_lang` (
@@ -1237,7 +1241,7 @@ CREATE TABLE `ps_attachment_lang` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_attribute`
+-- Table structure for table `ps_attribute`
 --
 
 CREATE TABLE `ps_attribute` (
@@ -1248,7 +1252,7 @@ CREATE TABLE `ps_attribute` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Zrzut danych tabeli `ps_attribute`
+-- Dumping data for table `ps_attribute`
 --
 
 INSERT INTO `ps_attribute` (`id_attribute`, `id_attribute_group`, `color`, `position`) VALUES
@@ -1281,7 +1285,7 @@ INSERT INTO `ps_attribute` (`id_attribute`, `id_attribute_group`, `color`, `posi
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_attribute_group`
+-- Table structure for table `ps_attribute_group`
 --
 
 CREATE TABLE `ps_attribute_group` (
@@ -1292,7 +1296,7 @@ CREATE TABLE `ps_attribute_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Zrzut danych tabeli `ps_attribute_group`
+-- Dumping data for table `ps_attribute_group`
 --
 
 INSERT INTO `ps_attribute_group` (`id_attribute_group`, `is_color_group`, `group_type`, `position`) VALUES
@@ -1304,7 +1308,7 @@ INSERT INTO `ps_attribute_group` (`id_attribute_group`, `is_color_group`, `group
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_attribute_group_lang`
+-- Table structure for table `ps_attribute_group_lang`
 --
 
 CREATE TABLE `ps_attribute_group_lang` (
@@ -1315,7 +1319,7 @@ CREATE TABLE `ps_attribute_group_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Zrzut danych tabeli `ps_attribute_group_lang`
+-- Dumping data for table `ps_attribute_group_lang`
 --
 
 INSERT INTO `ps_attribute_group_lang` (`id_attribute_group`, `id_lang`, `name`, `public_name`) VALUES
@@ -1327,7 +1331,7 @@ INSERT INTO `ps_attribute_group_lang` (`id_attribute_group`, `id_lang`, `name`, 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_attribute_group_shop`
+-- Table structure for table `ps_attribute_group_shop`
 --
 
 CREATE TABLE `ps_attribute_group_shop` (
@@ -1336,7 +1340,7 @@ CREATE TABLE `ps_attribute_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Zrzut danych tabeli `ps_attribute_group_shop`
+-- Dumping data for table `ps_attribute_group_shop`
 --
 
 INSERT INTO `ps_attribute_group_shop` (`id_attribute_group`, `id_shop`) VALUES
@@ -1348,7 +1352,7 @@ INSERT INTO `ps_attribute_group_shop` (`id_attribute_group`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_attribute_impact`
+-- Table structure for table `ps_attribute_impact`
 --
 
 CREATE TABLE `ps_attribute_impact` (
@@ -1362,7 +1366,7 @@ CREATE TABLE `ps_attribute_impact` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_attribute_lang`
+-- Table structure for table `ps_attribute_lang`
 --
 
 CREATE TABLE `ps_attribute_lang` (
@@ -1372,7 +1376,7 @@ CREATE TABLE `ps_attribute_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Zrzut danych tabeli `ps_attribute_lang`
+-- Dumping data for table `ps_attribute_lang`
 --
 
 INSERT INTO `ps_attribute_lang` (`id_attribute`, `id_lang`, `name`) VALUES
@@ -1405,7 +1409,7 @@ INSERT INTO `ps_attribute_lang` (`id_attribute`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_attribute_shop`
+-- Table structure for table `ps_attribute_shop`
 --
 
 CREATE TABLE `ps_attribute_shop` (
@@ -1414,7 +1418,7 @@ CREATE TABLE `ps_attribute_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Zrzut danych tabeli `ps_attribute_shop`
+-- Dumping data for table `ps_attribute_shop`
 --
 
 INSERT INTO `ps_attribute_shop` (`id_attribute`, `id_shop`) VALUES
@@ -1447,7 +1451,7 @@ INSERT INTO `ps_attribute_shop` (`id_attribute`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_authorization_role`
+-- Table structure for table `ps_authorization_role`
 --
 
 CREATE TABLE `ps_authorization_role` (
@@ -1456,7 +1460,7 @@ CREATE TABLE `ps_authorization_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_authorization_role`
+-- Dumping data for table `ps_authorization_role`
 --
 
 INSERT INTO `ps_authorization_role` (`id_authorization_role`, `slug`) VALUES
@@ -1592,6 +1596,10 @@ INSERT INTO `ps_authorization_role` (`id_authorization_role`, `slug`) VALUES
 (584, 'ROLE_MOD_MODULE_PS_WIREPAYMENT_DELETE'),
 (582, 'ROLE_MOD_MODULE_PS_WIREPAYMENT_READ'),
 (583, 'ROLE_MOD_MODULE_PS_WIREPAYMENT_UPDATE'),
+(709, 'ROLE_MOD_MODULE_REVWS_CREATE'),
+(712, 'ROLE_MOD_MODULE_REVWS_DELETE'),
+(710, 'ROLE_MOD_MODULE_REVWS_READ'),
+(711, 'ROLE_MOD_MODULE_REVWS_UPDATE'),
 (589, 'ROLE_MOD_MODULE_SEKEYWORDS_CREATE'),
 (592, 'ROLE_MOD_MODULE_SEKEYWORDS_DELETE'),
 (590, 'ROLE_MOD_MODULE_SEKEYWORDS_READ'),
@@ -2024,6 +2032,10 @@ INSERT INTO `ps_authorization_role` (`id_authorization_role`, `slug`) VALUES
 (320, 'ROLE_MOD_TAB_ADMINRETURN_DELETE'),
 (318, 'ROLE_MOD_TAB_ADMINRETURN_READ'),
 (319, 'ROLE_MOD_TAB_ADMINRETURN_UPDATE'),
+(713, 'ROLE_MOD_TAB_ADMINREVWSBACKEND_CREATE'),
+(716, 'ROLE_MOD_TAB_ADMINREVWSBACKEND_DELETE'),
+(714, 'ROLE_MOD_TAB_ADMINREVWSBACKEND_READ'),
+(715, 'ROLE_MOD_TAB_ADMINREVWSBACKEND_UPDATE'),
 (321, 'ROLE_MOD_TAB_ADMINSEARCHCONF_CREATE'),
 (324, 'ROLE_MOD_TAB_ADMINSEARCHCONF_DELETE'),
 (322, 'ROLE_MOD_TAB_ADMINSEARCHCONF_READ'),
@@ -2168,7 +2180,7 @@ INSERT INTO `ps_authorization_role` (`id_authorization_role`, `slug`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_badge`
+-- Table structure for table `ps_badge`
 --
 
 CREATE TABLE `ps_badge` (
@@ -2183,7 +2195,7 @@ CREATE TABLE `ps_badge` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_badge`
+-- Dumping data for table `ps_badge`
 --
 
 INSERT INTO `ps_badge` (`id_badge`, `id_ps_badge`, `type`, `id_group`, `group_position`, `scoring`, `awb`, `validated`) VALUES
@@ -2454,7 +2466,7 @@ INSERT INTO `ps_badge` (`id_badge`, `id_ps_badge`, `type`, `id_group`, `group_po
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_badge_lang`
+-- Table structure for table `ps_badge_lang`
 --
 
 CREATE TABLE `ps_badge_lang` (
@@ -2466,7 +2478,7 @@ CREATE TABLE `ps_badge_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_badge_lang`
+-- Dumping data for table `ps_badge_lang`
 --
 
 INSERT INTO `ps_badge_lang` (`id_badge`, `id_lang`, `name`, `description`, `group_name`) VALUES
@@ -2737,7 +2749,7 @@ INSERT INTO `ps_badge_lang` (`id_badge`, `id_lang`, `name`, `description`, `grou
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_carrier`
+-- Table structure for table `ps_carrier`
 --
 
 CREATE TABLE `ps_carrier` (
@@ -2765,7 +2777,7 @@ CREATE TABLE `ps_carrier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_carrier`
+-- Dumping data for table `ps_carrier`
 --
 
 INSERT INTO `ps_carrier` (`id_carrier`, `id_reference`, `id_tax_rules_group`, `name`, `url`, `active`, `deleted`, `shipping_handling`, `range_behavior`, `is_module`, `is_free`, `shipping_external`, `need_range`, `external_module_name`, `shipping_method`, `position`, `max_width`, `max_height`, `max_depth`, `max_weight`, `grade`) VALUES
@@ -2775,7 +2787,7 @@ INSERT INTO `ps_carrier` (`id_carrier`, `id_reference`, `id_tax_rules_group`, `n
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_carrier_group`
+-- Table structure for table `ps_carrier_group`
 --
 
 CREATE TABLE `ps_carrier_group` (
@@ -2784,7 +2796,7 @@ CREATE TABLE `ps_carrier_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_carrier_group`
+-- Dumping data for table `ps_carrier_group`
 --
 
 INSERT INTO `ps_carrier_group` (`id_carrier`, `id_group`) VALUES
@@ -2798,7 +2810,7 @@ INSERT INTO `ps_carrier_group` (`id_carrier`, `id_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_carrier_lang`
+-- Table structure for table `ps_carrier_lang`
 --
 
 CREATE TABLE `ps_carrier_lang` (
@@ -2809,7 +2821,7 @@ CREATE TABLE `ps_carrier_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_carrier_lang`
+-- Dumping data for table `ps_carrier_lang`
 --
 
 INSERT INTO `ps_carrier_lang` (`id_carrier`, `id_shop`, `id_lang`, `delay`) VALUES
@@ -2819,7 +2831,7 @@ INSERT INTO `ps_carrier_lang` (`id_carrier`, `id_shop`, `id_lang`, `delay`) VALU
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_carrier_shop`
+-- Table structure for table `ps_carrier_shop`
 --
 
 CREATE TABLE `ps_carrier_shop` (
@@ -2828,7 +2840,7 @@ CREATE TABLE `ps_carrier_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_carrier_shop`
+-- Dumping data for table `ps_carrier_shop`
 --
 
 INSERT INTO `ps_carrier_shop` (`id_carrier`, `id_shop`) VALUES
@@ -2838,7 +2850,7 @@ INSERT INTO `ps_carrier_shop` (`id_carrier`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_carrier_tax_rules_group_shop`
+-- Table structure for table `ps_carrier_tax_rules_group_shop`
 --
 
 CREATE TABLE `ps_carrier_tax_rules_group_shop` (
@@ -2848,7 +2860,7 @@ CREATE TABLE `ps_carrier_tax_rules_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_carrier_tax_rules_group_shop`
+-- Dumping data for table `ps_carrier_tax_rules_group_shop`
 --
 
 INSERT INTO `ps_carrier_tax_rules_group_shop` (`id_carrier`, `id_tax_rules_group`, `id_shop`) VALUES
@@ -2858,7 +2870,7 @@ INSERT INTO `ps_carrier_tax_rules_group_shop` (`id_carrier`, `id_tax_rules_group
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_carrier_zone`
+-- Table structure for table `ps_carrier_zone`
 --
 
 CREATE TABLE `ps_carrier_zone` (
@@ -2867,7 +2879,7 @@ CREATE TABLE `ps_carrier_zone` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_carrier_zone`
+-- Dumping data for table `ps_carrier_zone`
 --
 
 INSERT INTO `ps_carrier_zone` (`id_carrier`, `id_zone`) VALUES
@@ -2878,7 +2890,7 @@ INSERT INTO `ps_carrier_zone` (`id_carrier`, `id_zone`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cart`
+-- Table structure for table `ps_cart`
 --
 
 CREATE TABLE `ps_cart` (
@@ -2905,7 +2917,7 @@ CREATE TABLE `ps_cart` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_cart`
+-- Dumping data for table `ps_cart`
 --
 
 INSERT INTO `ps_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `delivery_option`, `id_lang`, `id_address_delivery`, `id_address_invoice`, `id_currency`, `id_customer`, `id_guest`, `secure_key`, `recyclable`, `gift`, `gift_message`, `mobile_theme`, `allow_seperated_package`, `date_add`, `date_upd`, `checkout_session_data`) VALUES
@@ -2918,7 +2930,7 @@ INSERT INTO `ps_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `del
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cart_cart_rule`
+-- Table structure for table `ps_cart_cart_rule`
 --
 
 CREATE TABLE `ps_cart_cart_rule` (
@@ -2929,7 +2941,7 @@ CREATE TABLE `ps_cart_cart_rule` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cart_product`
+-- Table structure for table `ps_cart_product`
 --
 
 CREATE TABLE `ps_cart_product` (
@@ -2944,7 +2956,7 @@ CREATE TABLE `ps_cart_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_cart_product`
+-- Dumping data for table `ps_cart_product`
 --
 
 INSERT INTO `ps_cart_product` (`id_cart`, `id_product`, `id_address_delivery`, `id_shop`, `id_product_attribute`, `id_customization`, `quantity`, `date_add`) VALUES
@@ -2959,7 +2971,7 @@ INSERT INTO `ps_cart_product` (`id_cart`, `id_product`, `id_address_delivery`, `
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cart_rule`
+-- Table structure for table `ps_cart_rule`
 --
 
 CREATE TABLE `ps_cart_rule` (
@@ -3001,7 +3013,7 @@ CREATE TABLE `ps_cart_rule` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cart_rule_carrier`
+-- Table structure for table `ps_cart_rule_carrier`
 --
 
 CREATE TABLE `ps_cart_rule_carrier` (
@@ -3012,7 +3024,7 @@ CREATE TABLE `ps_cart_rule_carrier` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cart_rule_combination`
+-- Table structure for table `ps_cart_rule_combination`
 --
 
 CREATE TABLE `ps_cart_rule_combination` (
@@ -3023,7 +3035,7 @@ CREATE TABLE `ps_cart_rule_combination` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cart_rule_country`
+-- Table structure for table `ps_cart_rule_country`
 --
 
 CREATE TABLE `ps_cart_rule_country` (
@@ -3034,7 +3046,7 @@ CREATE TABLE `ps_cart_rule_country` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cart_rule_group`
+-- Table structure for table `ps_cart_rule_group`
 --
 
 CREATE TABLE `ps_cart_rule_group` (
@@ -3045,7 +3057,7 @@ CREATE TABLE `ps_cart_rule_group` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cart_rule_lang`
+-- Table structure for table `ps_cart_rule_lang`
 --
 
 CREATE TABLE `ps_cart_rule_lang` (
@@ -3057,7 +3069,7 @@ CREATE TABLE `ps_cart_rule_lang` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cart_rule_product_rule`
+-- Table structure for table `ps_cart_rule_product_rule`
 --
 
 CREATE TABLE `ps_cart_rule_product_rule` (
@@ -3069,7 +3081,7 @@ CREATE TABLE `ps_cart_rule_product_rule` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cart_rule_product_rule_group`
+-- Table structure for table `ps_cart_rule_product_rule_group`
 --
 
 CREATE TABLE `ps_cart_rule_product_rule_group` (
@@ -3081,7 +3093,7 @@ CREATE TABLE `ps_cart_rule_product_rule_group` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cart_rule_product_rule_value`
+-- Table structure for table `ps_cart_rule_product_rule_value`
 --
 
 CREATE TABLE `ps_cart_rule_product_rule_value` (
@@ -3092,7 +3104,7 @@ CREATE TABLE `ps_cart_rule_product_rule_value` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cart_rule_shop`
+-- Table structure for table `ps_cart_rule_shop`
 --
 
 CREATE TABLE `ps_cart_rule_shop` (
@@ -3103,7 +3115,7 @@ CREATE TABLE `ps_cart_rule_shop` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_category`
+-- Table structure for table `ps_category`
 --
 
 CREATE TABLE `ps_category` (
@@ -3121,7 +3133,7 @@ CREATE TABLE `ps_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_category`
+-- Dumping data for table `ps_category`
 --
 
 INSERT INTO `ps_category` (`id_category`, `id_parent`, `id_shop_default`, `level_depth`, `nleft`, `nright`, `active`, `date_add`, `date_upd`, `position`, `is_root_category`) VALUES
@@ -3211,7 +3223,7 @@ INSERT INTO `ps_category` (`id_category`, `id_parent`, `id_shop_default`, `level
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_category_group`
+-- Table structure for table `ps_category_group`
 --
 
 CREATE TABLE `ps_category_group` (
@@ -3220,7 +3232,7 @@ CREATE TABLE `ps_category_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_category_group`
+-- Dumping data for table `ps_category_group`
 --
 
 INSERT INTO `ps_category_group` (`id_category`, `id_group`) VALUES
@@ -3472,7 +3484,7 @@ INSERT INTO `ps_category_group` (`id_category`, `id_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_category_lang`
+-- Table structure for table `ps_category_lang`
 --
 
 CREATE TABLE `ps_category_lang` (
@@ -3488,7 +3500,7 @@ CREATE TABLE `ps_category_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_category_lang`
+-- Dumping data for table `ps_category_lang`
 --
 
 INSERT INTO `ps_category_lang` (`id_category`, `id_shop`, `id_lang`, `name`, `description`, `link_rewrite`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
@@ -3578,7 +3590,7 @@ INSERT INTO `ps_category_lang` (`id_category`, `id_shop`, `id_lang`, `name`, `de
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_category_product`
+-- Table structure for table `ps_category_product`
 --
 
 CREATE TABLE `ps_category_product` (
@@ -3588,7 +3600,7 @@ CREATE TABLE `ps_category_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_category_product`
+-- Dumping data for table `ps_category_product`
 --
 
 INSERT INTO `ps_category_product` (`id_category`, `id_product`, `position`) VALUES
@@ -3648,7 +3660,7 @@ INSERT INTO `ps_category_product` (`id_category`, `id_product`, `position`) VALU
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_category_shop`
+-- Table structure for table `ps_category_shop`
 --
 
 CREATE TABLE `ps_category_shop` (
@@ -3658,7 +3670,7 @@ CREATE TABLE `ps_category_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_category_shop`
+-- Dumping data for table `ps_category_shop`
 --
 
 INSERT INTO `ps_category_shop` (`id_category`, `id_shop`, `position`) VALUES
@@ -3748,7 +3760,7 @@ INSERT INTO `ps_category_shop` (`id_category`, `id_shop`, `position`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cms`
+-- Table structure for table `ps_cms`
 --
 
 CREATE TABLE `ps_cms` (
@@ -3760,7 +3772,7 @@ CREATE TABLE `ps_cms` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_cms`
+-- Dumping data for table `ps_cms`
 --
 
 INSERT INTO `ps_cms` (`id_cms`, `id_cms_category`, `position`, `active`, `indexation`) VALUES
@@ -3773,7 +3785,7 @@ INSERT INTO `ps_cms` (`id_cms`, `id_cms_category`, `position`, `active`, `indexa
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cms_category`
+-- Table structure for table `ps_cms_category`
 --
 
 CREATE TABLE `ps_cms_category` (
@@ -3787,7 +3799,7 @@ CREATE TABLE `ps_cms_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_cms_category`
+-- Dumping data for table `ps_cms_category`
 --
 
 INSERT INTO `ps_cms_category` (`id_cms_category`, `id_parent`, `level_depth`, `active`, `date_add`, `date_upd`, `position`) VALUES
@@ -3796,7 +3808,7 @@ INSERT INTO `ps_cms_category` (`id_cms_category`, `id_parent`, `level_depth`, `a
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cms_category_lang`
+-- Table structure for table `ps_cms_category_lang`
 --
 
 CREATE TABLE `ps_cms_category_lang` (
@@ -3812,7 +3824,7 @@ CREATE TABLE `ps_cms_category_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_cms_category_lang`
+-- Dumping data for table `ps_cms_category_lang`
 --
 
 INSERT INTO `ps_cms_category_lang` (`id_cms_category`, `id_lang`, `id_shop`, `name`, `description`, `link_rewrite`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
@@ -3821,7 +3833,7 @@ INSERT INTO `ps_cms_category_lang` (`id_cms_category`, `id_lang`, `id_shop`, `na
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cms_category_shop`
+-- Table structure for table `ps_cms_category_shop`
 --
 
 CREATE TABLE `ps_cms_category_shop` (
@@ -3830,7 +3842,7 @@ CREATE TABLE `ps_cms_category_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_cms_category_shop`
+-- Dumping data for table `ps_cms_category_shop`
 --
 
 INSERT INTO `ps_cms_category_shop` (`id_cms_category`, `id_shop`) VALUES
@@ -3839,7 +3851,7 @@ INSERT INTO `ps_cms_category_shop` (`id_cms_category`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cms_lang`
+-- Table structure for table `ps_cms_lang`
 --
 
 CREATE TABLE `ps_cms_lang` (
@@ -3854,7 +3866,7 @@ CREATE TABLE `ps_cms_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_cms_lang`
+-- Dumping data for table `ps_cms_lang`
 --
 
 INSERT INTO `ps_cms_lang` (`id_cms`, `id_lang`, `id_shop`, `meta_title`, `meta_description`, `meta_keywords`, `content`, `link_rewrite`) VALUES
@@ -3867,7 +3879,7 @@ INSERT INTO `ps_cms_lang` (`id_cms`, `id_lang`, `id_shop`, `meta_title`, `meta_d
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cms_role`
+-- Table structure for table `ps_cms_role`
 --
 
 CREATE TABLE `ps_cms_role` (
@@ -3877,7 +3889,7 @@ CREATE TABLE `ps_cms_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_cms_role`
+-- Dumping data for table `ps_cms_role`
 --
 
 INSERT INTO `ps_cms_role` (`id_cms_role`, `name`, `id_cms`) VALUES
@@ -3887,7 +3899,7 @@ INSERT INTO `ps_cms_role` (`id_cms_role`, `name`, `id_cms`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cms_role_lang`
+-- Table structure for table `ps_cms_role_lang`
 --
 
 CREATE TABLE `ps_cms_role_lang` (
@@ -3900,7 +3912,7 @@ CREATE TABLE `ps_cms_role_lang` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cms_shop`
+-- Table structure for table `ps_cms_shop`
 --
 
 CREATE TABLE `ps_cms_shop` (
@@ -3909,7 +3921,7 @@ CREATE TABLE `ps_cms_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_cms_shop`
+-- Dumping data for table `ps_cms_shop`
 --
 
 INSERT INTO `ps_cms_shop` (`id_cms`, `id_shop`) VALUES
@@ -3922,7 +3934,7 @@ INSERT INTO `ps_cms_shop` (`id_cms`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_condition`
+-- Table structure for table `ps_condition`
 --
 
 CREATE TABLE `ps_condition` (
@@ -3941,7 +3953,7 @@ CREATE TABLE `ps_condition` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_condition`
+-- Dumping data for table `ps_condition`
 --
 
 INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`, `operator`, `value`, `result`, `calculation_type`, `calculation_detail`, `validated`, `date_add`, `date_upd`) VALUES
@@ -3950,8 +3962,8 @@ INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`
 (3, 3, 'configuration', 'PS_CSS_THEME_CACHE', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
 (4, 4, 'configuration', 'PS_CIPHER_ALGORITHM', '==', '1', '1', 'hook', 'actionAdminPerformanceControllerSaveAfter', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
 (5, 5, 'configuration', 'PS_MEDIA_SERVERS', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(6, 6, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '0', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
-(7, 7, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(6, 6, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '0', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
+(7, 7, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (8, 8, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '0', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
 (9, 9, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '1', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (10, 10, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '0', '0', 'hook', 'actionObjectProductAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
@@ -3973,7 +3985,7 @@ INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`
 (26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '1', 'hook', 'actionObjectShopAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (27, 27, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '5', '1', 'hook', 'actionObjectShopGroupAddAfter 	', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (28, 28, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '1', '1', 'hook', 'actionObjectShopGroupAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(29, 29, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '2', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(29, 29, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '2', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '500', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
 (32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '5000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
@@ -4052,11 +4064,11 @@ INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`
 (105, 113, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (106, 114, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '5000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (107, 121, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '==', '0', '0', 'time', '1', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(108, 136, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(109, 137, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"hipay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(110, 140, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(111, 141, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ogone%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(112, 142, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(108, 136, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
+(109, 137, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"hipay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
+(110, 140, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
+(111, 141, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ogone%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
+(112, 142, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (113, 147, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%hipay%\"', '==', '0', '0', 'time', '1', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (114, 152, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '==', '0', '0', 'time', '1', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (115, 155, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%trustly%\"', '==', '0', '0', 'time', '1', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
@@ -4072,20 +4084,20 @@ INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`
 (125, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (126, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-05 23:23:29'),
 (127, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:16'),
-(128, 225, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ferbuy%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(128, 225, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ferbuy%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (129, 227, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'FERBUY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'FERBUY_MODE\') AND ( value = \'live\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:16'),
-(130, 246, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%globkurier%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(130, 246, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%globkurier%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (131, 248, 'configuration', 'GLOBKURIER_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:16'),
-(132, 252, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%gadwords%\" ', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:29'),
+(132, 252, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%gadwords%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (133, 255, 'configuration', 'HIPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:16'),
 (134, 291, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'OGONE_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'OGONE_MODE\') AND ( value = \'live\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (135, 301, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPAL_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
-(136, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(136, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (137, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (138, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
-(139, 328, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%sofortbanking%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(139, 328, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%sofortbanking%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (140, 330, 'configuration', 'SOFORTBANKING_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
-(141, 332, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%textmaster%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(141, 332, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%textmaster%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (142, 334, 'configuration', 'TEXTMASTER_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (143, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (144, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
@@ -4107,113 +4119,113 @@ INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`
 (160, 391, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ogone%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (161, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (162, 396, 'sql', 'SELECT COUNT(*) FROM PREFIX_textmaster_project WHERE status = \"completed\"', '>=', '10', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
-(163, 416, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pigmbhpaymill%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(163, 416, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pigmbhpaymill%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (164, 418, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pigmbhpaymill%\" AND os.logable = 1', '>=', '1', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (165, 419, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pigmbhpaymill%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(166, 420, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%syspay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(166, 420, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%syspay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (167, 421, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SYSPAY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SYSPAY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (168, 422, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%syspay%\" AND os.logable = 1', '>=', '1', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (169, 423, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%syspay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(170, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(170, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (171, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (172, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (173, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(174, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(174, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (175, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (176, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (177, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(178, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(178, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (179, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
-(180, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(180, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (181, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (182, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (183, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(184, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(184, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (185, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (186, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (187, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(188, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(188, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (189, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (190, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (191, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(192, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(192, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (193, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (194, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (195, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(196, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(196, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (197, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (198, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (199, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(200, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(200, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (201, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (202, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (203, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(204, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32');
+(204, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51');
 INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`, `operator`, `value`, `result`, `calculation_type`, `calculation_detail`, `validated`, `date_add`, `date_upd`) VALUES
 (205, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (206, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (207, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(208, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(208, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (209, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (210, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (211, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(212, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(212, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (213, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (214, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (215, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(216, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(216, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (217, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (218, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (219, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(220, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(220, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (221, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (222, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (223, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(224, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(224, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (225, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (226, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (227, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(228, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(228, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (229, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (230, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (231, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(232, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(232, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (233, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (234, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (235, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(236, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(236, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (237, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (238, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (239, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(240, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(240, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (241, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (242, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (243, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(244, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(244, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (245, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (246, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (247, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(248, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(248, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (249, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (250, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (251, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(252, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(252, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (253, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (254, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (255, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(256, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(256, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (257, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (258, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (259, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(260, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(260, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (261, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (262, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (263, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(264, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(264, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (265, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (266, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (267, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
-(268, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(268, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-07 21:56:51'),
 (269, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-07 20:10:17'),
 (270, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
 (271, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32');
@@ -4221,7 +4233,7 @@ INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_condition_advice`
+-- Table structure for table `ps_condition_advice`
 --
 
 CREATE TABLE `ps_condition_advice` (
@@ -4231,7 +4243,7 @@ CREATE TABLE `ps_condition_advice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_condition_advice`
+-- Dumping data for table `ps_condition_advice`
 --
 
 INSERT INTO `ps_condition_advice` (`id_condition`, `id_advice`, `display`) VALUES
@@ -4279,7 +4291,7 @@ INSERT INTO `ps_condition_advice` (`id_condition`, `id_advice`, `display`) VALUE
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_condition_badge`
+-- Table structure for table `ps_condition_badge`
 --
 
 CREATE TABLE `ps_condition_badge` (
@@ -4288,7 +4300,7 @@ CREATE TABLE `ps_condition_badge` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_condition_badge`
+-- Dumping data for table `ps_condition_badge`
 --
 
 INSERT INTO `ps_condition_badge` (`id_condition`, `id_badge`) VALUES
@@ -4561,7 +4573,7 @@ INSERT INTO `ps_condition_badge` (`id_condition`, `id_badge`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_configuration`
+-- Table structure for table `ps_configuration`
 --
 
 CREATE TABLE `ps_configuration` (
@@ -4575,7 +4587,7 @@ CREATE TABLE `ps_configuration` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_configuration`
+-- Dumping data for table `ps_configuration`
 --
 
 INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, `name`, `value`, `date_add`, `date_upd`) VALUES
@@ -4807,8 +4819,8 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (226, NULL, NULL, 'HOMESLIDER_PAUSE', '7700', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (227, NULL, NULL, 'HOMESLIDER_LOOP', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (228, NULL, NULL, 'PS_BASE_DISTANCE_UNIT', 'm', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(229, NULL, NULL, 'PS_SHOP_DOMAIN', '127.0.0.1', '0000-00-00 00:00:00', '2018-10-06 23:20:23'),
-(230, NULL, NULL, 'PS_SHOP_DOMAIN_SSL', '127.0.0.1', '0000-00-00 00:00:00', '2018-10-06 23:20:23'),
+(229, NULL, NULL, 'PS_SHOP_DOMAIN', 'localhost:8080', '0000-00-00 00:00:00', '2018-10-07 21:56:14'),
+(230, NULL, NULL, 'PS_SHOP_DOMAIN_SSL', 'localhost:8080', '0000-00-00 00:00:00', '2018-10-07 21:56:14'),
 (231, NULL, NULL, 'PS_SHOP_NAME', 'HM', '0000-00-00 00:00:00', '2018-10-06 23:20:23'),
 (232, NULL, NULL, 'PS_SHOP_EMAIL', 'prestashop@hm.pl', '0000-00-00 00:00:00', '2018-10-06 23:20:24'),
 (233, NULL, NULL, 'PS_MAIL_METHOD', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4914,12 +4926,25 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (333, NULL, NULL, 'CRONJOBS_EXECUTION_TOKEN', 'df9b774d48c9496b61887b68e20949b4', '2018-10-06 23:20:41', '2018-10-06 23:20:41'),
 (334, NULL, NULL, 'BLOCKREASSURANCE_NBBLOCKS', '5', '2018-10-06 23:20:45', '2018-10-06 23:20:45'),
 (335, NULL, NULL, 'GF_NOT_VIEWED_BADGE', '150|166|168', '2018-10-06 23:23:33', '2018-10-06 23:23:33'),
-(336, NULL, NULL, 'ONBOARDINGV2_SHUT_DOWN', '1', '2018-10-06 23:23:37', '2018-10-06 23:23:37');
+(336, NULL, NULL, 'ONBOARDINGV2_SHUT_DOWN', '1', '2018-10-06 23:23:37', '2018-10-06 23:23:37'),
+(337, NULL, NULL, 'PS_ALLOW_ACCENTED_CHARS_URL', '0', '2018-10-07 21:56:14', '2018-10-07 21:56:14'),
+(338, NULL, NULL, 'PS_HTACCESS_DISABLE_MULTIVIEWS', '0', '2018-10-07 21:56:14', '2018-10-07 21:56:14'),
+(339, NULL, NULL, 'PS_HTACCESS_DISABLE_MODSEC', '0', '2018-10-07 21:56:14', '2018-10-07 21:56:14'),
+(340, NULL, NULL, 'PS_ROUTE_product_rule', NULL, '2018-10-07 21:56:14', '2018-10-07 21:56:14'),
+(341, NULL, NULL, 'PS_ROUTE_category_rule', NULL, '2018-10-07 21:56:14', '2018-10-07 21:56:14'),
+(342, NULL, NULL, 'PS_ROUTE_layered_rule', NULL, '2018-10-07 21:56:14', '2018-10-07 21:56:14'),
+(343, NULL, NULL, 'PS_ROUTE_supplier_rule', NULL, '2018-10-07 21:56:14', '2018-10-07 21:56:14'),
+(344, NULL, NULL, 'PS_ROUTE_manufacturer_rule', NULL, '2018-10-07 21:56:14', '2018-10-07 21:56:14'),
+(345, NULL, NULL, 'PS_ROUTE_cms_rule', NULL, '2018-10-07 21:56:14', '2018-10-07 21:56:14'),
+(346, NULL, NULL, 'PS_ROUTE_cms_category_rule', NULL, '2018-10-07 21:56:14', '2018-10-07 21:56:14'),
+(347, NULL, NULL, 'PS_ROUTE_module', 'module/{module}{/:controller}', '2018-10-07 21:56:14', '2018-10-07 21:56:14'),
+(348, NULL, NULL, 'REVWS_VERSION', '1.0.20', '2018-10-07 21:56:52', '2018-10-07 21:56:52'),
+(349, NULL, NULL, 'REVWS_SETTINGS', '{\"general\":{\"multilang\":true},\"theme\":{\"shape\":\"star\",\"shapeSize\":{\"product\":16,\"list\":16,\"create\":80},\"colors\":{\"fillColor\":\"#ffd055\",\"borderColor\":\"#ffd055\",\"fillColorOff\":\"transparent\",\"borderColorOff\":\"#d5d5d5\"}},\"display\":{\"product\":{\"placement\":\"tab\",\"reviewsPerPage\":5,\"orderBy\":\"date\",\"averagePlacement\":\"buttons\",\"hideEmptyReviews\":false,\"showSignInButton\":true},\"productList\":{\"show\":true,\"noReviews\":\"omit\"},\"productComparison\":{\"show\":true},\"myReviews\":{\"show\":true,\"iconClass\":\"\",\"reviewsPerPage\":5,\"maxRequests\":3}},\"moderation\":{\"enabled\":true,\"needApprove\":{\"create\":true,\"edit\":true,\"reported\":false}},\"review\":{\"displayName\":\"fullName\",\"allowGuestReviews\":true,\"allowReviewWithoutCriteria\":false,\"allowEmpty\":true,\"allowDelete\":true,\"allowEdit\":true,\"allowVoting\":true,\"allowReporting\":true,\"displayCriteria\":\"none\"},\"notifications\":{\"admin\":{\"email\":\"prestashop@hm.pl\",\"language\":1,\"reviewCreated\":false,\"reviewUpdated\":false,\"reviewDeleted\":false,\"needApprove\":true},\"author\":{\"thankYou\":true,\"reviewApproved\":true,\"reviewDeleted\":true,\"reply\":true}},\"richSnippets\":{\"enabled\":true},\"images\":{\"enabled\":true,\"allowNewImages\":true,\"maxFileSize\":3,\"width\":800,\"height\":800,\"thumbWidth\":100,\"thumbHeight\":100},\"gdpr\":{\"implementation\":\"basic\",\"requiredForCustomers\":true}}', '2018-10-07 21:56:52', '2018-10-07 21:56:52');
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_configuration_kpi`
+-- Table structure for table `ps_configuration_kpi`
 --
 
 CREATE TABLE `ps_configuration_kpi` (
@@ -4933,7 +4958,7 @@ CREATE TABLE `ps_configuration_kpi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_configuration_kpi`
+-- Dumping data for table `ps_configuration_kpi`
 --
 
 INSERT INTO `ps_configuration_kpi` (`id_configuration_kpi`, `id_shop_group`, `id_shop`, `name`, `value`, `date_add`, `date_upd`) VALUES
@@ -4977,7 +5002,7 @@ INSERT INTO `ps_configuration_kpi` (`id_configuration_kpi`, `id_shop_group`, `id
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_configuration_kpi_lang`
+-- Table structure for table `ps_configuration_kpi_lang`
 --
 
 CREATE TABLE `ps_configuration_kpi_lang` (
@@ -4990,7 +5015,7 @@ CREATE TABLE `ps_configuration_kpi_lang` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_configuration_lang`
+-- Table structure for table `ps_configuration_lang`
 --
 
 CREATE TABLE `ps_configuration_lang` (
@@ -5001,7 +5026,7 @@ CREATE TABLE `ps_configuration_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_configuration_lang`
+-- Dumping data for table `ps_configuration_lang`
 --
 
 INSERT INTO `ps_configuration_lang` (`id_configuration`, `id_lang`, `value`, `date_upd`) VALUES
@@ -5022,7 +5047,7 @@ INSERT INTO `ps_configuration_lang` (`id_configuration`, `id_lang`, `value`, `da
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_connections`
+-- Table structure for table `ps_connections`
 --
 
 CREATE TABLE `ps_connections` (
@@ -5037,18 +5062,19 @@ CREATE TABLE `ps_connections` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_connections`
+-- Dumping data for table `ps_connections`
 --
 
 INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_guest`, `id_page`, `ip_address`, `date_add`, `http_referer`) VALUES
 (1, 1, 1, 1, 1, 2130706433, '2018-10-06 23:20:27', 'http://www.prestashop.com'),
 (2, 1, 1, 3, 1, 2130706433, '2018-10-06 23:21:52', ''),
-(3, 1, 1, 3, 2, 2130706433, '2018-10-07 20:08:54', '');
+(3, 1, 1, 3, 2, 2130706433, '2018-10-07 20:08:54', ''),
+(4, 1, 1, 4, 1, 2130706433, '2018-10-07 21:47:21', '');
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_connections_page`
+-- Table structure for table `ps_connections_page`
 --
 
 CREATE TABLE `ps_connections_page` (
@@ -5061,7 +5087,7 @@ CREATE TABLE `ps_connections_page` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_connections_source`
+-- Table structure for table `ps_connections_source`
 --
 
 CREATE TABLE `ps_connections_source` (
@@ -5073,10 +5099,27 @@ CREATE TABLE `ps_connections_source` (
   `date_add` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `ps_connections_source`
+--
+
+INSERT INTO `ps_connections_source` (`id_connections_source`, `id_connections`, `http_referer`, `request_uri`, `keywords`, `date_add`) VALUES
+(1, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/', '', '2018-10-07 21:47:25'),
+(2, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/', '', '2018-10-07 21:47:33'),
+(3, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/', '', '2018-10-07 21:47:34'),
+(4, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/', '', '2018-10-07 21:47:35'),
+(5, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/', '', '2018-10-07 21:47:38'),
+(6, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/', '', '2018-10-07 21:47:41'),
+(7, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/', '', '2018-10-07 21:48:24'),
+(8, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/', '', '2018-10-07 21:48:28'),
+(9, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/', '', '2018-10-07 21:51:17'),
+(10, 0, 'http://127.0.0.1:8080/prestashop/', 'localhost:8080/prestashop/11-on', '', '2018-10-07 21:56:22'),
+(11, 0, 'http://localhost:8080/prestashop/11-on', 'localhost:8080/prestashop/16-basics', '', '2018-10-07 21:56:28');
+
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_contact`
+-- Table structure for table `ps_contact`
 --
 
 CREATE TABLE `ps_contact` (
@@ -5087,7 +5130,7 @@ CREATE TABLE `ps_contact` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_contact`
+-- Dumping data for table `ps_contact`
 --
 
 INSERT INTO `ps_contact` (`id_contact`, `email`, `customer_service`, `position`) VALUES
@@ -5097,7 +5140,7 @@ INSERT INTO `ps_contact` (`id_contact`, `email`, `customer_service`, `position`)
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_contact_lang`
+-- Table structure for table `ps_contact_lang`
 --
 
 CREATE TABLE `ps_contact_lang` (
@@ -5108,7 +5151,7 @@ CREATE TABLE `ps_contact_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_contact_lang`
+-- Dumping data for table `ps_contact_lang`
 --
 
 INSERT INTO `ps_contact_lang` (`id_contact`, `id_lang`, `name`, `description`) VALUES
@@ -5118,7 +5161,7 @@ INSERT INTO `ps_contact_lang` (`id_contact`, `id_lang`, `name`, `description`) V
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_contact_shop`
+-- Table structure for table `ps_contact_shop`
 --
 
 CREATE TABLE `ps_contact_shop` (
@@ -5127,7 +5170,7 @@ CREATE TABLE `ps_contact_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_contact_shop`
+-- Dumping data for table `ps_contact_shop`
 --
 
 INSERT INTO `ps_contact_shop` (`id_contact`, `id_shop`) VALUES
@@ -5137,7 +5180,7 @@ INSERT INTO `ps_contact_shop` (`id_contact`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_country`
+-- Table structure for table `ps_country`
 --
 
 CREATE TABLE `ps_country` (
@@ -5155,7 +5198,7 @@ CREATE TABLE `ps_country` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_country`
+-- Dumping data for table `ps_country`
 --
 
 INSERT INTO `ps_country` (`id_country`, `id_zone`, `id_currency`, `iso_code`, `call_prefix`, `active`, `contains_states`, `need_identification_number`, `need_zip_code`, `zip_code_format`, `display_tax_label`) VALUES
@@ -5407,7 +5450,7 @@ INSERT INTO `ps_country` (`id_country`, `id_zone`, `id_currency`, `iso_code`, `c
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_country_lang`
+-- Table structure for table `ps_country_lang`
 --
 
 CREATE TABLE `ps_country_lang` (
@@ -5417,7 +5460,7 @@ CREATE TABLE `ps_country_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_country_lang`
+-- Dumping data for table `ps_country_lang`
 --
 
 INSERT INTO `ps_country_lang` (`id_country`, `id_lang`, `name`) VALUES
@@ -5669,7 +5712,7 @@ INSERT INTO `ps_country_lang` (`id_country`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_country_shop`
+-- Table structure for table `ps_country_shop`
 --
 
 CREATE TABLE `ps_country_shop` (
@@ -5678,7 +5721,7 @@ CREATE TABLE `ps_country_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_country_shop`
+-- Dumping data for table `ps_country_shop`
 --
 
 INSERT INTO `ps_country_shop` (`id_country`, `id_shop`) VALUES
@@ -5930,7 +5973,7 @@ INSERT INTO `ps_country_shop` (`id_country`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_cronjobs`
+-- Table structure for table `ps_cronjobs`
 --
 
 CREATE TABLE `ps_cronjobs` (
@@ -5952,7 +5995,7 @@ CREATE TABLE `ps_cronjobs` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_currency`
+-- Table structure for table `ps_currency`
 --
 
 CREATE TABLE `ps_currency` (
@@ -5965,7 +6008,7 @@ CREATE TABLE `ps_currency` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_currency`
+-- Dumping data for table `ps_currency`
 --
 
 INSERT INTO `ps_currency` (`id_currency`, `name`, `iso_code`, `conversion_rate`, `deleted`, `active`) VALUES
@@ -5974,7 +6017,7 @@ INSERT INTO `ps_currency` (`id_currency`, `name`, `iso_code`, `conversion_rate`,
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_currency_shop`
+-- Table structure for table `ps_currency_shop`
 --
 
 CREATE TABLE `ps_currency_shop` (
@@ -5984,7 +6027,7 @@ CREATE TABLE `ps_currency_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_currency_shop`
+-- Dumping data for table `ps_currency_shop`
 --
 
 INSERT INTO `ps_currency_shop` (`id_currency`, `id_shop`, `conversion_rate`) VALUES
@@ -5993,7 +6036,7 @@ INSERT INTO `ps_currency_shop` (`id_currency`, `id_shop`, `conversion_rate`) VAL
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_customer`
+-- Table structure for table `ps_customer`
 --
 
 CREATE TABLE `ps_customer` (
@@ -6033,7 +6076,7 @@ CREATE TABLE `ps_customer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_customer`
+-- Dumping data for table `ps_customer`
 --
 
 INSERT INTO `ps_customer` (`id_customer`, `id_shop_group`, `id_shop`, `id_gender`, `id_default_group`, `id_lang`, `id_risk`, `company`, `siret`, `ape`, `firstname`, `lastname`, `email`, `passwd`, `last_passwd_gen`, `birthday`, `newsletter`, `ip_registration_newsletter`, `newsletter_date_add`, `optin`, `website`, `outstanding_allow_amount`, `show_public_prices`, `max_payment_days`, `secure_key`, `note`, `active`, `is_guest`, `deleted`, `date_add`, `date_upd`, `reset_password_token`, `reset_password_validity`) VALUES
@@ -6042,7 +6085,7 @@ INSERT INTO `ps_customer` (`id_customer`, `id_shop_group`, `id_shop`, `id_gender
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_customer_group`
+-- Table structure for table `ps_customer_group`
 --
 
 CREATE TABLE `ps_customer_group` (
@@ -6051,7 +6094,7 @@ CREATE TABLE `ps_customer_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_customer_group`
+-- Dumping data for table `ps_customer_group`
 --
 
 INSERT INTO `ps_customer_group` (`id_customer`, `id_group`) VALUES
@@ -6060,7 +6103,7 @@ INSERT INTO `ps_customer_group` (`id_customer`, `id_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_customer_message`
+-- Table structure for table `ps_customer_message`
 --
 
 CREATE TABLE `ps_customer_message` (
@@ -6080,7 +6123,7 @@ CREATE TABLE `ps_customer_message` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_customer_message_sync_imap`
+-- Table structure for table `ps_customer_message_sync_imap`
 --
 
 CREATE TABLE `ps_customer_message_sync_imap` (
@@ -6090,7 +6133,7 @@ CREATE TABLE `ps_customer_message_sync_imap` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_customer_thread`
+-- Table structure for table `ps_customer_thread`
 --
 
 CREATE TABLE `ps_customer_thread` (
@@ -6111,7 +6154,7 @@ CREATE TABLE `ps_customer_thread` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_customization`
+-- Table structure for table `ps_customization`
 --
 
 CREATE TABLE `ps_customization` (
@@ -6129,7 +6172,7 @@ CREATE TABLE `ps_customization` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_customization_field`
+-- Table structure for table `ps_customization_field`
 --
 
 CREATE TABLE `ps_customization_field` (
@@ -6142,7 +6185,7 @@ CREATE TABLE `ps_customization_field` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_customization_field`
+-- Dumping data for table `ps_customization_field`
 --
 
 INSERT INTO `ps_customization_field` (`id_customization_field`, `id_product`, `type`, `required`, `is_module`, `is_deleted`) VALUES
@@ -6151,7 +6194,7 @@ INSERT INTO `ps_customization_field` (`id_customization_field`, `id_product`, `t
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_customization_field_lang`
+-- Table structure for table `ps_customization_field_lang`
 --
 
 CREATE TABLE `ps_customization_field_lang` (
@@ -6162,7 +6205,7 @@ CREATE TABLE `ps_customization_field_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_customization_field_lang`
+-- Dumping data for table `ps_customization_field_lang`
 --
 
 INSERT INTO `ps_customization_field_lang` (`id_customization_field`, `id_lang`, `id_shop`, `name`) VALUES
@@ -6171,7 +6214,7 @@ INSERT INTO `ps_customization_field_lang` (`id_customization_field`, `id_lang`, 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_customized_data`
+-- Table structure for table `ps_customized_data`
 --
 
 CREATE TABLE `ps_customized_data` (
@@ -6187,7 +6230,7 @@ CREATE TABLE `ps_customized_data` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_date_range`
+-- Table structure for table `ps_date_range`
 --
 
 CREATE TABLE `ps_date_range` (
@@ -6199,7 +6242,7 @@ CREATE TABLE `ps_date_range` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_delivery`
+-- Table structure for table `ps_delivery`
 --
 
 CREATE TABLE `ps_delivery` (
@@ -6214,7 +6257,7 @@ CREATE TABLE `ps_delivery` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_delivery`
+-- Dumping data for table `ps_delivery`
 --
 
 INSERT INTO `ps_delivery` (`id_delivery`, `id_shop`, `id_shop_group`, `id_carrier`, `id_range_price`, `id_range_weight`, `id_zone`, `price`) VALUES
@@ -6226,7 +6269,7 @@ INSERT INTO `ps_delivery` (`id_delivery`, `id_shop`, `id_shop_group`, `id_carrie
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_emailsubscription`
+-- Table structure for table `ps_emailsubscription`
 --
 
 CREATE TABLE `ps_emailsubscription` (
@@ -6243,7 +6286,7 @@ CREATE TABLE `ps_emailsubscription` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_employee`
+-- Table structure for table `ps_employee`
 --
 
 CREATE TABLE `ps_employee` (
@@ -6278,7 +6321,7 @@ CREATE TABLE `ps_employee` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_employee`
+-- Dumping data for table `ps_employee`
 --
 
 INSERT INTO `ps_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `firstname`, `email`, `passwd`, `last_passwd_gen`, `stats_date_from`, `stats_date_to`, `stats_compare_from`, `stats_compare_to`, `stats_compare_option`, `preselect_date_range`, `bo_color`, `bo_theme`, `bo_css`, `default_tab`, `bo_width`, `bo_menu`, `active`, `optin`, `id_last_order`, `id_last_customer_message`, `id_last_customer`, `last_connection_date`, `reset_password_token`, `reset_password_validity`) VALUES
@@ -6287,7 +6330,7 @@ INSERT INTO `ps_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_employee_shop`
+-- Table structure for table `ps_employee_shop`
 --
 
 CREATE TABLE `ps_employee_shop` (
@@ -6296,7 +6339,7 @@ CREATE TABLE `ps_employee_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_employee_shop`
+-- Dumping data for table `ps_employee_shop`
 --
 
 INSERT INTO `ps_employee_shop` (`id_employee`, `id_shop`) VALUES
@@ -6305,7 +6348,7 @@ INSERT INTO `ps_employee_shop` (`id_employee`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_feature`
+-- Table structure for table `ps_feature`
 --
 
 CREATE TABLE `ps_feature` (
@@ -6314,7 +6357,7 @@ CREATE TABLE `ps_feature` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_feature`
+-- Dumping data for table `ps_feature`
 --
 
 INSERT INTO `ps_feature` (`id_feature`, `position`) VALUES
@@ -6327,7 +6370,7 @@ INSERT INTO `ps_feature` (`id_feature`, `position`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_feature_lang`
+-- Table structure for table `ps_feature_lang`
 --
 
 CREATE TABLE `ps_feature_lang` (
@@ -6337,7 +6380,7 @@ CREATE TABLE `ps_feature_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_feature_lang`
+-- Dumping data for table `ps_feature_lang`
 --
 
 INSERT INTO `ps_feature_lang` (`id_feature`, `id_lang`, `name`) VALUES
@@ -6350,7 +6393,7 @@ INSERT INTO `ps_feature_lang` (`id_feature`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_feature_product`
+-- Table structure for table `ps_feature_product`
 --
 
 CREATE TABLE `ps_feature_product` (
@@ -6360,7 +6403,7 @@ CREATE TABLE `ps_feature_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_feature_product`
+-- Dumping data for table `ps_feature_product`
 --
 
 INSERT INTO `ps_feature_product` (`id_feature`, `id_product`, `id_feature_value`) VALUES
@@ -6372,7 +6415,7 @@ INSERT INTO `ps_feature_product` (`id_feature`, `id_product`, `id_feature_value`
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_feature_shop`
+-- Table structure for table `ps_feature_shop`
 --
 
 CREATE TABLE `ps_feature_shop` (
@@ -6381,7 +6424,7 @@ CREATE TABLE `ps_feature_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_feature_shop`
+-- Dumping data for table `ps_feature_shop`
 --
 
 INSERT INTO `ps_feature_shop` (`id_feature`, `id_shop`) VALUES
@@ -6394,7 +6437,7 @@ INSERT INTO `ps_feature_shop` (`id_feature`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_feature_value`
+-- Table structure for table `ps_feature_value`
 --
 
 CREATE TABLE `ps_feature_value` (
@@ -6404,7 +6447,7 @@ CREATE TABLE `ps_feature_value` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_feature_value`
+-- Dumping data for table `ps_feature_value`
 --
 
 INSERT INTO `ps_feature_value` (`id_feature_value`, `id_feature`, `custom`) VALUES
@@ -6430,7 +6473,7 @@ INSERT INTO `ps_feature_value` (`id_feature_value`, `id_feature`, `custom`) VALU
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_feature_value_lang`
+-- Table structure for table `ps_feature_value_lang`
 --
 
 CREATE TABLE `ps_feature_value_lang` (
@@ -6440,7 +6483,7 @@ CREATE TABLE `ps_feature_value_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_feature_value_lang`
+-- Dumping data for table `ps_feature_value_lang`
 --
 
 INSERT INTO `ps_feature_value_lang` (`id_feature_value`, `id_lang`, `value`) VALUES
@@ -6466,7 +6509,7 @@ INSERT INTO `ps_feature_value_lang` (`id_feature_value`, `id_lang`, `value`) VAL
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_gender`
+-- Table structure for table `ps_gender`
 --
 
 CREATE TABLE `ps_gender` (
@@ -6475,7 +6518,7 @@ CREATE TABLE `ps_gender` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_gender`
+-- Dumping data for table `ps_gender`
 --
 
 INSERT INTO `ps_gender` (`id_gender`, `type`) VALUES
@@ -6485,7 +6528,7 @@ INSERT INTO `ps_gender` (`id_gender`, `type`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_gender_lang`
+-- Table structure for table `ps_gender_lang`
 --
 
 CREATE TABLE `ps_gender_lang` (
@@ -6495,7 +6538,7 @@ CREATE TABLE `ps_gender_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_gender_lang`
+-- Dumping data for table `ps_gender_lang`
 --
 
 INSERT INTO `ps_gender_lang` (`id_gender`, `id_lang`, `name`) VALUES
@@ -6505,7 +6548,7 @@ INSERT INTO `ps_gender_lang` (`id_gender`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_group`
+-- Table structure for table `ps_group`
 --
 
 CREATE TABLE `ps_group` (
@@ -6518,7 +6561,7 @@ CREATE TABLE `ps_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_group`
+-- Dumping data for table `ps_group`
 --
 
 INSERT INTO `ps_group` (`id_group`, `reduction`, `price_display_method`, `show_prices`, `date_add`, `date_upd`) VALUES
@@ -6529,7 +6572,7 @@ INSERT INTO `ps_group` (`id_group`, `reduction`, `price_display_method`, `show_p
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_group_lang`
+-- Table structure for table `ps_group_lang`
 --
 
 CREATE TABLE `ps_group_lang` (
@@ -6539,7 +6582,7 @@ CREATE TABLE `ps_group_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_group_lang`
+-- Dumping data for table `ps_group_lang`
 --
 
 INSERT INTO `ps_group_lang` (`id_group`, `id_lang`, `name`) VALUES
@@ -6550,7 +6593,7 @@ INSERT INTO `ps_group_lang` (`id_group`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_group_reduction`
+-- Table structure for table `ps_group_reduction`
 --
 
 CREATE TABLE `ps_group_reduction` (
@@ -6563,7 +6606,7 @@ CREATE TABLE `ps_group_reduction` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_group_shop`
+-- Table structure for table `ps_group_shop`
 --
 
 CREATE TABLE `ps_group_shop` (
@@ -6572,7 +6615,7 @@ CREATE TABLE `ps_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_group_shop`
+-- Dumping data for table `ps_group_shop`
 --
 
 INSERT INTO `ps_group_shop` (`id_group`, `id_shop`) VALUES
@@ -6583,7 +6626,7 @@ INSERT INTO `ps_group_shop` (`id_group`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_guest`
+-- Table structure for table `ps_guest`
 --
 
 CREATE TABLE `ps_guest` (
@@ -6606,18 +6649,19 @@ CREATE TABLE `ps_guest` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_guest`
+-- Dumping data for table `ps_guest`
 --
 
 INSERT INTO `ps_guest` (`id_guest`, `id_operating_system`, `id_web_browser`, `id_customer`, `javascript`, `screen_resolution_x`, `screen_resolution_y`, `screen_color`, `sun_java`, `adobe_flash`, `adobe_director`, `apple_quicktime`, `real_player`, `windows_media`, `accept_language`, `mobile_theme`) VALUES
 (1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0),
 (2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0),
-(3, 6, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0);
+(3, 6, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0),
+(4, 6, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'en', 0);
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_homeslider`
+-- Table structure for table `ps_homeslider`
 --
 
 CREATE TABLE `ps_homeslider` (
@@ -6626,7 +6670,7 @@ CREATE TABLE `ps_homeslider` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_homeslider`
+-- Dumping data for table `ps_homeslider`
 --
 
 INSERT INTO `ps_homeslider` (`id_homeslider_slides`, `id_shop`) VALUES
@@ -6637,7 +6681,7 @@ INSERT INTO `ps_homeslider` (`id_homeslider_slides`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_homeslider_slides`
+-- Table structure for table `ps_homeslider_slides`
 --
 
 CREATE TABLE `ps_homeslider_slides` (
@@ -6647,7 +6691,7 @@ CREATE TABLE `ps_homeslider_slides` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_homeslider_slides`
+-- Dumping data for table `ps_homeslider_slides`
 --
 
 INSERT INTO `ps_homeslider_slides` (`id_homeslider_slides`, `position`, `active`) VALUES
@@ -6658,7 +6702,7 @@ INSERT INTO `ps_homeslider_slides` (`id_homeslider_slides`, `position`, `active`
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_homeslider_slides_lang`
+-- Table structure for table `ps_homeslider_slides_lang`
 --
 
 CREATE TABLE `ps_homeslider_slides_lang` (
@@ -6672,7 +6716,7 @@ CREATE TABLE `ps_homeslider_slides_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_homeslider_slides_lang`
+-- Dumping data for table `ps_homeslider_slides_lang`
 --
 
 INSERT INTO `ps_homeslider_slides_lang` (`id_homeslider_slides`, `id_lang`, `title`, `description`, `legend`, `url`, `image`) VALUES
@@ -6683,7 +6727,7 @@ INSERT INTO `ps_homeslider_slides_lang` (`id_homeslider_slides`, `id_lang`, `tit
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_hook`
+-- Table structure for table `ps_hook`
 --
 
 CREATE TABLE `ps_hook` (
@@ -6695,7 +6739,7 @@ CREATE TABLE `ps_hook` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_hook`
+-- Dumping data for table `ps_hook`
 --
 
 INSERT INTO `ps_hook` (`id_hook`, `name`, `title`, `description`, `position`) VALUES
@@ -6919,12 +6963,20 @@ INSERT INTO `ps_hook` (`id_hook`, `name`, `title`, `description`, `position`) VA
 (218, 'actionObjectImageAddAfter', 'actionObjectImageAddAfter', '', 1),
 (219, 'actionObjectCartRuleAddAfter', 'actionObjectCartRuleAddAfter', '', 1),
 (220, 'actionAdminStoresControllerSaveAfter', 'actionAdminStoresControllerSaveAfter', '', 1),
-(221, 'actionAdminWebserviceControllerSaveAfter', 'actionAdminWebserviceControllerSaveAfter', '', 1);
+(221, 'actionAdminWebserviceControllerSaveAfter', 'actionAdminWebserviceControllerSaveAfter', '', 1),
+(222, 'moduleRoutes', 'moduleRoutes', '', 1),
+(223, 'displayMobileHeader', 'displayMobileHeader', '', 1),
+(224, 'displayProductListReviews', 'displayProductListReviews', '', 1),
+(225, 'displayProductComparison', 'displayProductComparison', '', 1),
+(226, 'datakickExtend', 'datakickExtend', '', 1),
+(227, 'actionRegisterKronaAction', 'actionRegisterKronaAction', '', 1),
+(228, 'displayRevwsReview', 'displayRevwsReview', '', 1),
+(229, 'displayRevwsReviewList', 'displayRevwsReviewList', '', 1);
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_hook_alias`
+-- Table structure for table `ps_hook_alias`
 --
 
 CREATE TABLE `ps_hook_alias` (
@@ -6934,7 +6986,7 @@ CREATE TABLE `ps_hook_alias` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_hook_alias`
+-- Dumping data for table `ps_hook_alias`
 --
 
 INSERT INTO `ps_hook_alias` (`id_hook_alias`, `alias`, `name`) VALUES
@@ -7025,7 +7077,7 @@ INSERT INTO `ps_hook_alias` (`id_hook_alias`, `alias`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_hook_module`
+-- Table structure for table `ps_hook_module`
 --
 
 CREATE TABLE `ps_hook_module` (
@@ -7036,7 +7088,7 @@ CREATE TABLE `ps_hook_module` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_hook_module`
+-- Dumping data for table `ps_hook_module`
 --
 
 INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VALUES
@@ -7137,6 +7189,18 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (53, 1, 221, 1),
 (55, 1, 161, 1),
 (56, 1, 206, 1),
+(57, 1, 27, 1),
+(57, 1, 43, 1),
+(57, 1, 99, 1),
+(57, 1, 123, 1),
+(57, 1, 222, 1),
+(57, 1, 223, 1),
+(57, 1, 224, 1),
+(57, 1, 225, 1),
+(57, 1, 226, 1),
+(57, 1, 227, 1),
+(57, 1, 228, 1),
+(57, 1, 229, 1),
 (2, 1, 161, 2),
 (3, 1, 162, 2),
 (3, 1, 168, 2),
@@ -7166,6 +7230,10 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (54, 1, 176, 2),
 (54, 1, 177, 2),
 (56, 1, 132, 2),
+(57, 1, 20, 2),
+(57, 1, 52, 2),
+(57, 1, 181, 2),
+(57, 1, 182, 2),
 (4, 1, 162, 3),
 (4, 1, 168, 3),
 (5, 1, 169, 3),
@@ -7178,11 +7246,13 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (31, 1, 49, 3),
 (53, 1, 163, 3),
 (54, 1, 65, 3),
+(57, 1, 160, 3),
 (5, 1, 162, 4),
 (6, 1, 168, 4),
 (15, 1, 13, 4),
 (25, 1, 205, 4),
 (32, 1, 49, 4),
+(57, 1, 14, 4),
 (33, 1, 49, 5),
 (34, 1, 49, 6),
 (35, 1, 49, 7),
@@ -7205,7 +7275,7 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_hook_module_exceptions`
+-- Table structure for table `ps_hook_module_exceptions`
 --
 
 CREATE TABLE `ps_hook_module_exceptions` (
@@ -7219,7 +7289,7 @@ CREATE TABLE `ps_hook_module_exceptions` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_image`
+-- Table structure for table `ps_image`
 --
 
 CREATE TABLE `ps_image` (
@@ -7230,7 +7300,7 @@ CREATE TABLE `ps_image` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_image`
+-- Dumping data for table `ps_image`
 --
 
 INSERT INTO `ps_image` (`id_image`, `id_product`, `position`, `cover`) VALUES
@@ -7261,7 +7331,7 @@ INSERT INTO `ps_image` (`id_image`, `id_product`, `position`, `cover`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_image_lang`
+-- Table structure for table `ps_image_lang`
 --
 
 CREATE TABLE `ps_image_lang` (
@@ -7271,7 +7341,7 @@ CREATE TABLE `ps_image_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_image_lang`
+-- Dumping data for table `ps_image_lang`
 --
 
 INSERT INTO `ps_image_lang` (`id_image`, `id_lang`, `legend`) VALUES
@@ -7302,7 +7372,7 @@ INSERT INTO `ps_image_lang` (`id_image`, `id_lang`, `legend`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_image_shop`
+-- Table structure for table `ps_image_shop`
 --
 
 CREATE TABLE `ps_image_shop` (
@@ -7313,7 +7383,7 @@ CREATE TABLE `ps_image_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_image_shop`
+-- Dumping data for table `ps_image_shop`
 --
 
 INSERT INTO `ps_image_shop` (`id_product`, `id_image`, `id_shop`, `cover`) VALUES
@@ -7344,7 +7414,7 @@ INSERT INTO `ps_image_shop` (`id_product`, `id_image`, `id_shop`, `cover`) VALUE
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_image_type`
+-- Table structure for table `ps_image_type`
 --
 
 CREATE TABLE `ps_image_type` (
@@ -7360,7 +7430,7 @@ CREATE TABLE `ps_image_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_image_type`
+-- Dumping data for table `ps_image_type`
 --
 
 INSERT INTO `ps_image_type` (`id_image_type`, `name`, `width`, `height`, `products`, `categories`, `manufacturers`, `suppliers`, `stores`) VALUES
@@ -7375,7 +7445,7 @@ INSERT INTO `ps_image_type` (`id_image_type`, `name`, `width`, `height`, `produc
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_import_match`
+-- Table structure for table `ps_import_match`
 --
 
 CREATE TABLE `ps_import_match` (
@@ -7388,7 +7458,7 @@ CREATE TABLE `ps_import_match` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_info`
+-- Table structure for table `ps_info`
 --
 
 CREATE TABLE `ps_info` (
@@ -7396,7 +7466,7 @@ CREATE TABLE `ps_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_info`
+-- Dumping data for table `ps_info`
 --
 
 INSERT INTO `ps_info` (`id_info`) VALUES
@@ -7405,7 +7475,7 @@ INSERT INTO `ps_info` (`id_info`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_info_lang`
+-- Table structure for table `ps_info_lang`
 --
 
 CREATE TABLE `ps_info_lang` (
@@ -7416,7 +7486,7 @@ CREATE TABLE `ps_info_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_info_lang`
+-- Dumping data for table `ps_info_lang`
 --
 
 INSERT INTO `ps_info_lang` (`id_info`, `id_shop`, `id_lang`, `text`) VALUES
@@ -7425,7 +7495,7 @@ INSERT INTO `ps_info_lang` (`id_info`, `id_shop`, `id_lang`, `text`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_info_shop`
+-- Table structure for table `ps_info_shop`
 --
 
 CREATE TABLE `ps_info_shop` (
@@ -7434,7 +7504,7 @@ CREATE TABLE `ps_info_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_info_shop`
+-- Dumping data for table `ps_info_shop`
 --
 
 INSERT INTO `ps_info_shop` (`id_info`, `id_shop`) VALUES
@@ -7443,7 +7513,7 @@ INSERT INTO `ps_info_shop` (`id_info`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_lang`
+-- Table structure for table `ps_lang`
 --
 
 CREATE TABLE `ps_lang` (
@@ -7459,7 +7529,7 @@ CREATE TABLE `ps_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Zrzut danych tabeli `ps_lang`
+-- Dumping data for table `ps_lang`
 --
 
 INSERT INTO `ps_lang` (`id_lang`, `name`, `active`, `iso_code`, `language_code`, `locale`, `date_format_lite`, `date_format_full`, `is_rtl`) VALUES
@@ -7468,7 +7538,7 @@ INSERT INTO `ps_lang` (`id_lang`, `name`, `active`, `iso_code`, `language_code`,
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_lang_shop`
+-- Table structure for table `ps_lang_shop`
 --
 
 CREATE TABLE `ps_lang_shop` (
@@ -7477,7 +7547,7 @@ CREATE TABLE `ps_lang_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Zrzut danych tabeli `ps_lang_shop`
+-- Dumping data for table `ps_lang_shop`
 --
 
 INSERT INTO `ps_lang_shop` (`id_lang`, `id_shop`) VALUES
@@ -7486,7 +7556,7 @@ INSERT INTO `ps_lang_shop` (`id_lang`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_layered_category`
+-- Table structure for table `ps_layered_category`
 --
 
 CREATE TABLE `ps_layered_category` (
@@ -7501,7 +7571,7 @@ CREATE TABLE `ps_layered_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Zrzut danych tabeli `ps_layered_category`
+-- Dumping data for table `ps_layered_category`
 --
 
 INSERT INTO `ps_layered_category` (`id_layered_category`, `id_shop`, `id_category`, `id_value`, `type`, `position`, `filter_type`, `filter_show_limit`) VALUES
@@ -7597,7 +7667,7 @@ INSERT INTO `ps_layered_category` (`id_layered_category`, `id_shop`, `id_categor
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_layered_filter`
+-- Table structure for table `ps_layered_filter`
 --
 
 CREATE TABLE `ps_layered_filter` (
@@ -7609,7 +7679,7 @@ CREATE TABLE `ps_layered_filter` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_layered_filter`
+-- Dumping data for table `ps_layered_filter`
 --
 
 INSERT INTO `ps_layered_filter` (`id_layered_filter`, `name`, `filters`, `n_categories`, `date_add`) VALUES
@@ -7618,7 +7688,7 @@ INSERT INTO `ps_layered_filter` (`id_layered_filter`, `name`, `filters`, `n_cate
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_layered_filter_shop`
+-- Table structure for table `ps_layered_filter_shop`
 --
 
 CREATE TABLE `ps_layered_filter_shop` (
@@ -7627,7 +7697,7 @@ CREATE TABLE `ps_layered_filter_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_layered_filter_shop`
+-- Dumping data for table `ps_layered_filter_shop`
 --
 
 INSERT INTO `ps_layered_filter_shop` (`id_layered_filter`, `id_shop`) VALUES
@@ -7636,7 +7706,7 @@ INSERT INTO `ps_layered_filter_shop` (`id_layered_filter`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_layered_indexable_attribute_group`
+-- Table structure for table `ps_layered_indexable_attribute_group`
 --
 
 CREATE TABLE `ps_layered_indexable_attribute_group` (
@@ -7645,7 +7715,7 @@ CREATE TABLE `ps_layered_indexable_attribute_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_layered_indexable_attribute_group`
+-- Dumping data for table `ps_layered_indexable_attribute_group`
 --
 
 INSERT INTO `ps_layered_indexable_attribute_group` (`id_attribute_group`, `indexable`) VALUES
@@ -7657,7 +7727,7 @@ INSERT INTO `ps_layered_indexable_attribute_group` (`id_attribute_group`, `index
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_layered_indexable_attribute_group_lang_value`
+-- Table structure for table `ps_layered_indexable_attribute_group_lang_value`
 --
 
 CREATE TABLE `ps_layered_indexable_attribute_group_lang_value` (
@@ -7670,7 +7740,7 @@ CREATE TABLE `ps_layered_indexable_attribute_group_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_layered_indexable_attribute_lang_value`
+-- Table structure for table `ps_layered_indexable_attribute_lang_value`
 --
 
 CREATE TABLE `ps_layered_indexable_attribute_lang_value` (
@@ -7683,7 +7753,7 @@ CREATE TABLE `ps_layered_indexable_attribute_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_layered_indexable_feature`
+-- Table structure for table `ps_layered_indexable_feature`
 --
 
 CREATE TABLE `ps_layered_indexable_feature` (
@@ -7692,7 +7762,7 @@ CREATE TABLE `ps_layered_indexable_feature` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_layered_indexable_feature`
+-- Dumping data for table `ps_layered_indexable_feature`
 --
 
 INSERT INTO `ps_layered_indexable_feature` (`id_feature`, `indexable`) VALUES
@@ -7705,7 +7775,7 @@ INSERT INTO `ps_layered_indexable_feature` (`id_feature`, `indexable`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_layered_indexable_feature_lang_value`
+-- Table structure for table `ps_layered_indexable_feature_lang_value`
 --
 
 CREATE TABLE `ps_layered_indexable_feature_lang_value` (
@@ -7718,7 +7788,7 @@ CREATE TABLE `ps_layered_indexable_feature_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_layered_indexable_feature_value_lang_value`
+-- Table structure for table `ps_layered_indexable_feature_value_lang_value`
 --
 
 CREATE TABLE `ps_layered_indexable_feature_value_lang_value` (
@@ -7731,7 +7801,7 @@ CREATE TABLE `ps_layered_indexable_feature_value_lang_value` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_layered_price_index`
+-- Table structure for table `ps_layered_price_index`
 --
 
 CREATE TABLE `ps_layered_price_index` (
@@ -7743,7 +7813,7 @@ CREATE TABLE `ps_layered_price_index` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_layered_price_index`
+-- Dumping data for table `ps_layered_price_index`
 --
 
 INSERT INTO `ps_layered_price_index` (`id_product`, `id_currency`, `id_shop`, `price_min`, `price_max`) VALUES
@@ -7770,7 +7840,7 @@ INSERT INTO `ps_layered_price_index` (`id_product`, `id_currency`, `id_shop`, `p
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_layered_product_attribute`
+-- Table structure for table `ps_layered_product_attribute`
 --
 
 CREATE TABLE `ps_layered_product_attribute` (
@@ -7781,7 +7851,7 @@ CREATE TABLE `ps_layered_product_attribute` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_layered_product_attribute`
+-- Dumping data for table `ps_layered_product_attribute`
 --
 
 INSERT INTO `ps_layered_product_attribute` (`id_attribute`, `id_product`, `id_attribute_group`, `id_shop`) VALUES
@@ -7826,7 +7896,7 @@ INSERT INTO `ps_layered_product_attribute` (`id_attribute`, `id_product`, `id_at
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_linksmenutop`
+-- Table structure for table `ps_linksmenutop`
 --
 
 CREATE TABLE `ps_linksmenutop` (
@@ -7838,7 +7908,7 @@ CREATE TABLE `ps_linksmenutop` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_linksmenutop_lang`
+-- Table structure for table `ps_linksmenutop_lang`
 --
 
 CREATE TABLE `ps_linksmenutop_lang` (
@@ -7852,7 +7922,7 @@ CREATE TABLE `ps_linksmenutop_lang` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_link_block`
+-- Table structure for table `ps_link_block`
 --
 
 CREATE TABLE `ps_link_block` (
@@ -7863,7 +7933,7 @@ CREATE TABLE `ps_link_block` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_link_block`
+-- Dumping data for table `ps_link_block`
 --
 
 INSERT INTO `ps_link_block` (`id_link_block`, `id_hook`, `position`, `content`) VALUES
@@ -7873,7 +7943,7 @@ INSERT INTO `ps_link_block` (`id_link_block`, `id_hook`, `position`, `content`) 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_link_block_lang`
+-- Table structure for table `ps_link_block_lang`
 --
 
 CREATE TABLE `ps_link_block_lang` (
@@ -7884,7 +7954,7 @@ CREATE TABLE `ps_link_block_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_link_block_lang`
+-- Dumping data for table `ps_link_block_lang`
 --
 
 INSERT INTO `ps_link_block_lang` (`id_link_block`, `id_lang`, `name`, `custom_content`) VALUES
@@ -7894,7 +7964,7 @@ INSERT INTO `ps_link_block_lang` (`id_link_block`, `id_lang`, `name`, `custom_co
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_link_block_shop`
+-- Table structure for table `ps_link_block_shop`
 --
 
 CREATE TABLE `ps_link_block_shop` (
@@ -7905,7 +7975,7 @@ CREATE TABLE `ps_link_block_shop` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_log`
+-- Table structure for table `ps_log`
 --
 
 CREATE TABLE `ps_log` (
@@ -7921,7 +7991,7 @@ CREATE TABLE `ps_log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_log`
+-- Dumping data for table `ps_log`
 --
 
 INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_type`, `object_id`, `id_employee`, `date_add`, `date_upd`) VALUES
@@ -7931,7 +8001,7 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_mail`
+-- Table structure for table `ps_mail`
 --
 
 CREATE TABLE `ps_mail` (
@@ -7946,7 +8016,7 @@ CREATE TABLE `ps_mail` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_manufacturer`
+-- Table structure for table `ps_manufacturer`
 --
 
 CREATE TABLE `ps_manufacturer` (
@@ -7958,7 +8028,7 @@ CREATE TABLE `ps_manufacturer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_manufacturer`
+-- Dumping data for table `ps_manufacturer`
 --
 
 INSERT INTO `ps_manufacturer` (`id_manufacturer`, `name`, `date_add`, `date_upd`, `active`) VALUES
@@ -7968,7 +8038,7 @@ INSERT INTO `ps_manufacturer` (`id_manufacturer`, `name`, `date_add`, `date_upd`
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_manufacturer_lang`
+-- Table structure for table `ps_manufacturer_lang`
 --
 
 CREATE TABLE `ps_manufacturer_lang` (
@@ -7982,7 +8052,7 @@ CREATE TABLE `ps_manufacturer_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_manufacturer_lang`
+-- Dumping data for table `ps_manufacturer_lang`
 --
 
 INSERT INTO `ps_manufacturer_lang` (`id_manufacturer`, `id_lang`, `description`, `short_description`, `meta_title`, `meta_keywords`, `meta_description`) VALUES
@@ -7992,7 +8062,7 @@ INSERT INTO `ps_manufacturer_lang` (`id_manufacturer`, `id_lang`, `description`,
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_manufacturer_shop`
+-- Table structure for table `ps_manufacturer_shop`
 --
 
 CREATE TABLE `ps_manufacturer_shop` (
@@ -8001,7 +8071,7 @@ CREATE TABLE `ps_manufacturer_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_manufacturer_shop`
+-- Dumping data for table `ps_manufacturer_shop`
 --
 
 INSERT INTO `ps_manufacturer_shop` (`id_manufacturer`, `id_shop`) VALUES
@@ -8011,7 +8081,7 @@ INSERT INTO `ps_manufacturer_shop` (`id_manufacturer`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_memcached_servers`
+-- Table structure for table `ps_memcached_servers`
 --
 
 CREATE TABLE `ps_memcached_servers` (
@@ -8024,7 +8094,7 @@ CREATE TABLE `ps_memcached_servers` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_message`
+-- Table structure for table `ps_message`
 --
 
 CREATE TABLE `ps_message` (
@@ -8041,7 +8111,7 @@ CREATE TABLE `ps_message` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_message_readed`
+-- Table structure for table `ps_message_readed`
 --
 
 CREATE TABLE `ps_message_readed` (
@@ -8053,7 +8123,7 @@ CREATE TABLE `ps_message_readed` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_meta`
+-- Table structure for table `ps_meta`
 --
 
 CREATE TABLE `ps_meta` (
@@ -8063,7 +8133,7 @@ CREATE TABLE `ps_meta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_meta`
+-- Dumping data for table `ps_meta`
 --
 
 INSERT INTO `ps_meta` (`id_meta`, `page`, `configurable`) VALUES
@@ -8107,12 +8177,14 @@ INSERT INTO `ps_meta` (`id_meta`, `page`, `configurable`) VALUES
 (38, 'module-ps_shoppingcart-ajax', 1),
 (39, 'module-ps_wirepayment-payment', 1),
 (40, 'module-ps_wirepayment-validation', 1),
-(41, 'module-cronjobs-callback', 1);
+(41, 'module-cronjobs-callback', 1),
+(42, 'module-revws-MyReviews', 1),
+(43, 'module-revws-AllReviews', 1);
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_meta_lang`
+-- Table structure for table `ps_meta_lang`
 --
 
 CREATE TABLE `ps_meta_lang` (
@@ -8126,7 +8198,7 @@ CREATE TABLE `ps_meta_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_meta_lang`
+-- Dumping data for table `ps_meta_lang`
 --
 
 INSERT INTO `ps_meta_lang` (`id_meta`, `id_shop`, `id_lang`, `title`, `description`, `keywords`, `url_rewrite`) VALUES
@@ -8162,12 +8234,14 @@ INSERT INTO `ps_meta_lang` (`id_meta`, `id_shop`, `id_lang`, `title`, `descripti
 (38, 1, 1, '', '', '', ''),
 (39, 1, 1, '', '', '', ''),
 (40, 1, 1, '', '', '', ''),
-(41, 1, 1, '', '', '', '');
+(41, 1, 1, '', '', '', ''),
+(42, 1, 1, '', '', '', ''),
+(43, 1, 1, '', '', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_module`
+-- Table structure for table `ps_module`
 --
 
 CREATE TABLE `ps_module` (
@@ -8178,7 +8252,7 @@ CREATE TABLE `ps_module` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_module`
+-- Dumping data for table `ps_module`
 --
 
 INSERT INTO `ps_module` (`id_module`, `name`, `active`, `version`) VALUES
@@ -8237,12 +8311,13 @@ INSERT INTO `ps_module` (`id_module`, `name`, `active`, `version`) VALUES
 (53, 'gamification', 1, '2.0.3'),
 (54, 'cronjobs', 1, '1.4.0'),
 (55, 'psaddonsconnect', 1, '1.0.1'),
-(56, 'blockreassurance', 1, '3.0.1');
+(56, 'blockreassurance', 1, '3.0.1'),
+(57, 'revws', 1, '1.0.20');
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_module_access`
+-- Table structure for table `ps_module_access`
 --
 
 CREATE TABLE `ps_module_access` (
@@ -8251,7 +8326,7 @@ CREATE TABLE `ps_module_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_module_access`
+-- Dumping data for table `ps_module_access`
 --
 
 INSERT INTO `ps_module_access` (`id_profile`, `id_authorization_role`) VALUES
@@ -8478,12 +8553,16 @@ INSERT INTO `ps_module_access` (`id_profile`, `id_authorization_role`) VALUES
 (1, 705),
 (1, 706),
 (1, 707),
-(1, 708);
+(1, 708),
+(1, 709),
+(1, 710),
+(1, 711),
+(1, 712);
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_module_carrier`
+-- Table structure for table `ps_module_carrier`
 --
 
 CREATE TABLE `ps_module_carrier` (
@@ -8493,7 +8572,7 @@ CREATE TABLE `ps_module_carrier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_module_carrier`
+-- Dumping data for table `ps_module_carrier`
 --
 
 INSERT INTO `ps_module_carrier` (`id_module`, `id_shop`, `id_reference`) VALUES
@@ -8505,7 +8584,7 @@ INSERT INTO `ps_module_carrier` (`id_module`, `id_shop`, `id_reference`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_module_country`
+-- Table structure for table `ps_module_country`
 --
 
 CREATE TABLE `ps_module_country` (
@@ -8515,7 +8594,7 @@ CREATE TABLE `ps_module_country` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_module_country`
+-- Dumping data for table `ps_module_country`
 --
 
 INSERT INTO `ps_module_country` (`id_module`, `id_shop`, `id_country`) VALUES
@@ -8525,7 +8604,7 @@ INSERT INTO `ps_module_country` (`id_module`, `id_shop`, `id_country`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_module_currency`
+-- Table structure for table `ps_module_currency`
 --
 
 CREATE TABLE `ps_module_currency` (
@@ -8535,7 +8614,7 @@ CREATE TABLE `ps_module_currency` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_module_currency`
+-- Dumping data for table `ps_module_currency`
 --
 
 INSERT INTO `ps_module_currency` (`id_module`, `id_shop`, `id_currency`) VALUES
@@ -8545,7 +8624,7 @@ INSERT INTO `ps_module_currency` (`id_module`, `id_shop`, `id_currency`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_module_group`
+-- Table structure for table `ps_module_group`
 --
 
 CREATE TABLE `ps_module_group` (
@@ -8555,7 +8634,7 @@ CREATE TABLE `ps_module_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_module_group`
+-- Dumping data for table `ps_module_group`
 --
 
 INSERT INTO `ps_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
@@ -8726,12 +8805,15 @@ INSERT INTO `ps_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
 (55, 1, 3),
 (56, 1, 1),
 (56, 1, 2),
-(56, 1, 3);
+(56, 1, 3),
+(57, 1, 1),
+(57, 1, 2),
+(57, 1, 3);
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_module_history`
+-- Table structure for table `ps_module_history`
 --
 
 CREATE TABLE `ps_module_history` (
@@ -8743,7 +8825,7 @@ CREATE TABLE `ps_module_history` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Zrzut danych tabeli `ps_module_history`
+-- Dumping data for table `ps_module_history`
 --
 
 INSERT INTO `ps_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `date_upd`) VALUES
@@ -8752,7 +8834,7 @@ INSERT INTO `ps_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_module_preference`
+-- Table structure for table `ps_module_preference`
 --
 
 CREATE TABLE `ps_module_preference` (
@@ -8766,7 +8848,7 @@ CREATE TABLE `ps_module_preference` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_module_shop`
+-- Table structure for table `ps_module_shop`
 --
 
 CREATE TABLE `ps_module_shop` (
@@ -8776,7 +8858,7 @@ CREATE TABLE `ps_module_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_module_shop`
+-- Dumping data for table `ps_module_shop`
 --
 
 INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
@@ -8835,12 +8917,13 @@ INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 (53, 1, 7),
 (54, 1, 7),
 (55, 1, 7),
-(56, 1, 7);
+(56, 1, 7),
+(57, 1, 7);
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_operating_system`
+-- Table structure for table `ps_operating_system`
 --
 
 CREATE TABLE `ps_operating_system` (
@@ -8849,7 +8932,7 @@ CREATE TABLE `ps_operating_system` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_operating_system`
+-- Dumping data for table `ps_operating_system`
 --
 
 INSERT INTO `ps_operating_system` (`id_operating_system`, `name`) VALUES
@@ -8866,7 +8949,7 @@ INSERT INTO `ps_operating_system` (`id_operating_system`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_orders`
+-- Table structure for table `ps_orders`
 --
 
 CREATE TABLE `ps_orders` (
@@ -8919,7 +9002,7 @@ CREATE TABLE `ps_orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_orders`
+-- Dumping data for table `ps_orders`
 --
 
 INSERT INTO `ps_orders` (`id_order`, `reference`, `id_shop_group`, `id_shop`, `id_carrier`, `id_lang`, `id_customer`, `id_cart`, `id_currency`, `id_address_delivery`, `id_address_invoice`, `current_state`, `secure_key`, `payment`, `conversion_rate`, `module`, `recyclable`, `gift`, `gift_message`, `mobile_theme`, `shipping_number`, `total_discounts`, `total_discounts_tax_incl`, `total_discounts_tax_excl`, `total_paid`, `total_paid_tax_incl`, `total_paid_tax_excl`, `total_paid_real`, `total_products`, `total_products_wt`, `total_shipping`, `total_shipping_tax_incl`, `total_shipping_tax_excl`, `carrier_tax_rate`, `total_wrapping`, `total_wrapping_tax_incl`, `total_wrapping_tax_excl`, `round_mode`, `round_type`, `invoice_number`, `delivery_number`, `invoice_date`, `delivery_date`, `valid`, `date_add`, `date_upd`) VALUES
@@ -8932,7 +9015,7 @@ INSERT INTO `ps_orders` (`id_order`, `reference`, `id_shop_group`, `id_shop`, `i
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_carrier`
+-- Table structure for table `ps_order_carrier`
 --
 
 CREATE TABLE `ps_order_carrier` (
@@ -8948,7 +9031,7 @@ CREATE TABLE `ps_order_carrier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_order_carrier`
+-- Dumping data for table `ps_order_carrier`
 --
 
 INSERT INTO `ps_order_carrier` (`id_order_carrier`, `id_order`, `id_carrier`, `id_order_invoice`, `weight`, `shipping_cost_tax_excl`, `shipping_cost_tax_incl`, `tracking_number`, `date_add`) VALUES
@@ -8961,7 +9044,7 @@ INSERT INTO `ps_order_carrier` (`id_order_carrier`, `id_order`, `id_carrier`, `i
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_cart_rule`
+-- Table structure for table `ps_order_cart_rule`
 --
 
 CREATE TABLE `ps_order_cart_rule` (
@@ -8978,7 +9061,7 @@ CREATE TABLE `ps_order_cart_rule` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_detail`
+-- Table structure for table `ps_order_detail`
 --
 
 CREATE TABLE `ps_order_detail` (
@@ -9031,7 +9114,7 @@ CREATE TABLE `ps_order_detail` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_order_detail`
+-- Dumping data for table `ps_order_detail`
 --
 
 INSERT INTO `ps_order_detail` (`id_order_detail`, `id_order`, `id_order_invoice`, `id_warehouse`, `id_shop`, `product_id`, `product_attribute_id`, `id_customization`, `product_name`, `product_quantity`, `product_quantity_in_stock`, `product_quantity_refunded`, `product_quantity_return`, `product_quantity_reinjected`, `product_price`, `reduction_percent`, `reduction_amount`, `reduction_amount_tax_incl`, `reduction_amount_tax_excl`, `group_reduction`, `product_quantity_discount`, `product_ean13`, `product_isbn`, `product_upc`, `product_reference`, `product_supplier_reference`, `product_weight`, `id_tax_rules_group`, `tax_computation_method`, `tax_name`, `tax_rate`, `ecotax`, `ecotax_tax_rate`, `discount_quantity_applied`, `download_hash`, `download_nb`, `download_deadline`, `total_price_tax_incl`, `total_price_tax_excl`, `unit_price_tax_incl`, `unit_price_tax_excl`, `total_shipping_price_tax_incl`, `total_shipping_price_tax_excl`, `purchase_supplier_price`, `original_product_price`, `original_wholesale_price`) VALUES
@@ -9046,7 +9129,7 @@ INSERT INTO `ps_order_detail` (`id_order_detail`, `id_order`, `id_order_invoice`
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_detail_tax`
+-- Table structure for table `ps_order_detail_tax`
 --
 
 CREATE TABLE `ps_order_detail_tax` (
@@ -9059,7 +9142,7 @@ CREATE TABLE `ps_order_detail_tax` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_history`
+-- Table structure for table `ps_order_history`
 --
 
 CREATE TABLE `ps_order_history` (
@@ -9071,7 +9154,7 @@ CREATE TABLE `ps_order_history` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_order_history`
+-- Dumping data for table `ps_order_history`
 --
 
 INSERT INTO `ps_order_history` (`id_order_history`, `id_employee`, `id_order`, `id_order_state`, `date_add`) VALUES
@@ -9086,7 +9169,7 @@ INSERT INTO `ps_order_history` (`id_order_history`, `id_employee`, `id_order`, `
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_invoice`
+-- Table structure for table `ps_order_invoice`
 --
 
 CREATE TABLE `ps_order_invoice` (
@@ -9114,7 +9197,7 @@ CREATE TABLE `ps_order_invoice` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_invoice_payment`
+-- Table structure for table `ps_order_invoice_payment`
 --
 
 CREATE TABLE `ps_order_invoice_payment` (
@@ -9126,7 +9209,7 @@ CREATE TABLE `ps_order_invoice_payment` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_invoice_tax`
+-- Table structure for table `ps_order_invoice_tax`
 --
 
 CREATE TABLE `ps_order_invoice_tax` (
@@ -9139,7 +9222,7 @@ CREATE TABLE `ps_order_invoice_tax` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_message`
+-- Table structure for table `ps_order_message`
 --
 
 CREATE TABLE `ps_order_message` (
@@ -9148,7 +9231,7 @@ CREATE TABLE `ps_order_message` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_order_message`
+-- Dumping data for table `ps_order_message`
 --
 
 INSERT INTO `ps_order_message` (`id_order_message`, `date_add`) VALUES
@@ -9157,7 +9240,7 @@ INSERT INTO `ps_order_message` (`id_order_message`, `date_add`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_message_lang`
+-- Table structure for table `ps_order_message_lang`
 --
 
 CREATE TABLE `ps_order_message_lang` (
@@ -9168,7 +9251,7 @@ CREATE TABLE `ps_order_message_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_order_message_lang`
+-- Dumping data for table `ps_order_message_lang`
 --
 
 INSERT INTO `ps_order_message_lang` (`id_order_message`, `id_lang`, `name`, `message`) VALUES
@@ -9177,7 +9260,7 @@ INSERT INTO `ps_order_message_lang` (`id_order_message`, `id_lang`, `name`, `mes
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_payment`
+-- Table structure for table `ps_order_payment`
 --
 
 CREATE TABLE `ps_order_payment` (
@@ -9198,7 +9281,7 @@ CREATE TABLE `ps_order_payment` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_return`
+-- Table structure for table `ps_order_return`
 --
 
 CREATE TABLE `ps_order_return` (
@@ -9214,7 +9297,7 @@ CREATE TABLE `ps_order_return` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_return_detail`
+-- Table structure for table `ps_order_return_detail`
 --
 
 CREATE TABLE `ps_order_return_detail` (
@@ -9227,7 +9310,7 @@ CREATE TABLE `ps_order_return_detail` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_return_state`
+-- Table structure for table `ps_order_return_state`
 --
 
 CREATE TABLE `ps_order_return_state` (
@@ -9236,7 +9319,7 @@ CREATE TABLE `ps_order_return_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_order_return_state`
+-- Dumping data for table `ps_order_return_state`
 --
 
 INSERT INTO `ps_order_return_state` (`id_order_return_state`, `color`) VALUES
@@ -9249,7 +9332,7 @@ INSERT INTO `ps_order_return_state` (`id_order_return_state`, `color`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_return_state_lang`
+-- Table structure for table `ps_order_return_state_lang`
 --
 
 CREATE TABLE `ps_order_return_state_lang` (
@@ -9259,7 +9342,7 @@ CREATE TABLE `ps_order_return_state_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_order_return_state_lang`
+-- Dumping data for table `ps_order_return_state_lang`
 --
 
 INSERT INTO `ps_order_return_state_lang` (`id_order_return_state`, `id_lang`, `name`) VALUES
@@ -9272,7 +9355,7 @@ INSERT INTO `ps_order_return_state_lang` (`id_order_return_state`, `id_lang`, `n
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_slip`
+-- Table structure for table `ps_order_slip`
 --
 
 CREATE TABLE `ps_order_slip` (
@@ -9296,7 +9379,7 @@ CREATE TABLE `ps_order_slip` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_slip_detail`
+-- Table structure for table `ps_order_slip_detail`
 --
 
 CREATE TABLE `ps_order_slip_detail` (
@@ -9314,7 +9397,7 @@ CREATE TABLE `ps_order_slip_detail` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_slip_detail_tax`
+-- Table structure for table `ps_order_slip_detail_tax`
 --
 
 CREATE TABLE `ps_order_slip_detail_tax` (
@@ -9327,7 +9410,7 @@ CREATE TABLE `ps_order_slip_detail_tax` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_state`
+-- Table structure for table `ps_order_state`
 --
 
 CREATE TABLE `ps_order_state` (
@@ -9348,7 +9431,7 @@ CREATE TABLE `ps_order_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_order_state`
+-- Dumping data for table `ps_order_state`
 --
 
 INSERT INTO `ps_order_state` (`id_order_state`, `invoice`, `send_email`, `module_name`, `color`, `unremovable`, `hidden`, `logable`, `delivery`, `shipped`, `paid`, `pdf_invoice`, `pdf_delivery`, `deleted`) VALUES
@@ -9369,7 +9452,7 @@ INSERT INTO `ps_order_state` (`id_order_state`, `invoice`, `send_email`, `module
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_order_state_lang`
+-- Table structure for table `ps_order_state_lang`
 --
 
 CREATE TABLE `ps_order_state_lang` (
@@ -9380,7 +9463,7 @@ CREATE TABLE `ps_order_state_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_order_state_lang`
+-- Dumping data for table `ps_order_state_lang`
 --
 
 INSERT INTO `ps_order_state_lang` (`id_order_state`, `id_lang`, `name`, `template`) VALUES
@@ -9401,7 +9484,7 @@ INSERT INTO `ps_order_state_lang` (`id_order_state`, `id_lang`, `name`, `templat
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_pack`
+-- Table structure for table `ps_pack`
 --
 
 CREATE TABLE `ps_pack` (
@@ -9412,7 +9495,7 @@ CREATE TABLE `ps_pack` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_pack`
+-- Dumping data for table `ps_pack`
 --
 
 INSERT INTO `ps_pack` (`id_product_pack`, `id_product_item`, `id_product_attribute_item`, `quantity`) VALUES
@@ -9422,7 +9505,7 @@ INSERT INTO `ps_pack` (`id_product_pack`, `id_product_item`, `id_product_attribu
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_page`
+-- Table structure for table `ps_page`
 --
 
 CREATE TABLE `ps_page` (
@@ -9432,7 +9515,7 @@ CREATE TABLE `ps_page` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_page`
+-- Dumping data for table `ps_page`
 --
 
 INSERT INTO `ps_page` (`id_page`, `id_page_type`, `id_object`) VALUES
@@ -9442,7 +9525,7 @@ INSERT INTO `ps_page` (`id_page`, `id_page_type`, `id_object`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_pagenotfound`
+-- Table structure for table `ps_pagenotfound`
 --
 
 CREATE TABLE `ps_pagenotfound` (
@@ -9457,7 +9540,7 @@ CREATE TABLE `ps_pagenotfound` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_page_type`
+-- Table structure for table `ps_page_type`
 --
 
 CREATE TABLE `ps_page_type` (
@@ -9466,7 +9549,7 @@ CREATE TABLE `ps_page_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_page_type`
+-- Dumping data for table `ps_page_type`
 --
 
 INSERT INTO `ps_page_type` (`id_page_type`, `name`) VALUES
@@ -9476,7 +9559,7 @@ INSERT INTO `ps_page_type` (`id_page_type`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_page_viewed`
+-- Table structure for table `ps_page_viewed`
 --
 
 CREATE TABLE `ps_page_viewed` (
@@ -9490,7 +9573,7 @@ CREATE TABLE `ps_page_viewed` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product`
+-- Table structure for table `ps_product`
 --
 
 CREATE TABLE `ps_product` (
@@ -9550,7 +9633,7 @@ CREATE TABLE `ps_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_product`
+-- Dumping data for table `ps_product`
 --
 
 INSERT INTO `ps_product` (`id_product`, `id_supplier`, `id_manufacturer`, `id_category_default`, `id_shop_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ean13`, `isbn`, `upc`, `ecotax`, `quantity`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `reference`, `supplier_reference`, `location`, `width`, `height`, `depth`, `weight`, `out_of_stock`, `additional_delivery_times`, `quantity_discount`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_is_pack`, `cache_has_attachments`, `is_virtual`, `cache_default_attribute`, `date_add`, `date_upd`, `advanced_stock_management`, `pack_stock_type`, `state`) VALUES
@@ -9577,7 +9660,7 @@ INSERT INTO `ps_product` (`id_product`, `id_supplier`, `id_manufacturer`, `id_ca
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_attachment`
+-- Table structure for table `ps_product_attachment`
 --
 
 CREATE TABLE `ps_product_attachment` (
@@ -9588,7 +9671,7 @@ CREATE TABLE `ps_product_attachment` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_attribute`
+-- Table structure for table `ps_product_attribute`
 --
 
 CREATE TABLE `ps_product_attribute` (
@@ -9614,7 +9697,7 @@ CREATE TABLE `ps_product_attribute` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_product_attribute`
+-- Dumping data for table `ps_product_attribute`
 --
 
 INSERT INTO `ps_product_attribute` (`id_product_attribute`, `id_product`, `reference`, `supplier_reference`, `location`, `ean13`, `isbn`, `upc`, `wholesale_price`, `price`, `ecotax`, `quantity`, `weight`, `unit_price_impact`, `default_on`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `available_date`) VALUES
@@ -9661,7 +9744,7 @@ INSERT INTO `ps_product_attribute` (`id_product_attribute`, `id_product`, `refer
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_attribute_combination`
+-- Table structure for table `ps_product_attribute_combination`
 --
 
 CREATE TABLE `ps_product_attribute_combination` (
@@ -9670,7 +9753,7 @@ CREATE TABLE `ps_product_attribute_combination` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_product_attribute_combination`
+-- Dumping data for table `ps_product_attribute_combination`
 --
 
 INSERT INTO `ps_product_attribute_combination` (`id_attribute`, `id_product_attribute`) VALUES
@@ -9725,7 +9808,7 @@ INSERT INTO `ps_product_attribute_combination` (`id_attribute`, `id_product_attr
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_attribute_image`
+-- Table structure for table `ps_product_attribute_image`
 --
 
 CREATE TABLE `ps_product_attribute_image` (
@@ -9734,7 +9817,7 @@ CREATE TABLE `ps_product_attribute_image` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_product_attribute_image`
+-- Dumping data for table `ps_product_attribute_image`
 --
 
 INSERT INTO `ps_product_attribute_image` (`id_product_attribute`, `id_image`) VALUES
@@ -9781,7 +9864,7 @@ INSERT INTO `ps_product_attribute_image` (`id_product_attribute`, `id_image`) VA
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_attribute_shop`
+-- Table structure for table `ps_product_attribute_shop`
 --
 
 CREATE TABLE `ps_product_attribute_shop` (
@@ -9801,7 +9884,7 @@ CREATE TABLE `ps_product_attribute_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_product_attribute_shop`
+-- Dumping data for table `ps_product_attribute_shop`
 --
 
 INSERT INTO `ps_product_attribute_shop` (`id_product`, `id_product_attribute`, `id_shop`, `wholesale_price`, `price`, `ecotax`, `weight`, `unit_price_impact`, `default_on`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `available_date`) VALUES
@@ -9848,7 +9931,7 @@ INSERT INTO `ps_product_attribute_shop` (`id_product`, `id_product_attribute`, `
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_carrier`
+-- Table structure for table `ps_product_carrier`
 --
 
 CREATE TABLE `ps_product_carrier` (
@@ -9860,7 +9943,7 @@ CREATE TABLE `ps_product_carrier` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_country_tax`
+-- Table structure for table `ps_product_country_tax`
 --
 
 CREATE TABLE `ps_product_country_tax` (
@@ -9872,7 +9955,7 @@ CREATE TABLE `ps_product_country_tax` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_download`
+-- Table structure for table `ps_product_download`
 --
 
 CREATE TABLE `ps_product_download` (
@@ -9891,7 +9974,7 @@ CREATE TABLE `ps_product_download` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_group_reduction_cache`
+-- Table structure for table `ps_product_group_reduction_cache`
 --
 
 CREATE TABLE `ps_product_group_reduction_cache` (
@@ -9903,7 +9986,7 @@ CREATE TABLE `ps_product_group_reduction_cache` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_lang`
+-- Table structure for table `ps_product_lang`
 --
 
 CREATE TABLE `ps_product_lang` (
@@ -9924,7 +10007,7 @@ CREATE TABLE `ps_product_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_product_lang`
+-- Dumping data for table `ps_product_lang`
 --
 
 INSERT INTO `ps_product_lang` (`id_product`, `id_shop`, `id_lang`, `description`, `description_short`, `link_rewrite`, `meta_description`, `meta_keywords`, `meta_title`, `name`, `available_now`, `available_later`, `delivery_in_stock`, `delivery_out_stock`) VALUES
@@ -9951,7 +10034,7 @@ INSERT INTO `ps_product_lang` (`id_product`, `id_shop`, `id_lang`, `description`
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_sale`
+-- Table structure for table `ps_product_sale`
 --
 
 CREATE TABLE `ps_product_sale` (
@@ -9964,7 +10047,7 @@ CREATE TABLE `ps_product_sale` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_shop`
+-- Table structure for table `ps_product_shop`
 --
 
 CREATE TABLE `ps_product_shop` (
@@ -10004,7 +10087,7 @@ CREATE TABLE `ps_product_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_product_shop`
+-- Dumping data for table `ps_product_shop`
 --
 
 INSERT INTO `ps_product_shop` (`id_product`, `id_shop`, `id_category_default`, `id_tax_rules_group`, `on_sale`, `online_only`, `ecotax`, `minimal_quantity`, `low_stock_threshold`, `low_stock_alert`, `price`, `wholesale_price`, `unity`, `unit_price_ratio`, `additional_shipping_cost`, `customizable`, `uploadable_files`, `text_fields`, `active`, `redirect_type`, `id_type_redirected`, `available_for_order`, `available_date`, `show_condition`, `condition`, `show_price`, `indexed`, `visibility`, `cache_default_attribute`, `advanced_stock_management`, `date_add`, `date_upd`, `pack_stock_type`) VALUES
@@ -10031,7 +10114,7 @@ INSERT INTO `ps_product_shop` (`id_product`, `id_shop`, `id_category_default`, `
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_supplier`
+-- Table structure for table `ps_product_supplier`
 --
 
 CREATE TABLE `ps_product_supplier` (
@@ -10047,7 +10130,7 @@ CREATE TABLE `ps_product_supplier` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_product_tag`
+-- Table structure for table `ps_product_tag`
 --
 
 CREATE TABLE `ps_product_tag` (
@@ -10059,7 +10142,7 @@ CREATE TABLE `ps_product_tag` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_profile`
+-- Table structure for table `ps_profile`
 --
 
 CREATE TABLE `ps_profile` (
@@ -10067,7 +10150,7 @@ CREATE TABLE `ps_profile` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_profile`
+-- Dumping data for table `ps_profile`
 --
 
 INSERT INTO `ps_profile` (`id_profile`) VALUES
@@ -10079,7 +10162,7 @@ INSERT INTO `ps_profile` (`id_profile`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_profile_lang`
+-- Table structure for table `ps_profile_lang`
 --
 
 CREATE TABLE `ps_profile_lang` (
@@ -10089,7 +10172,7 @@ CREATE TABLE `ps_profile_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_profile_lang`
+-- Dumping data for table `ps_profile_lang`
 --
 
 INSERT INTO `ps_profile_lang` (`id_lang`, `id_profile`, `name`) VALUES
@@ -10101,7 +10184,7 @@ INSERT INTO `ps_profile_lang` (`id_lang`, `id_profile`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_quick_access`
+-- Table structure for table `ps_quick_access`
 --
 
 CREATE TABLE `ps_quick_access` (
@@ -10111,7 +10194,7 @@ CREATE TABLE `ps_quick_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_quick_access`
+-- Dumping data for table `ps_quick_access`
 --
 
 INSERT INTO `ps_quick_access` (`id_quick_access`, `new_window`, `link`) VALUES
@@ -10125,7 +10208,7 @@ INSERT INTO `ps_quick_access` (`id_quick_access`, `new_window`, `link`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_quick_access_lang`
+-- Table structure for table `ps_quick_access_lang`
 --
 
 CREATE TABLE `ps_quick_access_lang` (
@@ -10135,7 +10218,7 @@ CREATE TABLE `ps_quick_access_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_quick_access_lang`
+-- Dumping data for table `ps_quick_access_lang`
 --
 
 INSERT INTO `ps_quick_access_lang` (`id_quick_access`, `id_lang`, `name`) VALUES
@@ -10149,7 +10232,7 @@ INSERT INTO `ps_quick_access_lang` (`id_quick_access`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_range_price`
+-- Table structure for table `ps_range_price`
 --
 
 CREATE TABLE `ps_range_price` (
@@ -10160,7 +10243,7 @@ CREATE TABLE `ps_range_price` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_range_price`
+-- Dumping data for table `ps_range_price`
 --
 
 INSERT INTO `ps_range_price` (`id_range_price`, `id_carrier`, `delimiter1`, `delimiter2`) VALUES
@@ -10169,7 +10252,7 @@ INSERT INTO `ps_range_price` (`id_range_price`, `id_carrier`, `delimiter1`, `del
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_range_weight`
+-- Table structure for table `ps_range_weight`
 --
 
 CREATE TABLE `ps_range_weight` (
@@ -10180,7 +10263,7 @@ CREATE TABLE `ps_range_weight` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_range_weight`
+-- Dumping data for table `ps_range_weight`
 --
 
 INSERT INTO `ps_range_weight` (`id_range_weight`, `id_carrier`, `delimiter1`, `delimiter2`) VALUES
@@ -10189,7 +10272,7 @@ INSERT INTO `ps_range_weight` (`id_range_weight`, `id_carrier`, `delimiter1`, `d
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_reassurance`
+-- Table structure for table `ps_reassurance`
 --
 
 CREATE TABLE `ps_reassurance` (
@@ -10199,7 +10282,7 @@ CREATE TABLE `ps_reassurance` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_reassurance`
+-- Dumping data for table `ps_reassurance`
 --
 
 INSERT INTO `ps_reassurance` (`id_reassurance`, `id_shop`, `file_name`) VALUES
@@ -10210,7 +10293,7 @@ INSERT INTO `ps_reassurance` (`id_reassurance`, `id_shop`, `file_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_reassurance_lang`
+-- Table structure for table `ps_reassurance_lang`
 --
 
 CREATE TABLE `ps_reassurance_lang` (
@@ -10220,7 +10303,7 @@ CREATE TABLE `ps_reassurance_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_reassurance_lang`
+-- Dumping data for table `ps_reassurance_lang`
 --
 
 INSERT INTO `ps_reassurance_lang` (`id_reassurance`, `id_lang`, `text`) VALUES
@@ -10231,7 +10314,7 @@ INSERT INTO `ps_reassurance_lang` (`id_reassurance`, `id_lang`, `text`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_referrer`
+-- Table structure for table `ps_referrer`
 --
 
 CREATE TABLE `ps_referrer` (
@@ -10255,7 +10338,7 @@ CREATE TABLE `ps_referrer` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_referrer_cache`
+-- Table structure for table `ps_referrer_cache`
 --
 
 CREATE TABLE `ps_referrer_cache` (
@@ -10266,7 +10349,7 @@ CREATE TABLE `ps_referrer_cache` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_referrer_shop`
+-- Table structure for table `ps_referrer_shop`
 --
 
 CREATE TABLE `ps_referrer_shop` (
@@ -10285,7 +10368,7 @@ CREATE TABLE `ps_referrer_shop` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_request_sql`
+-- Table structure for table `ps_request_sql`
 --
 
 CREATE TABLE `ps_request_sql` (
@@ -10297,7 +10380,7 @@ CREATE TABLE `ps_request_sql` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_required_field`
+-- Table structure for table `ps_required_field`
 --
 
 CREATE TABLE `ps_required_field` (
@@ -10309,7 +10392,129 @@ CREATE TABLE `ps_required_field` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_risk`
+-- Table structure for table `ps_revws_criterion`
+--
+
+CREATE TABLE `ps_revws_criterion` (
+  `id_criterion` int(11) UNSIGNED NOT NULL,
+  `global` tinyint(1) NOT NULL DEFAULT '0',
+  `active` tinyint(1) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ps_revws_criterion`
+--
+
+INSERT INTO `ps_revws_criterion` (`id_criterion`, `global`, `active`) VALUES
+(1, 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ps_revws_criterion_category`
+--
+
+CREATE TABLE `ps_revws_criterion_category` (
+  `id_criterion` int(11) UNSIGNED NOT NULL,
+  `id_category` int(11) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ps_revws_criterion_lang`
+--
+
+CREATE TABLE `ps_revws_criterion_lang` (
+  `id_criterion` int(11) UNSIGNED NOT NULL,
+  `id_lang` int(11) UNSIGNED NOT NULL,
+  `label` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ps_revws_criterion_lang`
+--
+
+INSERT INTO `ps_revws_criterion_lang` (`id_criterion`, `id_lang`, `label`) VALUES
+(1, 1, 'Quality');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ps_revws_criterion_product`
+--
+
+CREATE TABLE `ps_revws_criterion_product` (
+  `id_criterion` int(11) UNSIGNED NOT NULL,
+  `id_product` int(11) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ps_revws_review`
+--
+
+CREATE TABLE `ps_revws_review` (
+  `id_review` int(11) UNSIGNED NOT NULL,
+  `id_product` int(11) UNSIGNED NOT NULL,
+  `id_customer` int(11) UNSIGNED DEFAULT NULL,
+  `id_guest` int(11) UNSIGNED DEFAULT NULL,
+  `id_lang` int(11) UNSIGNED NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `display_name` varchar(255) NOT NULL,
+  `title` varchar(127) NOT NULL,
+  `content` text,
+  `reply` text,
+  `validated` tinyint(1) NOT NULL DEFAULT '0',
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
+  `verified_buyer` tinyint(1) NOT NULL DEFAULT '0',
+  `date_add` datetime NOT NULL,
+  `date_upd` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ps_revws_review_grade`
+--
+
+CREATE TABLE `ps_revws_review_grade` (
+  `id_review` int(11) UNSIGNED NOT NULL,
+  `id_criterion` int(11) UNSIGNED NOT NULL,
+  `grade` decimal(5,2) NOT NULL DEFAULT '0.00'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ps_revws_review_image`
+--
+
+CREATE TABLE `ps_revws_review_image` (
+  `id_image` int(11) UNSIGNED NOT NULL,
+  `id_review` int(11) UNSIGNED NOT NULL,
+  `image` varchar(256) NOT NULL,
+  `pos` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ps_revws_review_reaction`
+--
+
+CREATE TABLE `ps_revws_review_reaction` (
+  `id_review` int(11) UNSIGNED NOT NULL,
+  `id_customer` int(11) UNSIGNED NOT NULL,
+  `id_guest` int(11) UNSIGNED NOT NULL,
+  `reaction_type` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ps_risk`
 --
 
 CREATE TABLE `ps_risk` (
@@ -10319,7 +10524,7 @@ CREATE TABLE `ps_risk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_risk`
+-- Dumping data for table `ps_risk`
 --
 
 INSERT INTO `ps_risk` (`id_risk`, `percent`, `color`) VALUES
@@ -10331,7 +10536,7 @@ INSERT INTO `ps_risk` (`id_risk`, `percent`, `color`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_risk_lang`
+-- Table structure for table `ps_risk_lang`
 --
 
 CREATE TABLE `ps_risk_lang` (
@@ -10341,7 +10546,7 @@ CREATE TABLE `ps_risk_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_risk_lang`
+-- Dumping data for table `ps_risk_lang`
 --
 
 INSERT INTO `ps_risk_lang` (`id_risk`, `id_lang`, `name`) VALUES
@@ -10353,7 +10558,7 @@ INSERT INTO `ps_risk_lang` (`id_risk`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_search_engine`
+-- Table structure for table `ps_search_engine`
 --
 
 CREATE TABLE `ps_search_engine` (
@@ -10363,7 +10568,7 @@ CREATE TABLE `ps_search_engine` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_search_engine`
+-- Dumping data for table `ps_search_engine`
 --
 
 INSERT INTO `ps_search_engine` (`id_search_engine`, `server`, `getvar`) VALUES
@@ -10409,7 +10614,7 @@ INSERT INTO `ps_search_engine` (`id_search_engine`, `server`, `getvar`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_search_index`
+-- Table structure for table `ps_search_index`
 --
 
 CREATE TABLE `ps_search_index` (
@@ -10419,7 +10624,7 @@ CREATE TABLE `ps_search_index` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_search_index`
+-- Dumping data for table `ps_search_index`
 --
 
 INSERT INTO `ps_search_index` (`id_product`, `id_word`, `weight`) VALUES
@@ -11170,7 +11375,7 @@ INSERT INTO `ps_search_index` (`id_product`, `id_word`, `weight`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_search_word`
+-- Table structure for table `ps_search_word`
 --
 
 CREATE TABLE `ps_search_word` (
@@ -11181,7 +11386,7 @@ CREATE TABLE `ps_search_word` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_search_word`
+-- Dumping data for table `ps_search_word`
 --
 
 INSERT INTO `ps_search_word` (`id_word`, `id_shop`, `id_lang`, `word`) VALUES
@@ -11415,7 +11620,7 @@ INSERT INTO `ps_search_word` (`id_word`, `id_shop`, `id_lang`, `word`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_sekeyword`
+-- Table structure for table `ps_sekeyword`
 --
 
 CREATE TABLE `ps_sekeyword` (
@@ -11429,7 +11634,7 @@ CREATE TABLE `ps_sekeyword` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_shop`
+-- Table structure for table `ps_shop`
 --
 
 CREATE TABLE `ps_shop` (
@@ -11443,7 +11648,7 @@ CREATE TABLE `ps_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Zrzut danych tabeli `ps_shop`
+-- Dumping data for table `ps_shop`
 --
 
 INSERT INTO `ps_shop` (`id_shop`, `id_shop_group`, `name`, `id_category`, `theme_name`, `active`, `deleted`) VALUES
@@ -11452,7 +11657,7 @@ INSERT INTO `ps_shop` (`id_shop`, `id_shop_group`, `name`, `id_category`, `theme
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_shop_group`
+-- Table structure for table `ps_shop_group`
 --
 
 CREATE TABLE `ps_shop_group` (
@@ -11466,7 +11671,7 @@ CREATE TABLE `ps_shop_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Zrzut danych tabeli `ps_shop_group`
+-- Dumping data for table `ps_shop_group`
 --
 
 INSERT INTO `ps_shop_group` (`id_shop_group`, `name`, `share_customer`, `share_order`, `share_stock`, `active`, `deleted`) VALUES
@@ -11475,7 +11680,7 @@ INSERT INTO `ps_shop_group` (`id_shop_group`, `name`, `share_customer`, `share_o
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_shop_url`
+-- Table structure for table `ps_shop_url`
 --
 
 CREATE TABLE `ps_shop_url` (
@@ -11490,16 +11695,16 @@ CREATE TABLE `ps_shop_url` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_shop_url`
+-- Dumping data for table `ps_shop_url`
 --
 
 INSERT INTO `ps_shop_url` (`id_shop_url`, `id_shop`, `domain`, `domain_ssl`, `physical_uri`, `virtual_uri`, `main`, `active`) VALUES
-(1, 1, '127.0.0.1', '127.0.0.1', '/prestashop/', '', 1, 1);
+(1, 1, 'localhost:8080', 'localhost:8080', '/prestashop/', '', 1, 1);
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_smarty_cache`
+-- Table structure for table `ps_smarty_cache`
 --
 
 CREATE TABLE `ps_smarty_cache` (
@@ -11513,7 +11718,7 @@ CREATE TABLE `ps_smarty_cache` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_smarty_last_flush`
+-- Table structure for table `ps_smarty_last_flush`
 --
 
 CREATE TABLE `ps_smarty_last_flush` (
@@ -11524,7 +11729,7 @@ CREATE TABLE `ps_smarty_last_flush` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_smarty_lazy_cache`
+-- Table structure for table `ps_smarty_lazy_cache`
 --
 
 CREATE TABLE `ps_smarty_lazy_cache` (
@@ -11538,7 +11743,7 @@ CREATE TABLE `ps_smarty_lazy_cache` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_specific_price`
+-- Table structure for table `ps_specific_price`
 --
 
 CREATE TABLE `ps_specific_price` (
@@ -11563,7 +11768,7 @@ CREATE TABLE `ps_specific_price` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_specific_price`
+-- Dumping data for table `ps_specific_price`
 --
 
 INSERT INTO `ps_specific_price` (`id_specific_price`, `id_specific_price_rule`, `id_cart`, `id_product`, `id_shop`, `id_shop_group`, `id_currency`, `id_country`, `id_group`, `id_customer`, `id_product_attribute`, `price`, `from_quantity`, `reduction`, `reduction_tax`, `reduction_type`, `from`, `to`) VALUES
@@ -11573,7 +11778,7 @@ INSERT INTO `ps_specific_price` (`id_specific_price`, `id_specific_price_rule`, 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_specific_price_priority`
+-- Table structure for table `ps_specific_price_priority`
 --
 
 CREATE TABLE `ps_specific_price_priority` (
@@ -11585,7 +11790,7 @@ CREATE TABLE `ps_specific_price_priority` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_specific_price_rule`
+-- Table structure for table `ps_specific_price_rule`
 --
 
 CREATE TABLE `ps_specific_price_rule` (
@@ -11607,7 +11812,7 @@ CREATE TABLE `ps_specific_price_rule` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_specific_price_rule_condition`
+-- Table structure for table `ps_specific_price_rule_condition`
 --
 
 CREATE TABLE `ps_specific_price_rule_condition` (
@@ -11620,7 +11825,7 @@ CREATE TABLE `ps_specific_price_rule_condition` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_specific_price_rule_condition_group`
+-- Table structure for table `ps_specific_price_rule_condition_group`
 --
 
 CREATE TABLE `ps_specific_price_rule_condition_group` (
@@ -11631,7 +11836,7 @@ CREATE TABLE `ps_specific_price_rule_condition_group` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_state`
+-- Table structure for table `ps_state`
 --
 
 CREATE TABLE `ps_state` (
@@ -11645,7 +11850,7 @@ CREATE TABLE `ps_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_state`
+-- Dumping data for table `ps_state`
 --
 
 INSERT INTO `ps_state` (`id_state`, `id_country`, `id_zone`, `name`, `iso_code`, `tax_behavior`, `active`) VALUES
@@ -11977,7 +12182,7 @@ INSERT INTO `ps_state` (`id_state`, `id_country`, `id_zone`, `name`, `iso_code`,
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_statssearch`
+-- Table structure for table `ps_statssearch`
 --
 
 CREATE TABLE `ps_statssearch` (
@@ -11992,7 +12197,7 @@ CREATE TABLE `ps_statssearch` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_stock`
+-- Table structure for table `ps_stock`
 --
 
 CREATE TABLE `ps_stock` (
@@ -12012,7 +12217,7 @@ CREATE TABLE `ps_stock` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_stock_available`
+-- Table structure for table `ps_stock_available`
 --
 
 CREATE TABLE `ps_stock_available` (
@@ -12029,7 +12234,7 @@ CREATE TABLE `ps_stock_available` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_stock_available`
+-- Dumping data for table `ps_stock_available`
 --
 
 INSERT INTO `ps_stock_available` (`id_stock_available`, `id_product`, `id_product_attribute`, `id_shop`, `id_shop_group`, `quantity`, `physical_quantity`, `reserved_quantity`, `depends_on_stock`, `out_of_stock`) VALUES
@@ -12095,7 +12300,7 @@ INSERT INTO `ps_stock_available` (`id_stock_available`, `id_product`, `id_produc
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_stock_mvt`
+-- Table structure for table `ps_stock_mvt`
 --
 
 CREATE TABLE `ps_stock_mvt` (
@@ -12119,7 +12324,7 @@ CREATE TABLE `ps_stock_mvt` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_stock_mvt_reason`
+-- Table structure for table `ps_stock_mvt_reason`
 --
 
 CREATE TABLE `ps_stock_mvt_reason` (
@@ -12131,7 +12336,7 @@ CREATE TABLE `ps_stock_mvt_reason` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_stock_mvt_reason`
+-- Dumping data for table `ps_stock_mvt_reason`
 --
 
 INSERT INTO `ps_stock_mvt_reason` (`id_stock_mvt_reason`, `sign`, `date_add`, `date_upd`, `deleted`) VALUES
@@ -12151,7 +12356,7 @@ INSERT INTO `ps_stock_mvt_reason` (`id_stock_mvt_reason`, `sign`, `date_add`, `d
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_stock_mvt_reason_lang`
+-- Table structure for table `ps_stock_mvt_reason_lang`
 --
 
 CREATE TABLE `ps_stock_mvt_reason_lang` (
@@ -12161,7 +12366,7 @@ CREATE TABLE `ps_stock_mvt_reason_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_stock_mvt_reason_lang`
+-- Dumping data for table `ps_stock_mvt_reason_lang`
 --
 
 INSERT INTO `ps_stock_mvt_reason_lang` (`id_stock_mvt_reason`, `id_lang`, `name`) VALUES
@@ -12181,7 +12386,7 @@ INSERT INTO `ps_stock_mvt_reason_lang` (`id_stock_mvt_reason`, `id_lang`, `name`
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_store`
+-- Table structure for table `ps_store`
 --
 
 CREATE TABLE `ps_store` (
@@ -12201,7 +12406,7 @@ CREATE TABLE `ps_store` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_store`
+-- Dumping data for table `ps_store`
 --
 
 INSERT INTO `ps_store` (`id_store`, `id_country`, `id_state`, `city`, `postcode`, `latitude`, `longitude`, `phone`, `fax`, `email`, `active`, `date_add`, `date_upd`) VALUES
@@ -12214,7 +12419,7 @@ INSERT INTO `ps_store` (`id_store`, `id_country`, `id_state`, `city`, `postcode`
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_store_lang`
+-- Table structure for table `ps_store_lang`
 --
 
 CREATE TABLE `ps_store_lang` (
@@ -12228,7 +12433,7 @@ CREATE TABLE `ps_store_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_store_lang`
+-- Dumping data for table `ps_store_lang`
 --
 
 INSERT INTO `ps_store_lang` (`id_store`, `id_lang`, `name`, `address1`, `address2`, `hours`, `note`) VALUES
@@ -12241,7 +12446,7 @@ INSERT INTO `ps_store_lang` (`id_store`, `id_lang`, `name`, `address1`, `address
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_store_shop`
+-- Table structure for table `ps_store_shop`
 --
 
 CREATE TABLE `ps_store_shop` (
@@ -12250,7 +12455,7 @@ CREATE TABLE `ps_store_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_store_shop`
+-- Dumping data for table `ps_store_shop`
 --
 
 INSERT INTO `ps_store_shop` (`id_store`, `id_shop`) VALUES
@@ -12263,7 +12468,7 @@ INSERT INTO `ps_store_shop` (`id_store`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_supplier`
+-- Table structure for table `ps_supplier`
 --
 
 CREATE TABLE `ps_supplier` (
@@ -12277,7 +12482,7 @@ CREATE TABLE `ps_supplier` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_supplier_lang`
+-- Table structure for table `ps_supplier_lang`
 --
 
 CREATE TABLE `ps_supplier_lang` (
@@ -12292,7 +12497,7 @@ CREATE TABLE `ps_supplier_lang` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_supplier_shop`
+-- Table structure for table `ps_supplier_shop`
 --
 
 CREATE TABLE `ps_supplier_shop` (
@@ -12303,7 +12508,7 @@ CREATE TABLE `ps_supplier_shop` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_supply_order`
+-- Table structure for table `ps_supply_order`
 --
 
 CREATE TABLE `ps_supply_order` (
@@ -12331,7 +12536,7 @@ CREATE TABLE `ps_supply_order` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_supply_order_detail`
+-- Table structure for table `ps_supply_order_detail`
 --
 
 CREATE TABLE `ps_supply_order_detail` (
@@ -12364,7 +12569,7 @@ CREATE TABLE `ps_supply_order_detail` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_supply_order_history`
+-- Table structure for table `ps_supply_order_history`
 --
 
 CREATE TABLE `ps_supply_order_history` (
@@ -12380,7 +12585,7 @@ CREATE TABLE `ps_supply_order_history` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_supply_order_receipt_history`
+-- Table structure for table `ps_supply_order_receipt_history`
 --
 
 CREATE TABLE `ps_supply_order_receipt_history` (
@@ -12397,7 +12602,7 @@ CREATE TABLE `ps_supply_order_receipt_history` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_supply_order_state`
+-- Table structure for table `ps_supply_order_state`
 --
 
 CREATE TABLE `ps_supply_order_state` (
@@ -12411,7 +12616,7 @@ CREATE TABLE `ps_supply_order_state` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_supply_order_state`
+-- Dumping data for table `ps_supply_order_state`
 --
 
 INSERT INTO `ps_supply_order_state` (`id_supply_order_state`, `delivery_note`, `editable`, `receipt_state`, `pending_receipt`, `enclosed`, `color`) VALUES
@@ -12425,7 +12630,7 @@ INSERT INTO `ps_supply_order_state` (`id_supply_order_state`, `delivery_note`, `
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_supply_order_state_lang`
+-- Table structure for table `ps_supply_order_state_lang`
 --
 
 CREATE TABLE `ps_supply_order_state_lang` (
@@ -12435,7 +12640,7 @@ CREATE TABLE `ps_supply_order_state_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_supply_order_state_lang`
+-- Dumping data for table `ps_supply_order_state_lang`
 --
 
 INSERT INTO `ps_supply_order_state_lang` (`id_supply_order_state`, `id_lang`, `name`) VALUES
@@ -12449,7 +12654,7 @@ INSERT INTO `ps_supply_order_state_lang` (`id_supply_order_state`, `id_lang`, `n
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_tab`
+-- Table structure for table `ps_tab`
 --
 
 CREATE TABLE `ps_tab` (
@@ -12464,7 +12669,7 @@ CREATE TABLE `ps_tab` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Zrzut danych tabeli `ps_tab`
+-- Dumping data for table `ps_tab`
 --
 
 INSERT INTO `ps_tab` (`id_tab`, `id_parent`, `position`, `module`, `class_name`, `active`, `hide_host_mode`, `icon`) VALUES
@@ -12593,12 +12798,13 @@ INSERT INTO `ps_tab` (`id_tab`, `id_parent`, `position`, `module`, `class_name`,
 (123, 121, 3, 'ps_themecusto', 'AdminPsThemeCustoAdvanced', 1, 0, ''),
 (124, 0, 5, 'welcome', 'AdminWelcome', 1, 0, ''),
 (125, 77, 7, 'gamification', 'AdminGamification', 1, 0, ''),
-(126, -1, 3, 'cronjobs', 'AdminCronJobs', 1, 0, '');
+(126, -1, 3, 'cronjobs', 'AdminCronJobs', 1, 0, ''),
+(127, 9, 8, 'revws', 'AdminRevwsBackend', 1, 0, '');
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_tab_advice`
+-- Table structure for table `ps_tab_advice`
 --
 
 CREATE TABLE `ps_tab_advice` (
@@ -12607,7 +12813,7 @@ CREATE TABLE `ps_tab_advice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_tab_advice`
+-- Dumping data for table `ps_tab_advice`
 --
 
 INSERT INTO `ps_tab_advice` (`id_tab`, `id_advice`) VALUES
@@ -12640,7 +12846,7 @@ INSERT INTO `ps_tab_advice` (`id_tab`, `id_advice`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_tab_lang`
+-- Table structure for table `ps_tab_lang`
 --
 
 CREATE TABLE `ps_tab_lang` (
@@ -12650,7 +12856,7 @@ CREATE TABLE `ps_tab_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Zrzut danych tabeli `ps_tab_lang`
+-- Dumping data for table `ps_tab_lang`
 --
 
 INSERT INTO `ps_tab_lang` (`id_tab`, `id_lang`, `name`) VALUES
@@ -12776,12 +12982,13 @@ INSERT INTO `ps_tab_lang` (`id_tab`, `id_lang`, `name`) VALUES
 (123, 1, 'Advanced Customization'),
 (124, 1, 'Welcome'),
 (125, 1, 'Merchant Expertise'),
-(126, 1, 'Cron Jobs');
+(126, 1, 'Cron Jobs'),
+(127, 1, 'Product reviews');
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_tab_module_preference`
+-- Table structure for table `ps_tab_module_preference`
 --
 
 CREATE TABLE `ps_tab_module_preference` (
@@ -12794,7 +13001,7 @@ CREATE TABLE `ps_tab_module_preference` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_tag`
+-- Table structure for table `ps_tag`
 --
 
 CREATE TABLE `ps_tag` (
@@ -12806,7 +13013,7 @@ CREATE TABLE `ps_tag` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_tag_count`
+-- Table structure for table `ps_tag_count`
 --
 
 CREATE TABLE `ps_tag_count` (
@@ -12820,7 +13027,7 @@ CREATE TABLE `ps_tag_count` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_tax`
+-- Table structure for table `ps_tax`
 --
 
 CREATE TABLE `ps_tax` (
@@ -12831,7 +13038,7 @@ CREATE TABLE `ps_tax` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_tax`
+-- Dumping data for table `ps_tax`
 --
 
 INSERT INTO `ps_tax` (`id_tax`, `rate`, `active`, `deleted`) VALUES
@@ -12870,7 +13077,7 @@ INSERT INTO `ps_tax` (`id_tax`, `rate`, `active`, `deleted`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_tax_lang`
+-- Table structure for table `ps_tax_lang`
 --
 
 CREATE TABLE `ps_tax_lang` (
@@ -12880,7 +13087,7 @@ CREATE TABLE `ps_tax_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_tax_lang`
+-- Dumping data for table `ps_tax_lang`
 --
 
 INSERT INTO `ps_tax_lang` (`id_tax`, `id_lang`, `name`) VALUES
@@ -12919,7 +13126,7 @@ INSERT INTO `ps_tax_lang` (`id_tax`, `id_lang`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_tax_rule`
+-- Table structure for table `ps_tax_rule`
 --
 
 CREATE TABLE `ps_tax_rule` (
@@ -12935,7 +13142,7 @@ CREATE TABLE `ps_tax_rule` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_tax_rule`
+-- Dumping data for table `ps_tax_rule`
 --
 
 INSERT INTO `ps_tax_rule` (`id_tax_rule`, `id_tax_rules_group`, `id_country`, `id_state`, `zipcode_from`, `zipcode_to`, `id_tax`, `behavior`, `description`) VALUES
@@ -13073,7 +13280,7 @@ INSERT INTO `ps_tax_rule` (`id_tax_rule`, `id_tax_rules_group`, `id_country`, `i
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_tax_rules_group`
+-- Table structure for table `ps_tax_rules_group`
 --
 
 CREATE TABLE `ps_tax_rules_group` (
@@ -13086,7 +13293,7 @@ CREATE TABLE `ps_tax_rules_group` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_tax_rules_group`
+-- Dumping data for table `ps_tax_rules_group`
 --
 
 INSERT INTO `ps_tax_rules_group` (`id_tax_rules_group`, `name`, `active`, `deleted`, `date_add`, `date_upd`) VALUES
@@ -13099,7 +13306,7 @@ INSERT INTO `ps_tax_rules_group` (`id_tax_rules_group`, `name`, `active`, `delet
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_tax_rules_group_shop`
+-- Table structure for table `ps_tax_rules_group_shop`
 --
 
 CREATE TABLE `ps_tax_rules_group_shop` (
@@ -13108,7 +13315,7 @@ CREATE TABLE `ps_tax_rules_group_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_tax_rules_group_shop`
+-- Dumping data for table `ps_tax_rules_group_shop`
 --
 
 INSERT INTO `ps_tax_rules_group_shop` (`id_tax_rules_group`, `id_shop`) VALUES
@@ -13121,7 +13328,7 @@ INSERT INTO `ps_tax_rules_group_shop` (`id_tax_rules_group`, `id_shop`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_timezone`
+-- Table structure for table `ps_timezone`
 --
 
 CREATE TABLE `ps_timezone` (
@@ -13130,7 +13337,7 @@ CREATE TABLE `ps_timezone` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_timezone`
+-- Dumping data for table `ps_timezone`
 --
 
 INSERT INTO `ps_timezone` (`id_timezone`, `name`) VALUES
@@ -13698,7 +13905,7 @@ INSERT INTO `ps_timezone` (`id_timezone`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_translation`
+-- Table structure for table `ps_translation`
 --
 
 CREATE TABLE `ps_translation` (
@@ -13713,7 +13920,7 @@ CREATE TABLE `ps_translation` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_warehouse`
+-- Table structure for table `ps_warehouse`
 --
 
 CREATE TABLE `ps_warehouse` (
@@ -13730,7 +13937,7 @@ CREATE TABLE `ps_warehouse` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_warehouse_carrier`
+-- Table structure for table `ps_warehouse_carrier`
 --
 
 CREATE TABLE `ps_warehouse_carrier` (
@@ -13741,7 +13948,7 @@ CREATE TABLE `ps_warehouse_carrier` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_warehouse_product_location`
+-- Table structure for table `ps_warehouse_product_location`
 --
 
 CREATE TABLE `ps_warehouse_product_location` (
@@ -13755,7 +13962,7 @@ CREATE TABLE `ps_warehouse_product_location` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_warehouse_shop`
+-- Table structure for table `ps_warehouse_shop`
 --
 
 CREATE TABLE `ps_warehouse_shop` (
@@ -13766,7 +13973,7 @@ CREATE TABLE `ps_warehouse_shop` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_webservice_account`
+-- Table structure for table `ps_webservice_account`
 --
 
 CREATE TABLE `ps_webservice_account` (
@@ -13782,7 +13989,7 @@ CREATE TABLE `ps_webservice_account` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_webservice_account_shop`
+-- Table structure for table `ps_webservice_account_shop`
 --
 
 CREATE TABLE `ps_webservice_account_shop` (
@@ -13793,7 +14000,7 @@ CREATE TABLE `ps_webservice_account_shop` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_webservice_permission`
+-- Table structure for table `ps_webservice_permission`
 --
 
 CREATE TABLE `ps_webservice_permission` (
@@ -13806,7 +14013,7 @@ CREATE TABLE `ps_webservice_permission` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_web_browser`
+-- Table structure for table `ps_web_browser`
 --
 
 CREATE TABLE `ps_web_browser` (
@@ -13815,7 +14022,7 @@ CREATE TABLE `ps_web_browser` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_web_browser`
+-- Dumping data for table `ps_web_browser`
 --
 
 INSERT INTO `ps_web_browser` (`id_web_browser`, `name`) VALUES
@@ -13834,7 +14041,7 @@ INSERT INTO `ps_web_browser` (`id_web_browser`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_zone`
+-- Table structure for table `ps_zone`
 --
 
 CREATE TABLE `ps_zone` (
@@ -13844,7 +14051,7 @@ CREATE TABLE `ps_zone` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_zone`
+-- Dumping data for table `ps_zone`
 --
 
 INSERT INTO `ps_zone` (`id_zone`, `name`, `active`) VALUES
@@ -13860,7 +14067,7 @@ INSERT INTO `ps_zone` (`id_zone`, `name`, `active`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `ps_zone_shop`
+-- Table structure for table `ps_zone_shop`
 --
 
 CREATE TABLE `ps_zone_shop` (
@@ -13869,7 +14076,7 @@ CREATE TABLE `ps_zone_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Zrzut danych tabeli `ps_zone_shop`
+-- Dumping data for table `ps_zone_shop`
 --
 
 INSERT INTO `ps_zone_shop` (`id_zone`, `id_shop`) VALUES
@@ -13883,23 +14090,23 @@ INSERT INTO `ps_zone_shop` (`id_zone`, `id_shop`) VALUES
 (8, 1);
 
 --
--- Indeksy dla zrzutów tabel
+-- Indexes for dumped tables
 --
 
 --
--- Indeksy dla tabeli `ps_access`
+-- Indexes for table `ps_access`
 --
 ALTER TABLE `ps_access`
   ADD PRIMARY KEY (`id_profile`,`id_authorization_role`);
 
 --
--- Indeksy dla tabeli `ps_accessory`
+-- Indexes for table `ps_accessory`
 --
 ALTER TABLE `ps_accessory`
   ADD KEY `accessory_product` (`id_product_1`,`id_product_2`);
 
 --
--- Indeksy dla tabeli `ps_address`
+-- Indexes for table `ps_address`
 --
 ALTER TABLE `ps_address`
   ADD PRIMARY KEY (`id_address`),
@@ -13911,71 +14118,71 @@ ALTER TABLE `ps_address`
   ADD KEY `id_warehouse` (`id_warehouse`);
 
 --
--- Indeksy dla tabeli `ps_address_format`
+-- Indexes for table `ps_address_format`
 --
 ALTER TABLE `ps_address_format`
   ADD PRIMARY KEY (`id_country`);
 
 --
--- Indeksy dla tabeli `ps_admin_filter`
+-- Indexes for table `ps_admin_filter`
 --
 ALTER TABLE `ps_admin_filter`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `admin_filter_search_idx` (`employee`,`shop`,`controller`,`action`);
 
 --
--- Indeksy dla tabeli `ps_advice`
+-- Indexes for table `ps_advice`
 --
 ALTER TABLE `ps_advice`
   ADD PRIMARY KEY (`id_advice`);
 
 --
--- Indeksy dla tabeli `ps_advice_lang`
+-- Indexes for table `ps_advice_lang`
 --
 ALTER TABLE `ps_advice_lang`
   ADD PRIMARY KEY (`id_advice`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_alias`
+-- Indexes for table `ps_alias`
 --
 ALTER TABLE `ps_alias`
   ADD PRIMARY KEY (`id_alias`),
   ADD UNIQUE KEY `alias` (`alias`);
 
 --
--- Indeksy dla tabeli `ps_attachment`
+-- Indexes for table `ps_attachment`
 --
 ALTER TABLE `ps_attachment`
   ADD PRIMARY KEY (`id_attachment`);
 
 --
--- Indeksy dla tabeli `ps_attachment_lang`
+-- Indexes for table `ps_attachment_lang`
 --
 ALTER TABLE `ps_attachment_lang`
   ADD PRIMARY KEY (`id_attachment`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_attribute`
+-- Indexes for table `ps_attribute`
 --
 ALTER TABLE `ps_attribute`
   ADD PRIMARY KEY (`id_attribute`),
   ADD KEY `attribute_group` (`id_attribute_group`);
 
 --
--- Indeksy dla tabeli `ps_attribute_group`
+-- Indexes for table `ps_attribute_group`
 --
 ALTER TABLE `ps_attribute_group`
   ADD PRIMARY KEY (`id_attribute_group`);
 
 --
--- Indeksy dla tabeli `ps_attribute_group_lang`
+-- Indexes for table `ps_attribute_group_lang`
 --
 ALTER TABLE `ps_attribute_group_lang`
   ADD PRIMARY KEY (`id_attribute_group`,`id_lang`),
   ADD KEY `IDX_4653726C67A664FB` (`id_attribute_group`);
 
 --
--- Indeksy dla tabeli `ps_attribute_group_shop`
+-- Indexes for table `ps_attribute_group_shop`
 --
 ALTER TABLE `ps_attribute_group_shop`
   ADD PRIMARY KEY (`id_attribute_group`,`id_shop`),
@@ -13983,21 +14190,21 @@ ALTER TABLE `ps_attribute_group_shop`
   ADD KEY `IDX_DB30BAAC274A50A0` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_attribute_impact`
+-- Indexes for table `ps_attribute_impact`
 --
 ALTER TABLE `ps_attribute_impact`
   ADD PRIMARY KEY (`id_attribute_impact`),
   ADD UNIQUE KEY `id_product` (`id_product`,`id_attribute`);
 
 --
--- Indeksy dla tabeli `ps_attribute_lang`
+-- Indexes for table `ps_attribute_lang`
 --
 ALTER TABLE `ps_attribute_lang`
   ADD PRIMARY KEY (`id_attribute`,`id_lang`),
   ADD KEY `IDX_3ABE46A77A4F53DC` (`id_attribute`);
 
 --
--- Indeksy dla tabeli `ps_attribute_shop`
+-- Indexes for table `ps_attribute_shop`
 --
 ALTER TABLE `ps_attribute_shop`
   ADD PRIMARY KEY (`id_attribute`,`id_shop`),
@@ -14005,26 +14212,26 @@ ALTER TABLE `ps_attribute_shop`
   ADD KEY `IDX_A7DD8E67274A50A0` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_authorization_role`
+-- Indexes for table `ps_authorization_role`
 --
 ALTER TABLE `ps_authorization_role`
   ADD PRIMARY KEY (`id_authorization_role`),
   ADD UNIQUE KEY `slug` (`slug`);
 
 --
--- Indeksy dla tabeli `ps_badge`
+-- Indexes for table `ps_badge`
 --
 ALTER TABLE `ps_badge`
   ADD PRIMARY KEY (`id_badge`);
 
 --
--- Indeksy dla tabeli `ps_badge_lang`
+-- Indexes for table `ps_badge_lang`
 --
 ALTER TABLE `ps_badge_lang`
   ADD PRIMARY KEY (`id_badge`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_carrier`
+-- Indexes for table `ps_carrier`
 --
 ALTER TABLE `ps_carrier`
   ADD PRIMARY KEY (`id_carrier`),
@@ -14033,38 +14240,38 @@ ALTER TABLE `ps_carrier`
   ADD KEY `reference` (`id_reference`,`deleted`,`active`);
 
 --
--- Indeksy dla tabeli `ps_carrier_group`
+-- Indexes for table `ps_carrier_group`
 --
 ALTER TABLE `ps_carrier_group`
   ADD PRIMARY KEY (`id_carrier`,`id_group`);
 
 --
--- Indeksy dla tabeli `ps_carrier_lang`
+-- Indexes for table `ps_carrier_lang`
 --
 ALTER TABLE `ps_carrier_lang`
   ADD PRIMARY KEY (`id_lang`,`id_shop`,`id_carrier`);
 
 --
--- Indeksy dla tabeli `ps_carrier_shop`
+-- Indexes for table `ps_carrier_shop`
 --
 ALTER TABLE `ps_carrier_shop`
   ADD PRIMARY KEY (`id_carrier`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_carrier_tax_rules_group_shop`
+-- Indexes for table `ps_carrier_tax_rules_group_shop`
 --
 ALTER TABLE `ps_carrier_tax_rules_group_shop`
   ADD PRIMARY KEY (`id_carrier`,`id_tax_rules_group`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_carrier_zone`
+-- Indexes for table `ps_carrier_zone`
 --
 ALTER TABLE `ps_carrier_zone`
   ADD PRIMARY KEY (`id_carrier`,`id_zone`);
 
 --
--- Indeksy dla tabeli `ps_cart`
+-- Indexes for table `ps_cart`
 --
 ALTER TABLE `ps_cart`
   ADD PRIMARY KEY (`id_cart`),
@@ -14080,14 +14287,14 @@ ALTER TABLE `ps_cart`
   ADD KEY `id_shop` (`id_shop`,`date_add`);
 
 --
--- Indeksy dla tabeli `ps_cart_cart_rule`
+-- Indexes for table `ps_cart_cart_rule`
 --
 ALTER TABLE `ps_cart_cart_rule`
   ADD PRIMARY KEY (`id_cart`,`id_cart_rule`),
   ADD KEY `id_cart_rule` (`id_cart_rule`);
 
 --
--- Indeksy dla tabeli `ps_cart_product`
+-- Indexes for table `ps_cart_product`
 --
 ALTER TABLE `ps_cart_product`
   ADD PRIMARY KEY (`id_cart`,`id_product`,`id_product_attribute`,`id_customization`,`id_address_delivery`),
@@ -14095,7 +14302,7 @@ ALTER TABLE `ps_cart_product`
   ADD KEY `id_cart_order` (`id_cart`,`date_add`,`id_product`,`id_product_attribute`);
 
 --
--- Indeksy dla tabeli `ps_cart_rule`
+-- Indexes for table `ps_cart_rule`
 --
 ALTER TABLE `ps_cart_rule`
   ADD PRIMARY KEY (`id_cart_rule`),
@@ -14107,13 +14314,13 @@ ALTER TABLE `ps_cart_rule`
   ADD KEY `date_to` (`date_to`);
 
 --
--- Indeksy dla tabeli `ps_cart_rule_carrier`
+-- Indexes for table `ps_cart_rule_carrier`
 --
 ALTER TABLE `ps_cart_rule_carrier`
   ADD PRIMARY KEY (`id_cart_rule`,`id_carrier`);
 
 --
--- Indeksy dla tabeli `ps_cart_rule_combination`
+-- Indexes for table `ps_cart_rule_combination`
 --
 ALTER TABLE `ps_cart_rule_combination`
   ADD PRIMARY KEY (`id_cart_rule_1`,`id_cart_rule_2`),
@@ -14121,49 +14328,49 @@ ALTER TABLE `ps_cart_rule_combination`
   ADD KEY `id_cart_rule_2` (`id_cart_rule_2`);
 
 --
--- Indeksy dla tabeli `ps_cart_rule_country`
+-- Indexes for table `ps_cart_rule_country`
 --
 ALTER TABLE `ps_cart_rule_country`
   ADD PRIMARY KEY (`id_cart_rule`,`id_country`);
 
 --
--- Indeksy dla tabeli `ps_cart_rule_group`
+-- Indexes for table `ps_cart_rule_group`
 --
 ALTER TABLE `ps_cart_rule_group`
   ADD PRIMARY KEY (`id_cart_rule`,`id_group`);
 
 --
--- Indeksy dla tabeli `ps_cart_rule_lang`
+-- Indexes for table `ps_cart_rule_lang`
 --
 ALTER TABLE `ps_cart_rule_lang`
   ADD PRIMARY KEY (`id_cart_rule`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_cart_rule_product_rule`
+-- Indexes for table `ps_cart_rule_product_rule`
 --
 ALTER TABLE `ps_cart_rule_product_rule`
   ADD PRIMARY KEY (`id_product_rule`);
 
 --
--- Indeksy dla tabeli `ps_cart_rule_product_rule_group`
+-- Indexes for table `ps_cart_rule_product_rule_group`
 --
 ALTER TABLE `ps_cart_rule_product_rule_group`
   ADD PRIMARY KEY (`id_product_rule_group`);
 
 --
--- Indeksy dla tabeli `ps_cart_rule_product_rule_value`
+-- Indexes for table `ps_cart_rule_product_rule_value`
 --
 ALTER TABLE `ps_cart_rule_product_rule_value`
   ADD PRIMARY KEY (`id_product_rule`,`id_item`);
 
 --
--- Indeksy dla tabeli `ps_cart_rule_shop`
+-- Indexes for table `ps_cart_rule_shop`
 --
 ALTER TABLE `ps_cart_rule_shop`
   ADD PRIMARY KEY (`id_cart_rule`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_category`
+-- Indexes for table `ps_category`
 --
 ALTER TABLE `ps_category`
   ADD PRIMARY KEY (`id_category`),
@@ -14175,7 +14382,7 @@ ALTER TABLE `ps_category`
   ADD KEY `activenright` (`active`,`nright`);
 
 --
--- Indeksy dla tabeli `ps_category_group`
+-- Indexes for table `ps_category_group`
 --
 ALTER TABLE `ps_category_group`
   ADD PRIMARY KEY (`id_category`,`id_group`),
@@ -14183,14 +14390,14 @@ ALTER TABLE `ps_category_group`
   ADD KEY `id_group` (`id_group`);
 
 --
--- Indeksy dla tabeli `ps_category_lang`
+-- Indexes for table `ps_category_lang`
 --
 ALTER TABLE `ps_category_lang`
   ADD PRIMARY KEY (`id_category`,`id_shop`,`id_lang`),
   ADD KEY `category_name` (`name`);
 
 --
--- Indeksy dla tabeli `ps_category_product`
+-- Indexes for table `ps_category_product`
 --
 ALTER TABLE `ps_category_product`
   ADD PRIMARY KEY (`id_category`,`id_product`),
@@ -14198,84 +14405,84 @@ ALTER TABLE `ps_category_product`
   ADD KEY `id_category` (`id_category`,`position`);
 
 --
--- Indeksy dla tabeli `ps_category_shop`
+-- Indexes for table `ps_category_shop`
 --
 ALTER TABLE `ps_category_shop`
   ADD PRIMARY KEY (`id_category`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_cms`
+-- Indexes for table `ps_cms`
 --
 ALTER TABLE `ps_cms`
   ADD PRIMARY KEY (`id_cms`);
 
 --
--- Indeksy dla tabeli `ps_cms_category`
+-- Indexes for table `ps_cms_category`
 --
 ALTER TABLE `ps_cms_category`
   ADD PRIMARY KEY (`id_cms_category`),
   ADD KEY `category_parent` (`id_parent`);
 
 --
--- Indeksy dla tabeli `ps_cms_category_lang`
+-- Indexes for table `ps_cms_category_lang`
 --
 ALTER TABLE `ps_cms_category_lang`
   ADD PRIMARY KEY (`id_cms_category`,`id_shop`,`id_lang`),
   ADD KEY `category_name` (`name`);
 
 --
--- Indeksy dla tabeli `ps_cms_category_shop`
+-- Indexes for table `ps_cms_category_shop`
 --
 ALTER TABLE `ps_cms_category_shop`
   ADD PRIMARY KEY (`id_cms_category`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_cms_lang`
+-- Indexes for table `ps_cms_lang`
 --
 ALTER TABLE `ps_cms_lang`
   ADD PRIMARY KEY (`id_cms`,`id_shop`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_cms_role`
+-- Indexes for table `ps_cms_role`
 --
 ALTER TABLE `ps_cms_role`
   ADD PRIMARY KEY (`id_cms_role`,`id_cms`),
   ADD UNIQUE KEY `name` (`name`);
 
 --
--- Indeksy dla tabeli `ps_cms_role_lang`
+-- Indexes for table `ps_cms_role_lang`
 --
 ALTER TABLE `ps_cms_role_lang`
   ADD PRIMARY KEY (`id_cms_role`,`id_lang`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_cms_shop`
+-- Indexes for table `ps_cms_shop`
 --
 ALTER TABLE `ps_cms_shop`
   ADD PRIMARY KEY (`id_cms`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_condition`
+-- Indexes for table `ps_condition`
 --
 ALTER TABLE `ps_condition`
   ADD PRIMARY KEY (`id_condition`,`id_ps_condition`);
 
 --
--- Indeksy dla tabeli `ps_condition_advice`
+-- Indexes for table `ps_condition_advice`
 --
 ALTER TABLE `ps_condition_advice`
   ADD PRIMARY KEY (`id_condition`,`id_advice`);
 
 --
--- Indeksy dla tabeli `ps_condition_badge`
+-- Indexes for table `ps_condition_badge`
 --
 ALTER TABLE `ps_condition_badge`
   ADD PRIMARY KEY (`id_condition`,`id_badge`);
 
 --
--- Indeksy dla tabeli `ps_configuration`
+-- Indexes for table `ps_configuration`
 --
 ALTER TABLE `ps_configuration`
   ADD PRIMARY KEY (`id_configuration`),
@@ -14284,7 +14491,7 @@ ALTER TABLE `ps_configuration`
   ADD KEY `id_shop_group` (`id_shop_group`);
 
 --
--- Indeksy dla tabeli `ps_configuration_kpi`
+-- Indexes for table `ps_configuration_kpi`
 --
 ALTER TABLE `ps_configuration_kpi`
   ADD PRIMARY KEY (`id_configuration_kpi`),
@@ -14293,19 +14500,19 @@ ALTER TABLE `ps_configuration_kpi`
   ADD KEY `id_shop_group` (`id_shop_group`);
 
 --
--- Indeksy dla tabeli `ps_configuration_kpi_lang`
+-- Indexes for table `ps_configuration_kpi_lang`
 --
 ALTER TABLE `ps_configuration_kpi_lang`
   ADD PRIMARY KEY (`id_configuration_kpi`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_configuration_lang`
+-- Indexes for table `ps_configuration_lang`
 --
 ALTER TABLE `ps_configuration_lang`
   ADD PRIMARY KEY (`id_configuration`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_connections`
+-- Indexes for table `ps_connections`
 --
 ALTER TABLE `ps_connections`
   ADD PRIMARY KEY (`id_connections`),
@@ -14314,13 +14521,13 @@ ALTER TABLE `ps_connections`
   ADD KEY `id_page` (`id_page`);
 
 --
--- Indeksy dla tabeli `ps_connections_page`
+-- Indexes for table `ps_connections_page`
 --
 ALTER TABLE `ps_connections_page`
   ADD PRIMARY KEY (`id_connections`,`id_page`,`time_start`);
 
 --
--- Indeksy dla tabeli `ps_connections_source`
+-- Indexes for table `ps_connections_source`
 --
 ALTER TABLE `ps_connections_source`
   ADD PRIMARY KEY (`id_connections_source`),
@@ -14330,26 +14537,26 @@ ALTER TABLE `ps_connections_source`
   ADD KEY `request_uri` (`request_uri`);
 
 --
--- Indeksy dla tabeli `ps_contact`
+-- Indexes for table `ps_contact`
 --
 ALTER TABLE `ps_contact`
   ADD PRIMARY KEY (`id_contact`);
 
 --
--- Indeksy dla tabeli `ps_contact_lang`
+-- Indexes for table `ps_contact_lang`
 --
 ALTER TABLE `ps_contact_lang`
   ADD PRIMARY KEY (`id_contact`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_contact_shop`
+-- Indexes for table `ps_contact_shop`
 --
 ALTER TABLE `ps_contact_shop`
   ADD PRIMARY KEY (`id_contact`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_country`
+-- Indexes for table `ps_country`
 --
 ALTER TABLE `ps_country`
   ADD PRIMARY KEY (`id_country`),
@@ -14357,40 +14564,40 @@ ALTER TABLE `ps_country`
   ADD KEY `country_` (`id_zone`);
 
 --
--- Indeksy dla tabeli `ps_country_lang`
+-- Indexes for table `ps_country_lang`
 --
 ALTER TABLE `ps_country_lang`
   ADD PRIMARY KEY (`id_country`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_country_shop`
+-- Indexes for table `ps_country_shop`
 --
 ALTER TABLE `ps_country_shop`
   ADD PRIMARY KEY (`id_country`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_cronjobs`
+-- Indexes for table `ps_cronjobs`
 --
 ALTER TABLE `ps_cronjobs`
   ADD PRIMARY KEY (`id_cronjob`),
   ADD KEY `id_module` (`id_module`);
 
 --
--- Indeksy dla tabeli `ps_currency`
+-- Indexes for table `ps_currency`
 --
 ALTER TABLE `ps_currency`
   ADD PRIMARY KEY (`id_currency`);
 
 --
--- Indeksy dla tabeli `ps_currency_shop`
+-- Indexes for table `ps_currency_shop`
 --
 ALTER TABLE `ps_currency_shop`
   ADD PRIMARY KEY (`id_currency`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_customer`
+-- Indexes for table `ps_customer`
 --
 ALTER TABLE `ps_customer`
   ADD PRIMARY KEY (`id_customer`),
@@ -14402,7 +14609,7 @@ ALTER TABLE `ps_customer`
   ADD KEY `id_shop` (`id_shop`,`date_add`);
 
 --
--- Indeksy dla tabeli `ps_customer_group`
+-- Indexes for table `ps_customer_group`
 --
 ALTER TABLE `ps_customer_group`
   ADD PRIMARY KEY (`id_customer`,`id_group`),
@@ -14410,7 +14617,7 @@ ALTER TABLE `ps_customer_group`
   ADD KEY `id_customer` (`id_customer`);
 
 --
--- Indeksy dla tabeli `ps_customer_message`
+-- Indexes for table `ps_customer_message`
 --
 ALTER TABLE `ps_customer_message`
   ADD PRIMARY KEY (`id_customer_message`),
@@ -14418,13 +14625,13 @@ ALTER TABLE `ps_customer_message`
   ADD KEY `id_employee` (`id_employee`);
 
 --
--- Indeksy dla tabeli `ps_customer_message_sync_imap`
+-- Indexes for table `ps_customer_message_sync_imap`
 --
 ALTER TABLE `ps_customer_message_sync_imap`
   ADD KEY `md5_header_index` (`md5_header`(4));
 
 --
--- Indeksy dla tabeli `ps_customer_thread`
+-- Indexes for table `ps_customer_thread`
 --
 ALTER TABLE `ps_customer_thread`
   ADD PRIMARY KEY (`id_customer_thread`),
@@ -14436,7 +14643,7 @@ ALTER TABLE `ps_customer_thread`
   ADD KEY `id_product` (`id_product`);
 
 --
--- Indeksy dla tabeli `ps_customization`
+-- Indexes for table `ps_customization`
 --
 ALTER TABLE `ps_customization`
   ADD PRIMARY KEY (`id_customization`,`id_cart`,`id_product`,`id_address_delivery`),
@@ -14444,32 +14651,32 @@ ALTER TABLE `ps_customization`
   ADD KEY `id_cart_product` (`id_cart`,`id_product`,`id_product_attribute`);
 
 --
--- Indeksy dla tabeli `ps_customization_field`
+-- Indexes for table `ps_customization_field`
 --
 ALTER TABLE `ps_customization_field`
   ADD PRIMARY KEY (`id_customization_field`),
   ADD KEY `id_product` (`id_product`);
 
 --
--- Indeksy dla tabeli `ps_customization_field_lang`
+-- Indexes for table `ps_customization_field_lang`
 --
 ALTER TABLE `ps_customization_field_lang`
   ADD PRIMARY KEY (`id_customization_field`,`id_lang`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_customized_data`
+-- Indexes for table `ps_customized_data`
 --
 ALTER TABLE `ps_customized_data`
   ADD PRIMARY KEY (`id_customization`,`type`,`index`);
 
 --
--- Indeksy dla tabeli `ps_date_range`
+-- Indexes for table `ps_date_range`
 --
 ALTER TABLE `ps_date_range`
   ADD PRIMARY KEY (`id_date_range`);
 
 --
--- Indeksy dla tabeli `ps_delivery`
+-- Indexes for table `ps_delivery`
 --
 ALTER TABLE `ps_delivery`
   ADD PRIMARY KEY (`id_delivery`),
@@ -14479,13 +14686,13 @@ ALTER TABLE `ps_delivery`
   ADD KEY `id_range_weight` (`id_range_weight`);
 
 --
--- Indeksy dla tabeli `ps_emailsubscription`
+-- Indexes for table `ps_emailsubscription`
 --
 ALTER TABLE `ps_emailsubscription`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeksy dla tabeli `ps_employee`
+-- Indexes for table `ps_employee`
 --
 ALTER TABLE `ps_employee`
   ADD PRIMARY KEY (`id_employee`),
@@ -14494,27 +14701,27 @@ ALTER TABLE `ps_employee`
   ADD KEY `id_profile` (`id_profile`);
 
 --
--- Indeksy dla tabeli `ps_employee_shop`
+-- Indexes for table `ps_employee_shop`
 --
 ALTER TABLE `ps_employee_shop`
   ADD PRIMARY KEY (`id_employee`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_feature`
+-- Indexes for table `ps_feature`
 --
 ALTER TABLE `ps_feature`
   ADD PRIMARY KEY (`id_feature`);
 
 --
--- Indeksy dla tabeli `ps_feature_lang`
+-- Indexes for table `ps_feature_lang`
 --
 ALTER TABLE `ps_feature_lang`
   ADD PRIMARY KEY (`id_feature`,`id_lang`),
   ADD KEY `id_lang` (`id_lang`,`name`);
 
 --
--- Indeksy dla tabeli `ps_feature_product`
+-- Indexes for table `ps_feature_product`
 --
 ALTER TABLE `ps_feature_product`
   ADD PRIMARY KEY (`id_feature`,`id_product`,`id_feature_value`),
@@ -14522,66 +14729,66 @@ ALTER TABLE `ps_feature_product`
   ADD KEY `id_product` (`id_product`);
 
 --
--- Indeksy dla tabeli `ps_feature_shop`
+-- Indexes for table `ps_feature_shop`
 --
 ALTER TABLE `ps_feature_shop`
   ADD PRIMARY KEY (`id_feature`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_feature_value`
+-- Indexes for table `ps_feature_value`
 --
 ALTER TABLE `ps_feature_value`
   ADD PRIMARY KEY (`id_feature_value`),
   ADD KEY `feature` (`id_feature`);
 
 --
--- Indeksy dla tabeli `ps_feature_value_lang`
+-- Indexes for table `ps_feature_value_lang`
 --
 ALTER TABLE `ps_feature_value_lang`
   ADD PRIMARY KEY (`id_feature_value`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_gender`
+-- Indexes for table `ps_gender`
 --
 ALTER TABLE `ps_gender`
   ADD PRIMARY KEY (`id_gender`);
 
 --
--- Indeksy dla tabeli `ps_gender_lang`
+-- Indexes for table `ps_gender_lang`
 --
 ALTER TABLE `ps_gender_lang`
   ADD PRIMARY KEY (`id_gender`,`id_lang`),
   ADD KEY `id_gender` (`id_gender`);
 
 --
--- Indeksy dla tabeli `ps_group`
+-- Indexes for table `ps_group`
 --
 ALTER TABLE `ps_group`
   ADD PRIMARY KEY (`id_group`);
 
 --
--- Indeksy dla tabeli `ps_group_lang`
+-- Indexes for table `ps_group_lang`
 --
 ALTER TABLE `ps_group_lang`
   ADD PRIMARY KEY (`id_group`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_group_reduction`
+-- Indexes for table `ps_group_reduction`
 --
 ALTER TABLE `ps_group_reduction`
   ADD PRIMARY KEY (`id_group_reduction`),
   ADD UNIQUE KEY `id_group` (`id_group`,`id_category`);
 
 --
--- Indeksy dla tabeli `ps_group_shop`
+-- Indexes for table `ps_group_shop`
 --
 ALTER TABLE `ps_group_shop`
   ADD PRIMARY KEY (`id_group`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_guest`
+-- Indexes for table `ps_guest`
 --
 ALTER TABLE `ps_guest`
   ADD PRIMARY KEY (`id_guest`),
@@ -14590,39 +14797,39 @@ ALTER TABLE `ps_guest`
   ADD KEY `id_web_browser` (`id_web_browser`);
 
 --
--- Indeksy dla tabeli `ps_homeslider`
+-- Indexes for table `ps_homeslider`
 --
 ALTER TABLE `ps_homeslider`
   ADD PRIMARY KEY (`id_homeslider_slides`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_homeslider_slides`
+-- Indexes for table `ps_homeslider_slides`
 --
 ALTER TABLE `ps_homeslider_slides`
   ADD PRIMARY KEY (`id_homeslider_slides`);
 
 --
--- Indeksy dla tabeli `ps_homeslider_slides_lang`
+-- Indexes for table `ps_homeslider_slides_lang`
 --
 ALTER TABLE `ps_homeslider_slides_lang`
   ADD PRIMARY KEY (`id_homeslider_slides`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_hook`
+-- Indexes for table `ps_hook`
 --
 ALTER TABLE `ps_hook`
   ADD PRIMARY KEY (`id_hook`),
   ADD UNIQUE KEY `hook_name` (`name`);
 
 --
--- Indeksy dla tabeli `ps_hook_alias`
+-- Indexes for table `ps_hook_alias`
 --
 ALTER TABLE `ps_hook_alias`
   ADD PRIMARY KEY (`id_hook_alias`),
   ADD UNIQUE KEY `alias` (`alias`);
 
 --
--- Indeksy dla tabeli `ps_hook_module`
+-- Indexes for table `ps_hook_module`
 --
 ALTER TABLE `ps_hook_module`
   ADD PRIMARY KEY (`id_module`,`id_hook`,`id_shop`),
@@ -14631,7 +14838,7 @@ ALTER TABLE `ps_hook_module`
   ADD KEY `position` (`id_shop`,`position`);
 
 --
--- Indeksy dla tabeli `ps_hook_module_exceptions`
+-- Indexes for table `ps_hook_module_exceptions`
 --
 ALTER TABLE `ps_hook_module_exceptions`
   ADD PRIMARY KEY (`id_hook_module_exceptions`),
@@ -14639,7 +14846,7 @@ ALTER TABLE `ps_hook_module_exceptions`
   ADD KEY `id_hook` (`id_hook`);
 
 --
--- Indeksy dla tabeli `ps_image`
+-- Indexes for table `ps_image`
 --
 ALTER TABLE `ps_image`
   ADD PRIMARY KEY (`id_image`),
@@ -14648,14 +14855,14 @@ ALTER TABLE `ps_image`
   ADD KEY `image_product` (`id_product`);
 
 --
--- Indeksy dla tabeli `ps_image_lang`
+-- Indexes for table `ps_image_lang`
 --
 ALTER TABLE `ps_image_lang`
   ADD PRIMARY KEY (`id_image`,`id_lang`),
   ADD KEY `id_image` (`id_image`);
 
 --
--- Indeksy dla tabeli `ps_image_shop`
+-- Indexes for table `ps_image_shop`
 --
 ALTER TABLE `ps_image_shop`
   ADD PRIMARY KEY (`id_image`,`id_shop`),
@@ -14663,44 +14870,44 @@ ALTER TABLE `ps_image_shop`
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_image_type`
+-- Indexes for table `ps_image_type`
 --
 ALTER TABLE `ps_image_type`
   ADD PRIMARY KEY (`id_image_type`),
   ADD KEY `image_type_name` (`name`);
 
 --
--- Indeksy dla tabeli `ps_import_match`
+-- Indexes for table `ps_import_match`
 --
 ALTER TABLE `ps_import_match`
   ADD PRIMARY KEY (`id_import_match`);
 
 --
--- Indeksy dla tabeli `ps_info`
+-- Indexes for table `ps_info`
 --
 ALTER TABLE `ps_info`
   ADD PRIMARY KEY (`id_info`);
 
 --
--- Indeksy dla tabeli `ps_info_lang`
+-- Indexes for table `ps_info_lang`
 --
 ALTER TABLE `ps_info_lang`
   ADD PRIMARY KEY (`id_info`,`id_lang`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_info_shop`
+-- Indexes for table `ps_info_shop`
 --
 ALTER TABLE `ps_info_shop`
   ADD PRIMARY KEY (`id_info`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_lang`
+-- Indexes for table `ps_lang`
 --
 ALTER TABLE `ps_lang`
   ADD PRIMARY KEY (`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_lang_shop`
+-- Indexes for table `ps_lang_shop`
 --
 ALTER TABLE `ps_lang_shop`
   ADD PRIMARY KEY (`id_lang`,`id_shop`),
@@ -14708,63 +14915,63 @@ ALTER TABLE `ps_lang_shop`
   ADD KEY `IDX_2F43BFC7274A50A0` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_layered_category`
+-- Indexes for table `ps_layered_category`
 --
 ALTER TABLE `ps_layered_category`
   ADD PRIMARY KEY (`id_layered_category`),
   ADD KEY `id_category` (`id_category`,`type`);
 
 --
--- Indeksy dla tabeli `ps_layered_filter`
+-- Indexes for table `ps_layered_filter`
 --
 ALTER TABLE `ps_layered_filter`
   ADD PRIMARY KEY (`id_layered_filter`);
 
 --
--- Indeksy dla tabeli `ps_layered_filter_shop`
+-- Indexes for table `ps_layered_filter_shop`
 --
 ALTER TABLE `ps_layered_filter_shop`
   ADD PRIMARY KEY (`id_layered_filter`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_layered_indexable_attribute_group`
+-- Indexes for table `ps_layered_indexable_attribute_group`
 --
 ALTER TABLE `ps_layered_indexable_attribute_group`
   ADD PRIMARY KEY (`id_attribute_group`);
 
 --
--- Indeksy dla tabeli `ps_layered_indexable_attribute_group_lang_value`
+-- Indexes for table `ps_layered_indexable_attribute_group_lang_value`
 --
 ALTER TABLE `ps_layered_indexable_attribute_group_lang_value`
   ADD PRIMARY KEY (`id_attribute_group`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_layered_indexable_attribute_lang_value`
+-- Indexes for table `ps_layered_indexable_attribute_lang_value`
 --
 ALTER TABLE `ps_layered_indexable_attribute_lang_value`
   ADD PRIMARY KEY (`id_attribute`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_layered_indexable_feature`
+-- Indexes for table `ps_layered_indexable_feature`
 --
 ALTER TABLE `ps_layered_indexable_feature`
   ADD PRIMARY KEY (`id_feature`);
 
 --
--- Indeksy dla tabeli `ps_layered_indexable_feature_lang_value`
+-- Indexes for table `ps_layered_indexable_feature_lang_value`
 --
 ALTER TABLE `ps_layered_indexable_feature_lang_value`
   ADD PRIMARY KEY (`id_feature`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_layered_indexable_feature_value_lang_value`
+-- Indexes for table `ps_layered_indexable_feature_value_lang_value`
 --
 ALTER TABLE `ps_layered_indexable_feature_value_lang_value`
   ADD PRIMARY KEY (`id_feature_value`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_layered_price_index`
+-- Indexes for table `ps_layered_price_index`
 --
 ALTER TABLE `ps_layered_price_index`
   ADD PRIMARY KEY (`id_product`,`id_currency`,`id_shop`),
@@ -14773,83 +14980,83 @@ ALTER TABLE `ps_layered_price_index`
   ADD KEY `price_max` (`price_max`);
 
 --
--- Indeksy dla tabeli `ps_layered_product_attribute`
+-- Indexes for table `ps_layered_product_attribute`
 --
 ALTER TABLE `ps_layered_product_attribute`
   ADD PRIMARY KEY (`id_attribute`,`id_product`,`id_shop`),
   ADD UNIQUE KEY `id_attribute_group` (`id_attribute_group`,`id_attribute`,`id_product`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_linksmenutop`
+-- Indexes for table `ps_linksmenutop`
 --
 ALTER TABLE `ps_linksmenutop`
   ADD PRIMARY KEY (`id_linksmenutop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_linksmenutop_lang`
+-- Indexes for table `ps_linksmenutop_lang`
 --
 ALTER TABLE `ps_linksmenutop_lang`
   ADD KEY `id_linksmenutop` (`id_linksmenutop`,`id_lang`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_link_block`
+-- Indexes for table `ps_link_block`
 --
 ALTER TABLE `ps_link_block`
   ADD PRIMARY KEY (`id_link_block`);
 
 --
--- Indeksy dla tabeli `ps_link_block_lang`
+-- Indexes for table `ps_link_block_lang`
 --
 ALTER TABLE `ps_link_block_lang`
   ADD PRIMARY KEY (`id_link_block`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_link_block_shop`
+-- Indexes for table `ps_link_block_shop`
 --
 ALTER TABLE `ps_link_block_shop`
   ADD PRIMARY KEY (`id_link_block`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_log`
+-- Indexes for table `ps_log`
 --
 ALTER TABLE `ps_log`
   ADD PRIMARY KEY (`id_log`);
 
 --
--- Indeksy dla tabeli `ps_mail`
+-- Indexes for table `ps_mail`
 --
 ALTER TABLE `ps_mail`
   ADD PRIMARY KEY (`id_mail`),
   ADD KEY `recipient` (`recipient`(10));
 
 --
--- Indeksy dla tabeli `ps_manufacturer`
+-- Indexes for table `ps_manufacturer`
 --
 ALTER TABLE `ps_manufacturer`
   ADD PRIMARY KEY (`id_manufacturer`);
 
 --
--- Indeksy dla tabeli `ps_manufacturer_lang`
+-- Indexes for table `ps_manufacturer_lang`
 --
 ALTER TABLE `ps_manufacturer_lang`
   ADD PRIMARY KEY (`id_manufacturer`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_manufacturer_shop`
+-- Indexes for table `ps_manufacturer_shop`
 --
 ALTER TABLE `ps_manufacturer_shop`
   ADD PRIMARY KEY (`id_manufacturer`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_memcached_servers`
+-- Indexes for table `ps_memcached_servers`
 --
 ALTER TABLE `ps_memcached_servers`
   ADD PRIMARY KEY (`id_memcached_server`);
 
 --
--- Indeksy dla tabeli `ps_message`
+-- Indexes for table `ps_message`
 --
 ALTER TABLE `ps_message`
   ADD PRIMARY KEY (`id_message`),
@@ -14859,20 +15066,20 @@ ALTER TABLE `ps_message`
   ADD KEY `id_employee` (`id_employee`);
 
 --
--- Indeksy dla tabeli `ps_message_readed`
+-- Indexes for table `ps_message_readed`
 --
 ALTER TABLE `ps_message_readed`
   ADD PRIMARY KEY (`id_message`,`id_employee`);
 
 --
--- Indeksy dla tabeli `ps_meta`
+-- Indexes for table `ps_meta`
 --
 ALTER TABLE `ps_meta`
   ADD PRIMARY KEY (`id_meta`),
   ADD UNIQUE KEY `page` (`page`);
 
 --
--- Indeksy dla tabeli `ps_meta_lang`
+-- Indexes for table `ps_meta_lang`
 --
 ALTER TABLE `ps_meta_lang`
   ADD PRIMARY KEY (`id_meta`,`id_shop`,`id_lang`),
@@ -14880,7 +15087,7 @@ ALTER TABLE `ps_meta_lang`
   ADD KEY `id_lang` (`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_module`
+-- Indexes for table `ps_module`
 --
 ALTER TABLE `ps_module`
   ADD PRIMARY KEY (`id_module`),
@@ -14888,64 +15095,64 @@ ALTER TABLE `ps_module`
   ADD KEY `name` (`name`);
 
 --
--- Indeksy dla tabeli `ps_module_access`
+-- Indexes for table `ps_module_access`
 --
 ALTER TABLE `ps_module_access`
   ADD PRIMARY KEY (`id_profile`,`id_authorization_role`);
 
 --
--- Indeksy dla tabeli `ps_module_carrier`
+-- Indexes for table `ps_module_carrier`
 --
 ALTER TABLE `ps_module_carrier`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_reference`);
 
 --
--- Indeksy dla tabeli `ps_module_country`
+-- Indexes for table `ps_module_country`
 --
 ALTER TABLE `ps_module_country`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_country`);
 
 --
--- Indeksy dla tabeli `ps_module_currency`
+-- Indexes for table `ps_module_currency`
 --
 ALTER TABLE `ps_module_currency`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_currency`),
   ADD KEY `id_module` (`id_module`);
 
 --
--- Indeksy dla tabeli `ps_module_group`
+-- Indexes for table `ps_module_group`
 --
 ALTER TABLE `ps_module_group`
   ADD PRIMARY KEY (`id_module`,`id_shop`,`id_group`);
 
 --
--- Indeksy dla tabeli `ps_module_history`
+-- Indexes for table `ps_module_history`
 --
 ALTER TABLE `ps_module_history`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeksy dla tabeli `ps_module_preference`
+-- Indexes for table `ps_module_preference`
 --
 ALTER TABLE `ps_module_preference`
   ADD PRIMARY KEY (`id_module_preference`),
   ADD UNIQUE KEY `employee_module` (`id_employee`,`module`);
 
 --
--- Indeksy dla tabeli `ps_module_shop`
+-- Indexes for table `ps_module_shop`
 --
 ALTER TABLE `ps_module_shop`
   ADD PRIMARY KEY (`id_module`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_operating_system`
+-- Indexes for table `ps_operating_system`
 --
 ALTER TABLE `ps_operating_system`
   ADD PRIMARY KEY (`id_operating_system`);
 
 --
--- Indeksy dla tabeli `ps_orders`
+-- Indexes for table `ps_orders`
 --
 ALTER TABLE `ps_orders`
   ADD PRIMARY KEY (`id_order`),
@@ -14964,7 +15171,7 @@ ALTER TABLE `ps_orders`
   ADD KEY `date_add` (`date_add`);
 
 --
--- Indeksy dla tabeli `ps_order_carrier`
+-- Indexes for table `ps_order_carrier`
 --
 ALTER TABLE `ps_order_carrier`
   ADD PRIMARY KEY (`id_order_carrier`),
@@ -14973,7 +15180,7 @@ ALTER TABLE `ps_order_carrier`
   ADD KEY `id_order_invoice` (`id_order_invoice`);
 
 --
--- Indeksy dla tabeli `ps_order_cart_rule`
+-- Indexes for table `ps_order_cart_rule`
 --
 ALTER TABLE `ps_order_cart_rule`
   ADD PRIMARY KEY (`id_order_cart_rule`),
@@ -14981,7 +15188,7 @@ ALTER TABLE `ps_order_cart_rule`
   ADD KEY `id_cart_rule` (`id_cart_rule`);
 
 --
--- Indeksy dla tabeli `ps_order_detail`
+-- Indexes for table `ps_order_detail`
 --
 ALTER TABLE `ps_order_detail`
   ADD PRIMARY KEY (`id_order_detail`),
@@ -14992,14 +15199,14 @@ ALTER TABLE `ps_order_detail`
   ADD KEY `id_order_id_order_detail` (`id_order`,`id_order_detail`);
 
 --
--- Indeksy dla tabeli `ps_order_detail_tax`
+-- Indexes for table `ps_order_detail_tax`
 --
 ALTER TABLE `ps_order_detail_tax`
   ADD KEY `id_order_detail` (`id_order_detail`),
   ADD KEY `id_tax` (`id_tax`);
 
 --
--- Indeksy dla tabeli `ps_order_history`
+-- Indexes for table `ps_order_history`
 --
 ALTER TABLE `ps_order_history`
   ADD PRIMARY KEY (`id_order_history`),
@@ -15008,14 +15215,14 @@ ALTER TABLE `ps_order_history`
   ADD KEY `id_order_state` (`id_order_state`);
 
 --
--- Indeksy dla tabeli `ps_order_invoice`
+-- Indexes for table `ps_order_invoice`
 --
 ALTER TABLE `ps_order_invoice`
   ADD PRIMARY KEY (`id_order_invoice`),
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indeksy dla tabeli `ps_order_invoice_payment`
+-- Indexes for table `ps_order_invoice_payment`
 --
 ALTER TABLE `ps_order_invoice_payment`
   ADD PRIMARY KEY (`id_order_invoice`,`id_order_payment`),
@@ -15023,32 +15230,32 @@ ALTER TABLE `ps_order_invoice_payment`
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indeksy dla tabeli `ps_order_invoice_tax`
+-- Indexes for table `ps_order_invoice_tax`
 --
 ALTER TABLE `ps_order_invoice_tax`
   ADD KEY `id_tax` (`id_tax`);
 
 --
--- Indeksy dla tabeli `ps_order_message`
+-- Indexes for table `ps_order_message`
 --
 ALTER TABLE `ps_order_message`
   ADD PRIMARY KEY (`id_order_message`);
 
 --
--- Indeksy dla tabeli `ps_order_message_lang`
+-- Indexes for table `ps_order_message_lang`
 --
 ALTER TABLE `ps_order_message_lang`
   ADD PRIMARY KEY (`id_order_message`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_order_payment`
+-- Indexes for table `ps_order_payment`
 --
 ALTER TABLE `ps_order_payment`
   ADD PRIMARY KEY (`id_order_payment`),
   ADD KEY `order_reference` (`order_reference`);
 
 --
--- Indeksy dla tabeli `ps_order_return`
+-- Indexes for table `ps_order_return`
 --
 ALTER TABLE `ps_order_return`
   ADD PRIMARY KEY (`id_order_return`),
@@ -15056,25 +15263,25 @@ ALTER TABLE `ps_order_return`
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indeksy dla tabeli `ps_order_return_detail`
+-- Indexes for table `ps_order_return_detail`
 --
 ALTER TABLE `ps_order_return_detail`
   ADD PRIMARY KEY (`id_order_return`,`id_order_detail`,`id_customization`);
 
 --
--- Indeksy dla tabeli `ps_order_return_state`
+-- Indexes for table `ps_order_return_state`
 --
 ALTER TABLE `ps_order_return_state`
   ADD PRIMARY KEY (`id_order_return_state`);
 
 --
--- Indeksy dla tabeli `ps_order_return_state_lang`
+-- Indexes for table `ps_order_return_state_lang`
 --
 ALTER TABLE `ps_order_return_state_lang`
   ADD PRIMARY KEY (`id_order_return_state`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_order_slip`
+-- Indexes for table `ps_order_slip`
 --
 ALTER TABLE `ps_order_slip`
   ADD PRIMARY KEY (`id_order_slip`),
@@ -15082,40 +15289,40 @@ ALTER TABLE `ps_order_slip`
   ADD KEY `id_order` (`id_order`);
 
 --
--- Indeksy dla tabeli `ps_order_slip_detail`
+-- Indexes for table `ps_order_slip_detail`
 --
 ALTER TABLE `ps_order_slip_detail`
   ADD PRIMARY KEY (`id_order_slip`,`id_order_detail`);
 
 --
--- Indeksy dla tabeli `ps_order_slip_detail_tax`
+-- Indexes for table `ps_order_slip_detail_tax`
 --
 ALTER TABLE `ps_order_slip_detail_tax`
   ADD KEY `id_order_slip_detail` (`id_order_slip_detail`),
   ADD KEY `id_tax` (`id_tax`);
 
 --
--- Indeksy dla tabeli `ps_order_state`
+-- Indexes for table `ps_order_state`
 --
 ALTER TABLE `ps_order_state`
   ADD PRIMARY KEY (`id_order_state`),
   ADD KEY `module_name` (`module_name`);
 
 --
--- Indeksy dla tabeli `ps_order_state_lang`
+-- Indexes for table `ps_order_state_lang`
 --
 ALTER TABLE `ps_order_state_lang`
   ADD PRIMARY KEY (`id_order_state`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_pack`
+-- Indexes for table `ps_pack`
 --
 ALTER TABLE `ps_pack`
   ADD PRIMARY KEY (`id_product_pack`,`id_product_item`,`id_product_attribute_item`),
   ADD KEY `product_item` (`id_product_item`,`id_product_attribute_item`);
 
 --
--- Indeksy dla tabeli `ps_page`
+-- Indexes for table `ps_page`
 --
 ALTER TABLE `ps_page`
   ADD PRIMARY KEY (`id_page`),
@@ -15123,27 +15330,27 @@ ALTER TABLE `ps_page`
   ADD KEY `id_object` (`id_object`);
 
 --
--- Indeksy dla tabeli `ps_pagenotfound`
+-- Indexes for table `ps_pagenotfound`
 --
 ALTER TABLE `ps_pagenotfound`
   ADD PRIMARY KEY (`id_pagenotfound`),
   ADD KEY `date_add` (`date_add`);
 
 --
--- Indeksy dla tabeli `ps_page_type`
+-- Indexes for table `ps_page_type`
 --
 ALTER TABLE `ps_page_type`
   ADD PRIMARY KEY (`id_page_type`),
   ADD KEY `name` (`name`);
 
 --
--- Indeksy dla tabeli `ps_page_viewed`
+-- Indexes for table `ps_page_viewed`
 --
 ALTER TABLE `ps_page_viewed`
   ADD PRIMARY KEY (`id_page`,`id_date_range`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_product`
+-- Indexes for table `ps_product`
 --
 ALTER TABLE `ps_product`
   ADD PRIMARY KEY (`id_product`),
@@ -15155,13 +15362,13 @@ ALTER TABLE `ps_product`
   ADD KEY `state` (`state`,`date_upd`);
 
 --
--- Indeksy dla tabeli `ps_product_attachment`
+-- Indexes for table `ps_product_attachment`
 --
 ALTER TABLE `ps_product_attachment`
   ADD PRIMARY KEY (`id_product`,`id_attachment`);
 
 --
--- Indeksy dla tabeli `ps_product_attribute`
+-- Indexes for table `ps_product_attribute`
 --
 ALTER TABLE `ps_product_attribute`
   ADD PRIMARY KEY (`id_product_attribute`),
@@ -15172,40 +15379,40 @@ ALTER TABLE `ps_product_attribute`
   ADD KEY `id_product_id_product_attribute` (`id_product_attribute`,`id_product`);
 
 --
--- Indeksy dla tabeli `ps_product_attribute_combination`
+-- Indexes for table `ps_product_attribute_combination`
 --
 ALTER TABLE `ps_product_attribute_combination`
   ADD PRIMARY KEY (`id_attribute`,`id_product_attribute`),
   ADD KEY `id_product_attribute` (`id_product_attribute`);
 
 --
--- Indeksy dla tabeli `ps_product_attribute_image`
+-- Indexes for table `ps_product_attribute_image`
 --
 ALTER TABLE `ps_product_attribute_image`
   ADD PRIMARY KEY (`id_product_attribute`,`id_image`),
   ADD KEY `id_image` (`id_image`);
 
 --
--- Indeksy dla tabeli `ps_product_attribute_shop`
+-- Indexes for table `ps_product_attribute_shop`
 --
 ALTER TABLE `ps_product_attribute_shop`
   ADD PRIMARY KEY (`id_product_attribute`,`id_shop`),
   ADD UNIQUE KEY `id_product` (`id_product`,`id_shop`,`default_on`);
 
 --
--- Indeksy dla tabeli `ps_product_carrier`
+-- Indexes for table `ps_product_carrier`
 --
 ALTER TABLE `ps_product_carrier`
   ADD PRIMARY KEY (`id_product`,`id_carrier_reference`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_product_country_tax`
+-- Indexes for table `ps_product_country_tax`
 --
 ALTER TABLE `ps_product_country_tax`
   ADD PRIMARY KEY (`id_product`,`id_country`);
 
 --
--- Indeksy dla tabeli `ps_product_download`
+-- Indexes for table `ps_product_download`
 --
 ALTER TABLE `ps_product_download`
   ADD PRIMARY KEY (`id_product_download`),
@@ -15213,13 +15420,13 @@ ALTER TABLE `ps_product_download`
   ADD KEY `product_active` (`id_product`,`active`);
 
 --
--- Indeksy dla tabeli `ps_product_group_reduction_cache`
+-- Indexes for table `ps_product_group_reduction_cache`
 --
 ALTER TABLE `ps_product_group_reduction_cache`
   ADD PRIMARY KEY (`id_product`,`id_group`);
 
 --
--- Indeksy dla tabeli `ps_product_lang`
+-- Indexes for table `ps_product_lang`
 --
 ALTER TABLE `ps_product_lang`
   ADD PRIMARY KEY (`id_product`,`id_shop`,`id_lang`),
@@ -15227,14 +15434,14 @@ ALTER TABLE `ps_product_lang`
   ADD KEY `name` (`name`);
 
 --
--- Indeksy dla tabeli `ps_product_sale`
+-- Indexes for table `ps_product_sale`
 --
 ALTER TABLE `ps_product_sale`
   ADD PRIMARY KEY (`id_product`),
   ADD KEY `quantity` (`quantity`);
 
 --
--- Indeksy dla tabeli `ps_product_shop`
+-- Indexes for table `ps_product_shop`
 --
 ALTER TABLE `ps_product_shop`
   ADD PRIMARY KEY (`id_product`,`id_shop`),
@@ -15243,7 +15450,7 @@ ALTER TABLE `ps_product_shop`
   ADD KEY `indexed` (`indexed`,`active`,`id_product`);
 
 --
--- Indeksy dla tabeli `ps_product_supplier`
+-- Indexes for table `ps_product_supplier`
 --
 ALTER TABLE `ps_product_supplier`
   ADD PRIMARY KEY (`id_product_supplier`),
@@ -15251,7 +15458,7 @@ ALTER TABLE `ps_product_supplier`
   ADD KEY `id_supplier` (`id_supplier`,`id_product`);
 
 --
--- Indeksy dla tabeli `ps_product_tag`
+-- Indexes for table `ps_product_tag`
 --
 ALTER TABLE `ps_product_tag`
   ADD PRIMARY KEY (`id_product`,`id_tag`),
@@ -15259,140 +15466,194 @@ ALTER TABLE `ps_product_tag`
   ADD KEY `id_lang` (`id_lang`,`id_tag`);
 
 --
--- Indeksy dla tabeli `ps_profile`
+-- Indexes for table `ps_profile`
 --
 ALTER TABLE `ps_profile`
   ADD PRIMARY KEY (`id_profile`);
 
 --
--- Indeksy dla tabeli `ps_profile_lang`
+-- Indexes for table `ps_profile_lang`
 --
 ALTER TABLE `ps_profile_lang`
   ADD PRIMARY KEY (`id_profile`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_quick_access`
+-- Indexes for table `ps_quick_access`
 --
 ALTER TABLE `ps_quick_access`
   ADD PRIMARY KEY (`id_quick_access`);
 
 --
--- Indeksy dla tabeli `ps_quick_access_lang`
+-- Indexes for table `ps_quick_access_lang`
 --
 ALTER TABLE `ps_quick_access_lang`
   ADD PRIMARY KEY (`id_quick_access`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_range_price`
+-- Indexes for table `ps_range_price`
 --
 ALTER TABLE `ps_range_price`
   ADD PRIMARY KEY (`id_range_price`),
   ADD UNIQUE KEY `id_carrier` (`id_carrier`,`delimiter1`,`delimiter2`);
 
 --
--- Indeksy dla tabeli `ps_range_weight`
+-- Indexes for table `ps_range_weight`
 --
 ALTER TABLE `ps_range_weight`
   ADD PRIMARY KEY (`id_range_weight`),
   ADD UNIQUE KEY `id_carrier` (`id_carrier`,`delimiter1`,`delimiter2`);
 
 --
--- Indeksy dla tabeli `ps_reassurance`
+-- Indexes for table `ps_reassurance`
 --
 ALTER TABLE `ps_reassurance`
   ADD PRIMARY KEY (`id_reassurance`);
 
 --
--- Indeksy dla tabeli `ps_reassurance_lang`
+-- Indexes for table `ps_reassurance_lang`
 --
 ALTER TABLE `ps_reassurance_lang`
   ADD PRIMARY KEY (`id_reassurance`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_referrer`
+-- Indexes for table `ps_referrer`
 --
 ALTER TABLE `ps_referrer`
   ADD PRIMARY KEY (`id_referrer`);
 
 --
--- Indeksy dla tabeli `ps_referrer_cache`
+-- Indexes for table `ps_referrer_cache`
 --
 ALTER TABLE `ps_referrer_cache`
   ADD PRIMARY KEY (`id_connections_source`,`id_referrer`);
 
 --
--- Indeksy dla tabeli `ps_referrer_shop`
+-- Indexes for table `ps_referrer_shop`
 --
 ALTER TABLE `ps_referrer_shop`
   ADD PRIMARY KEY (`id_referrer`,`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_request_sql`
+-- Indexes for table `ps_request_sql`
 --
 ALTER TABLE `ps_request_sql`
   ADD PRIMARY KEY (`id_request_sql`);
 
 --
--- Indeksy dla tabeli `ps_required_field`
+-- Indexes for table `ps_required_field`
 --
 ALTER TABLE `ps_required_field`
   ADD PRIMARY KEY (`id_required_field`),
   ADD KEY `object_name` (`object_name`);
 
 --
--- Indeksy dla tabeli `ps_risk`
+-- Indexes for table `ps_revws_criterion`
+--
+ALTER TABLE `ps_revws_criterion`
+  ADD PRIMARY KEY (`id_criterion`);
+
+--
+-- Indexes for table `ps_revws_criterion_category`
+--
+ALTER TABLE `ps_revws_criterion_category`
+  ADD PRIMARY KEY (`id_criterion`,`id_category`);
+
+--
+-- Indexes for table `ps_revws_criterion_lang`
+--
+ALTER TABLE `ps_revws_criterion_lang`
+  ADD PRIMARY KEY (`id_criterion`,`id_lang`);
+
+--
+-- Indexes for table `ps_revws_criterion_product`
+--
+ALTER TABLE `ps_revws_criterion_product`
+  ADD PRIMARY KEY (`id_criterion`,`id_product`);
+
+--
+-- Indexes for table `ps_revws_review`
+--
+ALTER TABLE `ps_revws_review`
+  ADD PRIMARY KEY (`id_review`),
+  ADD KEY `id_product` (`id_product`),
+  ADD KEY `id_customer` (`id_customer`),
+  ADD KEY `id_guest` (`id_guest`);
+
+--
+-- Indexes for table `ps_revws_review_grade`
+--
+ALTER TABLE `ps_revws_review_grade`
+  ADD PRIMARY KEY (`id_review`,`id_criterion`),
+  ADD KEY `id_review` (`id_review`);
+
+--
+-- Indexes for table `ps_revws_review_image`
+--
+ALTER TABLE `ps_revws_review_image`
+  ADD PRIMARY KEY (`id_image`),
+  ADD KEY `id_review` (`id_review`);
+
+--
+-- Indexes for table `ps_revws_review_reaction`
+--
+ALTER TABLE `ps_revws_review_reaction`
+  ADD PRIMARY KEY (`id_review`,`id_customer`,`id_guest`,`reaction_type`),
+  ADD KEY `id_review` (`id_review`);
+
+--
+-- Indexes for table `ps_risk`
 --
 ALTER TABLE `ps_risk`
   ADD PRIMARY KEY (`id_risk`);
 
 --
--- Indeksy dla tabeli `ps_risk_lang`
+-- Indexes for table `ps_risk_lang`
 --
 ALTER TABLE `ps_risk_lang`
   ADD PRIMARY KEY (`id_risk`,`id_lang`),
   ADD KEY `id_risk` (`id_risk`);
 
 --
--- Indeksy dla tabeli `ps_search_engine`
+-- Indexes for table `ps_search_engine`
 --
 ALTER TABLE `ps_search_engine`
   ADD PRIMARY KEY (`id_search_engine`);
 
 --
--- Indeksy dla tabeli `ps_search_index`
+-- Indexes for table `ps_search_index`
 --
 ALTER TABLE `ps_search_index`
   ADD PRIMARY KEY (`id_word`,`id_product`),
   ADD KEY `id_product` (`id_product`,`weight`);
 
 --
--- Indeksy dla tabeli `ps_search_word`
+-- Indexes for table `ps_search_word`
 --
 ALTER TABLE `ps_search_word`
   ADD PRIMARY KEY (`id_word`),
   ADD UNIQUE KEY `id_lang` (`id_lang`,`id_shop`,`word`);
 
 --
--- Indeksy dla tabeli `ps_sekeyword`
+-- Indexes for table `ps_sekeyword`
 --
 ALTER TABLE `ps_sekeyword`
   ADD PRIMARY KEY (`id_sekeyword`);
 
 --
--- Indeksy dla tabeli `ps_shop`
+-- Indexes for table `ps_shop`
 --
 ALTER TABLE `ps_shop`
   ADD PRIMARY KEY (`id_shop`),
   ADD KEY `IDX_CBDFBB9EF5C9E40` (`id_shop_group`);
 
 --
--- Indeksy dla tabeli `ps_shop_group`
+-- Indexes for table `ps_shop_group`
 --
 ALTER TABLE `ps_shop_group`
   ADD PRIMARY KEY (`id_shop_group`);
 
 --
--- Indeksy dla tabeli `ps_shop_url`
+-- Indexes for table `ps_shop_url`
 --
 ALTER TABLE `ps_shop_url`
   ADD PRIMARY KEY (`id_shop_url`),
@@ -15401,7 +15662,7 @@ ALTER TABLE `ps_shop_url`
   ADD KEY `id_shop` (`id_shop`,`main`);
 
 --
--- Indeksy dla tabeli `ps_smarty_cache`
+-- Indexes for table `ps_smarty_cache`
 --
 ALTER TABLE `ps_smarty_cache`
   ADD PRIMARY KEY (`id_smarty_cache`),
@@ -15410,19 +15671,19 @@ ALTER TABLE `ps_smarty_cache`
   ADD KEY `modified` (`modified`);
 
 --
--- Indeksy dla tabeli `ps_smarty_last_flush`
+-- Indexes for table `ps_smarty_last_flush`
 --
 ALTER TABLE `ps_smarty_last_flush`
   ADD PRIMARY KEY (`type`);
 
 --
--- Indeksy dla tabeli `ps_smarty_lazy_cache`
+-- Indexes for table `ps_smarty_lazy_cache`
 --
 ALTER TABLE `ps_smarty_lazy_cache`
   ADD PRIMARY KEY (`template_hash`,`cache_id`,`compile_id`);
 
 --
--- Indeksy dla tabeli `ps_specific_price`
+-- Indexes for table `ps_specific_price`
 --
 ALTER TABLE `ps_specific_price`
   ADD PRIMARY KEY (`id_specific_price`),
@@ -15438,34 +15699,34 @@ ALTER TABLE `ps_specific_price`
   ADD KEY `to` (`to`);
 
 --
--- Indeksy dla tabeli `ps_specific_price_priority`
+-- Indexes for table `ps_specific_price_priority`
 --
 ALTER TABLE `ps_specific_price_priority`
   ADD PRIMARY KEY (`id_specific_price_priority`,`id_product`),
   ADD UNIQUE KEY `id_product` (`id_product`);
 
 --
--- Indeksy dla tabeli `ps_specific_price_rule`
+-- Indexes for table `ps_specific_price_rule`
 --
 ALTER TABLE `ps_specific_price_rule`
   ADD PRIMARY KEY (`id_specific_price_rule`),
   ADD KEY `id_product` (`id_shop`,`id_currency`,`id_country`,`id_group`,`from_quantity`,`from`,`to`);
 
 --
--- Indeksy dla tabeli `ps_specific_price_rule_condition`
+-- Indexes for table `ps_specific_price_rule_condition`
 --
 ALTER TABLE `ps_specific_price_rule_condition`
   ADD PRIMARY KEY (`id_specific_price_rule_condition`),
   ADD KEY `id_specific_price_rule_condition_group` (`id_specific_price_rule_condition_group`);
 
 --
--- Indeksy dla tabeli `ps_specific_price_rule_condition_group`
+-- Indexes for table `ps_specific_price_rule_condition_group`
 --
 ALTER TABLE `ps_specific_price_rule_condition_group`
   ADD PRIMARY KEY (`id_specific_price_rule_condition_group`,`id_specific_price_rule`);
 
 --
--- Indeksy dla tabeli `ps_state`
+-- Indexes for table `ps_state`
 --
 ALTER TABLE `ps_state`
   ADD PRIMARY KEY (`id_state`),
@@ -15474,13 +15735,13 @@ ALTER TABLE `ps_state`
   ADD KEY `id_zone` (`id_zone`);
 
 --
--- Indeksy dla tabeli `ps_statssearch`
+-- Indexes for table `ps_statssearch`
 --
 ALTER TABLE `ps_statssearch`
   ADD PRIMARY KEY (`id_statssearch`);
 
 --
--- Indeksy dla tabeli `ps_stock`
+-- Indexes for table `ps_stock`
 --
 ALTER TABLE `ps_stock`
   ADD PRIMARY KEY (`id_stock`),
@@ -15489,7 +15750,7 @@ ALTER TABLE `ps_stock`
   ADD KEY `id_product_attribute` (`id_product_attribute`);
 
 --
--- Indeksy dla tabeli `ps_stock_available`
+-- Indexes for table `ps_stock_available`
 --
 ALTER TABLE `ps_stock_available`
   ADD PRIMARY KEY (`id_stock_available`),
@@ -15500,7 +15761,7 @@ ALTER TABLE `ps_stock_available`
   ADD KEY `id_product_attribute` (`id_product_attribute`);
 
 --
--- Indeksy dla tabeli `ps_stock_mvt`
+-- Indexes for table `ps_stock_mvt`
 --
 ALTER TABLE `ps_stock_mvt`
   ADD PRIMARY KEY (`id_stock_mvt`),
@@ -15508,57 +15769,57 @@ ALTER TABLE `ps_stock_mvt`
   ADD KEY `id_stock_mvt_reason` (`id_stock_mvt_reason`);
 
 --
--- Indeksy dla tabeli `ps_stock_mvt_reason`
+-- Indexes for table `ps_stock_mvt_reason`
 --
 ALTER TABLE `ps_stock_mvt_reason`
   ADD PRIMARY KEY (`id_stock_mvt_reason`);
 
 --
--- Indeksy dla tabeli `ps_stock_mvt_reason_lang`
+-- Indexes for table `ps_stock_mvt_reason_lang`
 --
 ALTER TABLE `ps_stock_mvt_reason_lang`
   ADD PRIMARY KEY (`id_stock_mvt_reason`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_store`
+-- Indexes for table `ps_store`
 --
 ALTER TABLE `ps_store`
   ADD PRIMARY KEY (`id_store`);
 
 --
--- Indeksy dla tabeli `ps_store_lang`
+-- Indexes for table `ps_store_lang`
 --
 ALTER TABLE `ps_store_lang`
   ADD PRIMARY KEY (`id_store`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_store_shop`
+-- Indexes for table `ps_store_shop`
 --
 ALTER TABLE `ps_store_shop`
   ADD PRIMARY KEY (`id_store`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_supplier`
+-- Indexes for table `ps_supplier`
 --
 ALTER TABLE `ps_supplier`
   ADD PRIMARY KEY (`id_supplier`);
 
 --
--- Indeksy dla tabeli `ps_supplier_lang`
+-- Indexes for table `ps_supplier_lang`
 --
 ALTER TABLE `ps_supplier_lang`
   ADD PRIMARY KEY (`id_supplier`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_supplier_shop`
+-- Indexes for table `ps_supplier_shop`
 --
 ALTER TABLE `ps_supplier_shop`
   ADD PRIMARY KEY (`id_supplier`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_supply_order`
+-- Indexes for table `ps_supply_order`
 --
 ALTER TABLE `ps_supply_order`
   ADD PRIMARY KEY (`id_supply_order`),
@@ -15567,7 +15828,7 @@ ALTER TABLE `ps_supply_order`
   ADD KEY `reference` (`reference`);
 
 --
--- Indeksy dla tabeli `ps_supply_order_detail`
+-- Indexes for table `ps_supply_order_detail`
 --
 ALTER TABLE `ps_supply_order_detail`
   ADD PRIMARY KEY (`id_supply_order_detail`),
@@ -15576,7 +15837,7 @@ ALTER TABLE `ps_supply_order_detail`
   ADD KEY `id_product_product_attribute` (`id_product`,`id_product_attribute`);
 
 --
--- Indeksy dla tabeli `ps_supply_order_history`
+-- Indexes for table `ps_supply_order_history`
 --
 ALTER TABLE `ps_supply_order_history`
   ADD PRIMARY KEY (`id_supply_order_history`),
@@ -15585,7 +15846,7 @@ ALTER TABLE `ps_supply_order_history`
   ADD KEY `id_state` (`id_state`);
 
 --
--- Indeksy dla tabeli `ps_supply_order_receipt_history`
+-- Indexes for table `ps_supply_order_receipt_history`
 --
 ALTER TABLE `ps_supply_order_receipt_history`
   ADD PRIMARY KEY (`id_supply_order_receipt_history`),
@@ -15593,45 +15854,45 @@ ALTER TABLE `ps_supply_order_receipt_history`
   ADD KEY `id_supply_order_state` (`id_supply_order_state`);
 
 --
--- Indeksy dla tabeli `ps_supply_order_state`
+-- Indexes for table `ps_supply_order_state`
 --
 ALTER TABLE `ps_supply_order_state`
   ADD PRIMARY KEY (`id_supply_order_state`);
 
 --
--- Indeksy dla tabeli `ps_supply_order_state_lang`
+-- Indexes for table `ps_supply_order_state_lang`
 --
 ALTER TABLE `ps_supply_order_state_lang`
   ADD PRIMARY KEY (`id_supply_order_state`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_tab`
+-- Indexes for table `ps_tab`
 --
 ALTER TABLE `ps_tab`
   ADD PRIMARY KEY (`id_tab`);
 
 --
--- Indeksy dla tabeli `ps_tab_advice`
+-- Indexes for table `ps_tab_advice`
 --
 ALTER TABLE `ps_tab_advice`
   ADD PRIMARY KEY (`id_tab`,`id_advice`);
 
 --
--- Indeksy dla tabeli `ps_tab_lang`
+-- Indexes for table `ps_tab_lang`
 --
 ALTER TABLE `ps_tab_lang`
   ADD PRIMARY KEY (`id_tab`,`id_lang`),
   ADD KEY `IDX_CFD9262DED47AB56` (`id_tab`);
 
 --
--- Indeksy dla tabeli `ps_tab_module_preference`
+-- Indexes for table `ps_tab_module_preference`
 --
 ALTER TABLE `ps_tab_module_preference`
   ADD PRIMARY KEY (`id_tab_module_preference`),
   ADD UNIQUE KEY `employee_module` (`id_employee`,`id_tab`,`module`);
 
 --
--- Indeksy dla tabeli `ps_tag`
+-- Indexes for table `ps_tag`
 --
 ALTER TABLE `ps_tag`
   ADD PRIMARY KEY (`id_tag`),
@@ -15639,26 +15900,26 @@ ALTER TABLE `ps_tag`
   ADD KEY `id_lang` (`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_tag_count`
+-- Indexes for table `ps_tag_count`
 --
 ALTER TABLE `ps_tag_count`
   ADD PRIMARY KEY (`id_group`,`id_tag`),
   ADD KEY `id_group` (`id_group`,`id_lang`,`id_shop`,`counter`);
 
 --
--- Indeksy dla tabeli `ps_tax`
+-- Indexes for table `ps_tax`
 --
 ALTER TABLE `ps_tax`
   ADD PRIMARY KEY (`id_tax`);
 
 --
--- Indeksy dla tabeli `ps_tax_lang`
+-- Indexes for table `ps_tax_lang`
 --
 ALTER TABLE `ps_tax_lang`
   ADD PRIMARY KEY (`id_tax`,`id_lang`);
 
 --
--- Indeksy dla tabeli `ps_tax_rule`
+-- Indexes for table `ps_tax_rule`
 --
 ALTER TABLE `ps_tax_rule`
   ADD PRIMARY KEY (`id_tax_rule`),
@@ -15667,26 +15928,26 @@ ALTER TABLE `ps_tax_rule`
   ADD KEY `category_getproducts` (`id_tax_rules_group`,`id_country`,`id_state`,`zipcode_from`);
 
 --
--- Indeksy dla tabeli `ps_tax_rules_group`
+-- Indexes for table `ps_tax_rules_group`
 --
 ALTER TABLE `ps_tax_rules_group`
   ADD PRIMARY KEY (`id_tax_rules_group`);
 
 --
--- Indeksy dla tabeli `ps_tax_rules_group_shop`
+-- Indexes for table `ps_tax_rules_group_shop`
 --
 ALTER TABLE `ps_tax_rules_group_shop`
   ADD PRIMARY KEY (`id_tax_rules_group`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_timezone`
+-- Indexes for table `ps_timezone`
 --
 ALTER TABLE `ps_timezone`
   ADD PRIMARY KEY (`id_timezone`);
 
 --
--- Indeksy dla tabeli `ps_translation`
+-- Indexes for table `ps_translation`
 --
 ALTER TABLE `ps_translation`
   ADD PRIMARY KEY (`id_translation`),
@@ -15694,13 +15955,13 @@ ALTER TABLE `ps_translation`
   ADD KEY `key` (`domain`);
 
 --
--- Indeksy dla tabeli `ps_warehouse`
+-- Indexes for table `ps_warehouse`
 --
 ALTER TABLE `ps_warehouse`
   ADD PRIMARY KEY (`id_warehouse`);
 
 --
--- Indeksy dla tabeli `ps_warehouse_carrier`
+-- Indexes for table `ps_warehouse_carrier`
 --
 ALTER TABLE `ps_warehouse_carrier`
   ADD PRIMARY KEY (`id_warehouse`,`id_carrier`),
@@ -15708,14 +15969,14 @@ ALTER TABLE `ps_warehouse_carrier`
   ADD KEY `id_carrier` (`id_carrier`);
 
 --
--- Indeksy dla tabeli `ps_warehouse_product_location`
+-- Indexes for table `ps_warehouse_product_location`
 --
 ALTER TABLE `ps_warehouse_product_location`
   ADD PRIMARY KEY (`id_warehouse_product_location`),
   ADD UNIQUE KEY `id_product` (`id_product`,`id_product_attribute`,`id_warehouse`);
 
 --
--- Indeksy dla tabeli `ps_warehouse_shop`
+-- Indexes for table `ps_warehouse_shop`
 --
 ALTER TABLE `ps_warehouse_shop`
   ADD PRIMARY KEY (`id_warehouse`,`id_shop`),
@@ -15723,21 +15984,21 @@ ALTER TABLE `ps_warehouse_shop`
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_webservice_account`
+-- Indexes for table `ps_webservice_account`
 --
 ALTER TABLE `ps_webservice_account`
   ADD PRIMARY KEY (`id_webservice_account`),
   ADD KEY `key` (`key`);
 
 --
--- Indeksy dla tabeli `ps_webservice_account_shop`
+-- Indexes for table `ps_webservice_account_shop`
 --
 ALTER TABLE `ps_webservice_account_shop`
   ADD PRIMARY KEY (`id_webservice_account`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
 
 --
--- Indeksy dla tabeli `ps_webservice_permission`
+-- Indexes for table `ps_webservice_permission`
 --
 ALTER TABLE `ps_webservice_permission`
   ADD PRIMARY KEY (`id_webservice_permission`),
@@ -15747,19 +16008,19 @@ ALTER TABLE `ps_webservice_permission`
   ADD KEY `id_webservice_account` (`id_webservice_account`);
 
 --
--- Indeksy dla tabeli `ps_web_browser`
+-- Indexes for table `ps_web_browser`
 --
 ALTER TABLE `ps_web_browser`
   ADD PRIMARY KEY (`id_web_browser`);
 
 --
--- Indeksy dla tabeli `ps_zone`
+-- Indexes for table `ps_zone`
 --
 ALTER TABLE `ps_zone`
   ADD PRIMARY KEY (`id_zone`);
 
 --
--- Indeksy dla tabeli `ps_zone_shop`
+-- Indexes for table `ps_zone_shop`
 --
 ALTER TABLE `ps_zone_shop`
   ADD PRIMARY KEY (`id_zone`,`id_shop`),
@@ -15770,829 +16031,847 @@ ALTER TABLE `ps_zone_shop`
 --
 
 --
--- AUTO_INCREMENT dla tabeli `ps_address`
+-- AUTO_INCREMENT for table `ps_address`
 --
 ALTER TABLE `ps_address`
   MODIFY `id_address` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_admin_filter`
+-- AUTO_INCREMENT for table `ps_admin_filter`
 --
 ALTER TABLE `ps_admin_filter`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_advice`
+-- AUTO_INCREMENT for table `ps_advice`
 --
 ALTER TABLE `ps_advice`
   MODIFY `id_advice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_alias`
+-- AUTO_INCREMENT for table `ps_alias`
 --
 ALTER TABLE `ps_alias`
   MODIFY `id_alias` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_attachment`
+-- AUTO_INCREMENT for table `ps_attachment`
 --
 ALTER TABLE `ps_attachment`
   MODIFY `id_attachment` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_attachment_lang`
+-- AUTO_INCREMENT for table `ps_attachment_lang`
 --
 ALTER TABLE `ps_attachment_lang`
   MODIFY `id_attachment` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_attribute`
+-- AUTO_INCREMENT for table `ps_attribute`
 --
 ALTER TABLE `ps_attribute`
   MODIFY `id_attribute` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_attribute_group`
+-- AUTO_INCREMENT for table `ps_attribute_group`
 --
 ALTER TABLE `ps_attribute_group`
   MODIFY `id_attribute_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_attribute_impact`
+-- AUTO_INCREMENT for table `ps_attribute_impact`
 --
 ALTER TABLE `ps_attribute_impact`
   MODIFY `id_attribute_impact` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_authorization_role`
+-- AUTO_INCREMENT for table `ps_authorization_role`
 --
 ALTER TABLE `ps_authorization_role`
-  MODIFY `id_authorization_role` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=709;
+  MODIFY `id_authorization_role` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=717;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_badge`
+-- AUTO_INCREMENT for table `ps_badge`
 --
 ALTER TABLE `ps_badge`
   MODIFY `id_badge` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=264;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_carrier`
+-- AUTO_INCREMENT for table `ps_carrier`
 --
 ALTER TABLE `ps_carrier`
   MODIFY `id_carrier` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_cart`
+-- AUTO_INCREMENT for table `ps_cart`
 --
 ALTER TABLE `ps_cart`
   MODIFY `id_cart` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_cart_rule`
+-- AUTO_INCREMENT for table `ps_cart_rule`
 --
 ALTER TABLE `ps_cart_rule`
   MODIFY `id_cart_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_cart_rule_product_rule`
+-- AUTO_INCREMENT for table `ps_cart_rule_product_rule`
 --
 ALTER TABLE `ps_cart_rule_product_rule`
   MODIFY `id_product_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_cart_rule_product_rule_group`
+-- AUTO_INCREMENT for table `ps_cart_rule_product_rule_group`
 --
 ALTER TABLE `ps_cart_rule_product_rule_group`
   MODIFY `id_product_rule_group` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_category`
+-- AUTO_INCREMENT for table `ps_category`
 --
 ALTER TABLE `ps_category`
   MODIFY `id_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_cms`
+-- AUTO_INCREMENT for table `ps_cms`
 --
 ALTER TABLE `ps_cms`
   MODIFY `id_cms` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_cms_category`
+-- AUTO_INCREMENT for table `ps_cms_category`
 --
 ALTER TABLE `ps_cms_category`
   MODIFY `id_cms_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_cms_category_shop`
+-- AUTO_INCREMENT for table `ps_cms_category_shop`
 --
 ALTER TABLE `ps_cms_category_shop`
   MODIFY `id_cms_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_cms_role`
+-- AUTO_INCREMENT for table `ps_cms_role`
 --
 ALTER TABLE `ps_cms_role`
   MODIFY `id_cms_role` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_condition`
+-- AUTO_INCREMENT for table `ps_condition`
 --
 ALTER TABLE `ps_condition`
   MODIFY `id_condition` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=272;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_configuration`
+-- AUTO_INCREMENT for table `ps_configuration`
 --
 ALTER TABLE `ps_configuration`
-  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=337;
+  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=350;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_configuration_kpi`
+-- AUTO_INCREMENT for table `ps_configuration_kpi`
 --
 ALTER TABLE `ps_configuration_kpi`
   MODIFY `id_configuration_kpi` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_connections`
+-- AUTO_INCREMENT for table `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_connections_source`
+-- AUTO_INCREMENT for table `ps_connections_source`
 --
 ALTER TABLE `ps_connections_source`
-  MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_contact`
+-- AUTO_INCREMENT for table `ps_contact`
 --
 ALTER TABLE `ps_contact`
   MODIFY `id_contact` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_country`
+-- AUTO_INCREMENT for table `ps_country`
 --
 ALTER TABLE `ps_country`
   MODIFY `id_country` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=245;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_cronjobs`
+-- AUTO_INCREMENT for table `ps_cronjobs`
 --
 ALTER TABLE `ps_cronjobs`
   MODIFY `id_cronjob` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_currency`
+-- AUTO_INCREMENT for table `ps_currency`
 --
 ALTER TABLE `ps_currency`
   MODIFY `id_currency` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_customer`
+-- AUTO_INCREMENT for table `ps_customer`
 --
 ALTER TABLE `ps_customer`
   MODIFY `id_customer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_customer_message`
+-- AUTO_INCREMENT for table `ps_customer_message`
 --
 ALTER TABLE `ps_customer_message`
   MODIFY `id_customer_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_customer_thread`
+-- AUTO_INCREMENT for table `ps_customer_thread`
 --
 ALTER TABLE `ps_customer_thread`
   MODIFY `id_customer_thread` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_customization`
+-- AUTO_INCREMENT for table `ps_customization`
 --
 ALTER TABLE `ps_customization`
   MODIFY `id_customization` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_customization_field`
+-- AUTO_INCREMENT for table `ps_customization_field`
 --
 ALTER TABLE `ps_customization_field`
   MODIFY `id_customization_field` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_date_range`
+-- AUTO_INCREMENT for table `ps_date_range`
 --
 ALTER TABLE `ps_date_range`
   MODIFY `id_date_range` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_delivery`
+-- AUTO_INCREMENT for table `ps_delivery`
 --
 ALTER TABLE `ps_delivery`
   MODIFY `id_delivery` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_emailsubscription`
+-- AUTO_INCREMENT for table `ps_emailsubscription`
 --
 ALTER TABLE `ps_emailsubscription`
   MODIFY `id` int(6) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_employee`
+-- AUTO_INCREMENT for table `ps_employee`
 --
 ALTER TABLE `ps_employee`
   MODIFY `id_employee` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_feature`
+-- AUTO_INCREMENT for table `ps_feature`
 --
 ALTER TABLE `ps_feature`
   MODIFY `id_feature` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_feature_value`
+-- AUTO_INCREMENT for table `ps_feature_value`
 --
 ALTER TABLE `ps_feature_value`
   MODIFY `id_feature_value` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_gender`
+-- AUTO_INCREMENT for table `ps_gender`
 --
 ALTER TABLE `ps_gender`
   MODIFY `id_gender` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_group`
+-- AUTO_INCREMENT for table `ps_group`
 --
 ALTER TABLE `ps_group`
   MODIFY `id_group` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_group_reduction`
+-- AUTO_INCREMENT for table `ps_group_reduction`
 --
 ALTER TABLE `ps_group_reduction`
   MODIFY `id_group_reduction` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_guest`
+-- AUTO_INCREMENT for table `ps_guest`
 --
 ALTER TABLE `ps_guest`
-  MODIFY `id_guest` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_guest` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_homeslider`
+-- AUTO_INCREMENT for table `ps_homeslider`
 --
 ALTER TABLE `ps_homeslider`
   MODIFY `id_homeslider_slides` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_homeslider_slides`
+-- AUTO_INCREMENT for table `ps_homeslider_slides`
 --
 ALTER TABLE `ps_homeslider_slides`
   MODIFY `id_homeslider_slides` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_hook`
+-- AUTO_INCREMENT for table `ps_hook`
 --
 ALTER TABLE `ps_hook`
-  MODIFY `id_hook` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=222;
+  MODIFY `id_hook` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=230;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_hook_alias`
+-- AUTO_INCREMENT for table `ps_hook_alias`
 --
 ALTER TABLE `ps_hook_alias`
   MODIFY `id_hook_alias` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_hook_module_exceptions`
+-- AUTO_INCREMENT for table `ps_hook_module_exceptions`
 --
 ALTER TABLE `ps_hook_module_exceptions`
   MODIFY `id_hook_module_exceptions` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_image`
+-- AUTO_INCREMENT for table `ps_image`
 --
 ALTER TABLE `ps_image`
   MODIFY `id_image` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_image_type`
+-- AUTO_INCREMENT for table `ps_image_type`
 --
 ALTER TABLE `ps_image_type`
   MODIFY `id_image_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_import_match`
+-- AUTO_INCREMENT for table `ps_import_match`
 --
 ALTER TABLE `ps_import_match`
   MODIFY `id_import_match` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_info`
+-- AUTO_INCREMENT for table `ps_info`
 --
 ALTER TABLE `ps_info`
   MODIFY `id_info` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_lang`
+-- AUTO_INCREMENT for table `ps_lang`
 --
 ALTER TABLE `ps_lang`
   MODIFY `id_lang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_layered_category`
+-- AUTO_INCREMENT for table `ps_layered_category`
 --
 ALTER TABLE `ps_layered_category`
   MODIFY `id_layered_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_layered_filter`
+-- AUTO_INCREMENT for table `ps_layered_filter`
 --
 ALTER TABLE `ps_layered_filter`
   MODIFY `id_layered_filter` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_linksmenutop`
+-- AUTO_INCREMENT for table `ps_linksmenutop`
 --
 ALTER TABLE `ps_linksmenutop`
   MODIFY `id_linksmenutop` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_link_block`
+-- AUTO_INCREMENT for table `ps_link_block`
 --
 ALTER TABLE `ps_link_block`
   MODIFY `id_link_block` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_link_block_shop`
+-- AUTO_INCREMENT for table `ps_link_block_shop`
 --
 ALTER TABLE `ps_link_block_shop`
   MODIFY `id_link_block` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_log`
+-- AUTO_INCREMENT for table `ps_log`
 --
 ALTER TABLE `ps_log`
   MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_mail`
+-- AUTO_INCREMENT for table `ps_mail`
 --
 ALTER TABLE `ps_mail`
   MODIFY `id_mail` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_manufacturer`
+-- AUTO_INCREMENT for table `ps_manufacturer`
 --
 ALTER TABLE `ps_manufacturer`
   MODIFY `id_manufacturer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_memcached_servers`
+-- AUTO_INCREMENT for table `ps_memcached_servers`
 --
 ALTER TABLE `ps_memcached_servers`
   MODIFY `id_memcached_server` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_message`
+-- AUTO_INCREMENT for table `ps_message`
 --
 ALTER TABLE `ps_message`
   MODIFY `id_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_meta`
+-- AUTO_INCREMENT for table `ps_meta`
 --
 ALTER TABLE `ps_meta`
-  MODIFY `id_meta` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id_meta` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_module`
+-- AUTO_INCREMENT for table `ps_module`
 --
 ALTER TABLE `ps_module`
-  MODIFY `id_module` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `id_module` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_module_history`
+-- AUTO_INCREMENT for table `ps_module_history`
 --
 ALTER TABLE `ps_module_history`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_module_preference`
+-- AUTO_INCREMENT for table `ps_module_preference`
 --
 ALTER TABLE `ps_module_preference`
   MODIFY `id_module_preference` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_operating_system`
+-- AUTO_INCREMENT for table `ps_operating_system`
 --
 ALTER TABLE `ps_operating_system`
   MODIFY `id_operating_system` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_orders`
+-- AUTO_INCREMENT for table `ps_orders`
 --
 ALTER TABLE `ps_orders`
   MODIFY `id_order` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_order_carrier`
+-- AUTO_INCREMENT for table `ps_order_carrier`
 --
 ALTER TABLE `ps_order_carrier`
   MODIFY `id_order_carrier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_order_cart_rule`
+-- AUTO_INCREMENT for table `ps_order_cart_rule`
 --
 ALTER TABLE `ps_order_cart_rule`
   MODIFY `id_order_cart_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_order_detail`
+-- AUTO_INCREMENT for table `ps_order_detail`
 --
 ALTER TABLE `ps_order_detail`
   MODIFY `id_order_detail` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_order_history`
+-- AUTO_INCREMENT for table `ps_order_history`
 --
 ALTER TABLE `ps_order_history`
   MODIFY `id_order_history` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_order_invoice`
+-- AUTO_INCREMENT for table `ps_order_invoice`
 --
 ALTER TABLE `ps_order_invoice`
   MODIFY `id_order_invoice` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_order_message`
+-- AUTO_INCREMENT for table `ps_order_message`
 --
 ALTER TABLE `ps_order_message`
   MODIFY `id_order_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_order_payment`
+-- AUTO_INCREMENT for table `ps_order_payment`
 --
 ALTER TABLE `ps_order_payment`
   MODIFY `id_order_payment` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_order_return`
+-- AUTO_INCREMENT for table `ps_order_return`
 --
 ALTER TABLE `ps_order_return`
   MODIFY `id_order_return` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_order_return_state`
+-- AUTO_INCREMENT for table `ps_order_return_state`
 --
 ALTER TABLE `ps_order_return_state`
   MODIFY `id_order_return_state` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_order_slip`
+-- AUTO_INCREMENT for table `ps_order_slip`
 --
 ALTER TABLE `ps_order_slip`
   MODIFY `id_order_slip` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_order_state`
+-- AUTO_INCREMENT for table `ps_order_state`
 --
 ALTER TABLE `ps_order_state`
   MODIFY `id_order_state` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_page`
+-- AUTO_INCREMENT for table `ps_page`
 --
 ALTER TABLE `ps_page`
   MODIFY `id_page` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_pagenotfound`
+-- AUTO_INCREMENT for table `ps_pagenotfound`
 --
 ALTER TABLE `ps_pagenotfound`
   MODIFY `id_pagenotfound` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_page_type`
+-- AUTO_INCREMENT for table `ps_page_type`
 --
 ALTER TABLE `ps_page_type`
   MODIFY `id_page_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_product`
+-- AUTO_INCREMENT for table `ps_product`
 --
 ALTER TABLE `ps_product`
   MODIFY `id_product` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_product_attribute`
+-- AUTO_INCREMENT for table `ps_product_attribute`
 --
 ALTER TABLE `ps_product_attribute`
   MODIFY `id_product_attribute` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_product_download`
+-- AUTO_INCREMENT for table `ps_product_download`
 --
 ALTER TABLE `ps_product_download`
   MODIFY `id_product_download` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_product_supplier`
+-- AUTO_INCREMENT for table `ps_product_supplier`
 --
 ALTER TABLE `ps_product_supplier`
   MODIFY `id_product_supplier` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_profile`
+-- AUTO_INCREMENT for table `ps_profile`
 --
 ALTER TABLE `ps_profile`
   MODIFY `id_profile` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_quick_access`
+-- AUTO_INCREMENT for table `ps_quick_access`
 --
 ALTER TABLE `ps_quick_access`
   MODIFY `id_quick_access` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_range_price`
+-- AUTO_INCREMENT for table `ps_range_price`
 --
 ALTER TABLE `ps_range_price`
   MODIFY `id_range_price` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_range_weight`
+-- AUTO_INCREMENT for table `ps_range_weight`
 --
 ALTER TABLE `ps_range_weight`
   MODIFY `id_range_weight` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_reassurance`
+-- AUTO_INCREMENT for table `ps_reassurance`
 --
 ALTER TABLE `ps_reassurance`
   MODIFY `id_reassurance` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_reassurance_lang`
+-- AUTO_INCREMENT for table `ps_reassurance_lang`
 --
 ALTER TABLE `ps_reassurance_lang`
   MODIFY `id_reassurance` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_referrer`
+-- AUTO_INCREMENT for table `ps_referrer`
 --
 ALTER TABLE `ps_referrer`
   MODIFY `id_referrer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_referrer_shop`
+-- AUTO_INCREMENT for table `ps_referrer_shop`
 --
 ALTER TABLE `ps_referrer_shop`
   MODIFY `id_referrer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_request_sql`
+-- AUTO_INCREMENT for table `ps_request_sql`
 --
 ALTER TABLE `ps_request_sql`
   MODIFY `id_request_sql` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_required_field`
+-- AUTO_INCREMENT for table `ps_required_field`
 --
 ALTER TABLE `ps_required_field`
   MODIFY `id_required_field` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_risk`
+-- AUTO_INCREMENT for table `ps_revws_criterion`
+--
+ALTER TABLE `ps_revws_criterion`
+  MODIFY `id_criterion` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `ps_revws_review`
+--
+ALTER TABLE `ps_revws_review`
+  MODIFY `id_review` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `ps_revws_review_image`
+--
+ALTER TABLE `ps_revws_review_image`
+  MODIFY `id_image` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `ps_risk`
 --
 ALTER TABLE `ps_risk`
   MODIFY `id_risk` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_search_engine`
+-- AUTO_INCREMENT for table `ps_search_engine`
 --
 ALTER TABLE `ps_search_engine`
   MODIFY `id_search_engine` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_search_word`
+-- AUTO_INCREMENT for table `ps_search_word`
 --
 ALTER TABLE `ps_search_word`
   MODIFY `id_word` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1379;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_sekeyword`
+-- AUTO_INCREMENT for table `ps_sekeyword`
 --
 ALTER TABLE `ps_sekeyword`
   MODIFY `id_sekeyword` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_shop`
+-- AUTO_INCREMENT for table `ps_shop`
 --
 ALTER TABLE `ps_shop`
   MODIFY `id_shop` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_shop_group`
+-- AUTO_INCREMENT for table `ps_shop_group`
 --
 ALTER TABLE `ps_shop_group`
   MODIFY `id_shop_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_shop_url`
+-- AUTO_INCREMENT for table `ps_shop_url`
 --
 ALTER TABLE `ps_shop_url`
   MODIFY `id_shop_url` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_specific_price`
+-- AUTO_INCREMENT for table `ps_specific_price`
 --
 ALTER TABLE `ps_specific_price`
   MODIFY `id_specific_price` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_specific_price_priority`
+-- AUTO_INCREMENT for table `ps_specific_price_priority`
 --
 ALTER TABLE `ps_specific_price_priority`
   MODIFY `id_specific_price_priority` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_specific_price_rule`
+-- AUTO_INCREMENT for table `ps_specific_price_rule`
 --
 ALTER TABLE `ps_specific_price_rule`
   MODIFY `id_specific_price_rule` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_specific_price_rule_condition`
+-- AUTO_INCREMENT for table `ps_specific_price_rule_condition`
 --
 ALTER TABLE `ps_specific_price_rule_condition`
   MODIFY `id_specific_price_rule_condition` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_specific_price_rule_condition_group`
+-- AUTO_INCREMENT for table `ps_specific_price_rule_condition_group`
 --
 ALTER TABLE `ps_specific_price_rule_condition_group`
   MODIFY `id_specific_price_rule_condition_group` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_state`
+-- AUTO_INCREMENT for table `ps_state`
 --
 ALTER TABLE `ps_state`
   MODIFY `id_state` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=325;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_statssearch`
+-- AUTO_INCREMENT for table `ps_statssearch`
 --
 ALTER TABLE `ps_statssearch`
   MODIFY `id_statssearch` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_stock`
+-- AUTO_INCREMENT for table `ps_stock`
 --
 ALTER TABLE `ps_stock`
   MODIFY `id_stock` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_stock_available`
+-- AUTO_INCREMENT for table `ps_stock_available`
 --
 ALTER TABLE `ps_stock_available`
   MODIFY `id_stock_available` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_stock_mvt`
+-- AUTO_INCREMENT for table `ps_stock_mvt`
 --
 ALTER TABLE `ps_stock_mvt`
   MODIFY `id_stock_mvt` bigint(20) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_stock_mvt_reason`
+-- AUTO_INCREMENT for table `ps_stock_mvt_reason`
 --
 ALTER TABLE `ps_stock_mvt_reason`
   MODIFY `id_stock_mvt_reason` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_store`
+-- AUTO_INCREMENT for table `ps_store`
 --
 ALTER TABLE `ps_store`
   MODIFY `id_store` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_supplier`
+-- AUTO_INCREMENT for table `ps_supplier`
 --
 ALTER TABLE `ps_supplier`
   MODIFY `id_supplier` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_supply_order`
+-- AUTO_INCREMENT for table `ps_supply_order`
 --
 ALTER TABLE `ps_supply_order`
   MODIFY `id_supply_order` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_supply_order_detail`
+-- AUTO_INCREMENT for table `ps_supply_order_detail`
 --
 ALTER TABLE `ps_supply_order_detail`
   MODIFY `id_supply_order_detail` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_supply_order_history`
+-- AUTO_INCREMENT for table `ps_supply_order_history`
 --
 ALTER TABLE `ps_supply_order_history`
   MODIFY `id_supply_order_history` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_supply_order_receipt_history`
+-- AUTO_INCREMENT for table `ps_supply_order_receipt_history`
 --
 ALTER TABLE `ps_supply_order_receipt_history`
   MODIFY `id_supply_order_receipt_history` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_supply_order_state`
+-- AUTO_INCREMENT for table `ps_supply_order_state`
 --
 ALTER TABLE `ps_supply_order_state`
   MODIFY `id_supply_order_state` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_tab`
+-- AUTO_INCREMENT for table `ps_tab`
 --
 ALTER TABLE `ps_tab`
-  MODIFY `id_tab` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
+  MODIFY `id_tab` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=128;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_tab_module_preference`
+-- AUTO_INCREMENT for table `ps_tab_module_preference`
 --
 ALTER TABLE `ps_tab_module_preference`
   MODIFY `id_tab_module_preference` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_tag`
+-- AUTO_INCREMENT for table `ps_tag`
 --
 ALTER TABLE `ps_tag`
   MODIFY `id_tag` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_tax`
+-- AUTO_INCREMENT for table `ps_tax`
 --
 ALTER TABLE `ps_tax`
   MODIFY `id_tax` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_tax_rule`
+-- AUTO_INCREMENT for table `ps_tax_rule`
 --
 ALTER TABLE `ps_tax_rule`
   MODIFY `id_tax_rule` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=131;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_tax_rules_group`
+-- AUTO_INCREMENT for table `ps_tax_rules_group`
 --
 ALTER TABLE `ps_tax_rules_group`
   MODIFY `id_tax_rules_group` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_timezone`
+-- AUTO_INCREMENT for table `ps_timezone`
 --
 ALTER TABLE `ps_timezone`
   MODIFY `id_timezone` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=561;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_translation`
+-- AUTO_INCREMENT for table `ps_translation`
 --
 ALTER TABLE `ps_translation`
   MODIFY `id_translation` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_warehouse`
+-- AUTO_INCREMENT for table `ps_warehouse`
 --
 ALTER TABLE `ps_warehouse`
   MODIFY `id_warehouse` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_warehouse_product_location`
+-- AUTO_INCREMENT for table `ps_warehouse_product_location`
 --
 ALTER TABLE `ps_warehouse_product_location`
   MODIFY `id_warehouse_product_location` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_webservice_account`
+-- AUTO_INCREMENT for table `ps_webservice_account`
 --
 ALTER TABLE `ps_webservice_account`
   MODIFY `id_webservice_account` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_webservice_permission`
+-- AUTO_INCREMENT for table `ps_webservice_permission`
 --
 ALTER TABLE `ps_webservice_permission`
   MODIFY `id_webservice_permission` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_web_browser`
+-- AUTO_INCREMENT for table `ps_web_browser`
 --
 ALTER TABLE `ps_web_browser`
   MODIFY `id_web_browser` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT dla tabeli `ps_zone`
+-- AUTO_INCREMENT for table `ps_zone`
 --
 ALTER TABLE `ps_zone`
   MODIFY `id_zone` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
