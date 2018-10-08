@@ -16,7 +16,7 @@ Starajcie się tego przestrzegać:
 
 -Patrzcie co commitujecie
 
--Testuje to co robiliście
+-Testujcie to co robiliście
 
 -Prestę sclonować do katalogu htdocs/prestashop/
 
