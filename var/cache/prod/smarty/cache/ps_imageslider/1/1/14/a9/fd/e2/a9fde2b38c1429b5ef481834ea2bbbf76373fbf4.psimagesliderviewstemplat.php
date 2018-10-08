@@ -1,31 +1,31 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-06 23:21:44
+/* Smarty version 3.1.32, created on 2018-10-08 19:16:14
   from 'module:psimagesliderviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bb92768060ae7_54719620',
+  'unifunc' => 'content_5bbb90debe92c6_91037993',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6c2108a17c7103b6e203f4f0621d4645b56b0114' => 
     array (
       0 => 'module:psimagesliderviewstemplat',
-      1 => 1537364655,
+      1 => 1538939846,
       2 => 'module',
     ),
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_5bb92768060ae7_54719620 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbb90debe92c6_91037993 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
   <div id="carousel" data-ride="carousel" class="carousel slide" data-interval="5000" data-wrap="true" data-pause="hover">
     <ul class="carousel-inner" role="listbox">
               <li class="carousel-item active" role="option" aria-hidden="false">
           <a href="http://www.prestashop.com/?utm_source=back-office&amp;utm_medium=v17_homeslider&amp;utm_campaign=back-office-PL&amp;utm_content=download">
             <figure>
-              <img src="http://127.0.0.1/prestashop/modules/ps_imageslider/images/sample-1.jpg" alt="sample-1">
+              <img src="http://127.0.0.1:8080/prestashop/modules/ps_imageslider/images/sample-1.jpg" alt="sample-1">
                               <figcaption class="caption">
                   <h2 class="display-1 text-uppercase">Sample 1</h2>
                   <div class="caption-description"><h3>EXCEPTEUR OCCAECAT</h3>
@@ -37,7 +37,7 @@ function content_5bb92768060ae7_54719620 (Smarty_Internal_Template $_smarty_tpl)
               <li class="carousel-item " role="option" aria-hidden="true">
           <a href="http://www.prestashop.com/?utm_source=back-office&amp;utm_medium=v17_homeslider&amp;utm_campaign=back-office-PL&amp;utm_content=download">
             <figure>
-              <img src="http://127.0.0.1/prestashop/modules/ps_imageslider/images/sample-2.jpg" alt="sample-2">
+              <img src="http://127.0.0.1:8080/prestashop/modules/ps_imageslider/images/sample-2.jpg" alt="sample-2">
                               <figcaption class="caption">
                   <h2 class="display-1 text-uppercase">Sample 2</h2>
                   <div class="caption-description"><h3>EXCEPTEUR OCCAECAT</h3>
@@ -49,7 +49,7 @@ function content_5bb92768060ae7_54719620 (Smarty_Internal_Template $_smarty_tpl)
               <li class="carousel-item " role="option" aria-hidden="true">
           <a href="http://www.prestashop.com/?utm_source=back-office&amp;utm_medium=v17_homeslider&amp;utm_campaign=back-office-PL&amp;utm_content=download">
             <figure>
-              <img src="http://127.0.0.1/prestashop/modules/ps_imageslider/images/sample-3.jpg" alt="sample-3">
+              <img src="http://127.0.0.1:8080/prestashop/modules/ps_imageslider/images/sample-3.jpg" alt="sample-3">
                               <figcaption class="caption">
                   <h2 class="display-1 text-uppercase">Sample 3</h2>
                   <div class="caption-description"><h3>EXCEPTEUR OCCAECAT</h3>
