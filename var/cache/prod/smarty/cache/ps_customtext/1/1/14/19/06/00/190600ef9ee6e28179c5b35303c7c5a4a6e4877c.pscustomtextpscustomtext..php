@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-08 19:52:49
+/* Smarty version 3.1.32, created on 2018-10-09 18:55:42
   from 'module:pscustomtextpscustomtext.' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bbb9971d00d75_52101912',
+  'unifunc' => 'content_5bbcdd8ea0d5d2_56657914',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_5bbb9971d00d75_52101912 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbcdd8ea0d5d2_56657914 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="custom-text">
   <h2>H&amp;M Polska</h2>
