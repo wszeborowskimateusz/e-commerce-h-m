@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-06 23:21:44
+/* Smarty version 3.1.32, created on 2018-10-10 19:45:07
   from 'module:psimagesliderviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bb92768060ae7_54719620',
+  'unifunc' => 'content_5bbe3aa3d058f4_30683407',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,42 +18,52 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_5bb92768060ae7_54719620 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bbe3aa3d058f4_30683407 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
   <div id="carousel" data-ride="carousel" class="carousel slide" data-interval="5000" data-wrap="true" data-pause="hover">
     <ul class="carousel-inner" role="listbox">
               <li class="carousel-item active" role="option" aria-hidden="false">
-          <a href="http://www.prestashop.com/?utm_source=back-office&amp;utm_medium=v17_homeslider&amp;utm_campaign=back-office-PL&amp;utm_content=download">
+          <a href="https://www2.hm.com/pl_pl/ona/kampanie/16r-garment-collecting.html">
             <figure>
-              <img src="http://127.0.0.1/prestashop/modules/ps_imageslider/images/sample-1.jpg" alt="sample-1">
+              <img src="http://127.0.0.1/prestashop/modules/ps_imageslider/images/acbeba6ed59a1faecb780bb6411c82a6f9b24071_HM_Baner11.png" alt="">
                               <figcaption class="caption">
-                  <h2 class="display-1 text-uppercase">Sample 1</h2>
-                  <div class="caption-description"><h3>EXCEPTEUR OCCAECAT</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit</p></div>
+                  <h2 class="display-1 text-uppercase">ZAMKNIJ OBIEG MODY</h2>
+                  <div class="caption-description"><p>PROGRAM ZBIÓRKI TEKSTYLIÓW</p>
+<p></p></div>
                 </figcaption>
                           </figure>
           </a>
         </li>
               <li class="carousel-item " role="option" aria-hidden="true">
-          <a href="http://www.prestashop.com/?utm_source=back-office&amp;utm_medium=v17_homeslider&amp;utm_campaign=back-office-PL&amp;utm_content=download">
+          <a href="https://www2.hm.com/pl_pl/dom/kampanie/9768d-bedspread-some-love.html">
             <figure>
-              <img src="http://127.0.0.1/prestashop/modules/ps_imageslider/images/sample-2.jpg" alt="sample-2">
+              <img src="http://127.0.0.1/prestashop/modules/ps_imageslider/images/2ad89241269fb923b138894d1f6c3ec055fe4b1a_HM_Baner14.png" alt="">
                               <figcaption class="caption">
-                  <h2 class="display-1 text-uppercase">Sample 2</h2>
-                  <div class="caption-description"><h3>EXCEPTEUR OCCAECAT</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit</p></div>
+                  <h2 class="display-1 text-uppercase">W SIÓDMYM NIEBIE</h2>
+                  <div class="caption-description"><p>NOWE NARZUTY</p></div>
                 </figcaption>
                           </figure>
           </a>
         </li>
               <li class="carousel-item " role="option" aria-hidden="true">
-          <a href="http://www.prestashop.com/?utm_source=back-office&amp;utm_medium=v17_homeslider&amp;utm_campaign=back-office-PL&amp;utm_content=download">
+          <a href="https://www2.hm.com/pl_pl/divided/campaigns/38m-the-romantic-arrivals.html">
             <figure>
-              <img src="http://127.0.0.1/prestashop/modules/ps_imageslider/images/sample-3.jpg" alt="sample-3">
+              <img src="http://127.0.0.1/prestashop/modules/ps_imageslider/images/68d9f083f28bf1b96a903f99253c20bedd863123_HM_Baner15.png" alt="">
                               <figcaption class="caption">
-                  <h2 class="display-1 text-uppercase">Sample 3</h2>
-                  <div class="caption-description"><h3>EXCEPTEUR OCCAECAT</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit</p></div>
+                  <h2 class="display-1 text-uppercase">DIVIDED</h2>
+                  <div class="caption-description"><p></p>
+<p>ROMANTYCZNE NOWOŚCI</p></div>
+                </figcaption>
+                          </figure>
+          </a>
+        </li>
+              <li class="carousel-item " role="option" aria-hidden="true">
+          <a href="https://www2.hm.com/pl_pl/dziecko/kampanie/4218b-the-knit-knockout.html">
+            <figure>
+              <img src="http://127.0.0.1/prestashop/modules/ps_imageslider/images/f4361ab6a12237ee5fabbd4bdc4cc3e78dbcd914_HM_Baner16.png" alt="">
+                              <figcaption class="caption">
+                  <h2 class="display-1 text-uppercase">DZIANINY NA KAŻDY DZIEŃ</h2>
+                  <div class="caption-description"><p>DODATKI DLA DZIECI</p></div>
                 </figcaption>
                           </figure>
           </a>
