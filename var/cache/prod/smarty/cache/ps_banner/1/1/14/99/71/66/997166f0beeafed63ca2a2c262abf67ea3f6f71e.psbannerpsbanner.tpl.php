@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-10 19:59:59
+/* Smarty version 3.1.32, created on 2018-10-09 18:55:42
   from 'module:psbannerpsbanner.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bbe3e1f510374_51955117',
+  'unifunc' => 'content_5bbcdd8e9b3d09_49392962',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,9 +18,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_5bbe3e1f510374_51955117 (Smarty_Internal_Template $_smarty_tpl) {
-?><a class="banner" href="https://www2.hm.com/content/hmonline/pl_pl/hmclub.guest.html" title="">
-      <img src="http://127.0.0.1/prestashop/modules/ps_banner/img/6b5b0a67400a7b7e220b9ca78beabfe2.png" alt="" title="" class="img-fluid">
+function content_5bbcdd8e9b3d09_49392962 (Smarty_Internal_Template $_smarty_tpl) {
+?><a class="banner" href="http://127.0.0.1:8080/prestashop/" title="">
+      <img src="http://127.0.0.1:8080/prestashop/modules/ps_banner/img/sale70.png" alt="" title="" class="img-fluid">
   </a>
 <?php }
 }

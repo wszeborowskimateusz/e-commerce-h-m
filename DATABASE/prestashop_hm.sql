@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 10 Paź 2018, 20:05
--- Wersja serwera: 10.1.28-MariaDB
--- Wersja PHP: 7.1.10
+-- Czas generowania: 09 Paź 2018, 18:58
+-- Wersja serwera: 10.1.36-MariaDB
+-- Wersja PHP: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -2440,9 +2440,9 @@ INSERT INTO `ps_badge` (`id_badge`, `id_ps_badge`, `type`, `id_group`, `group_po
 (251, 110, 'achievement', 38, 4, 20, 0, 0),
 (252, 111, 'achievement', 38, 5, 25, 0, 0),
 (253, 112, 'achievement', 38, 6, 30, 0, 0),
-(254, 113, 'achievement', 39, 1, 10, 0, 0),
-(255, 114, 'achievement', 39, 2, 20, 0, 0),
-(256, 115, 'achievement', 39, 3, 30, 0, 0),
+(254, 113, 'achievement', 39, 1, 10, 0, 1),
+(255, 114, 'achievement', 39, 2, 20, 0, 1),
+(256, 115, 'achievement', 39, 3, 30, 0, 1),
 (257, 116, 'achievement', 39, 4, 40, 0, 0),
 (258, 117, 'achievement', 39, 5, 50, 0, 0),
 (259, 118, 'achievement', 39, 6, 50, 0, 0),
@@ -3765,10 +3765,10 @@ CREATE TABLE `ps_cms` (
 
 INSERT INTO `ps_cms` (`id_cms`, `id_cms_category`, `position`, `active`, `indexation`) VALUES
 (1, 1, 0, 1, 0),
-(2, 1, 1, 1, 0),
-(3, 1, 2, 1, 0),
-(4, 1, 3, 1, 0),
-(5, 1, 4, 1, 0);
+(2, 1, 4, 0, 0),
+(3, 1, 1, 1, 0),
+(4, 1, 2, 1, 0),
+(5, 1, 3, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3858,11 +3858,11 @@ CREATE TABLE `ps_cms_lang` (
 --
 
 INSERT INTO `ps_cms_lang` (`id_cms`, `id_lang`, `id_shop`, `meta_title`, `meta_description`, `meta_keywords`, `content`, `link_rewrite`) VALUES
-(1, 1, 1, 'Delivery', 'Our terms and conditions of delivery', 'conditions, delivery, delay, shipment, pack', '<h2>Shipments and returns</h2><h3>Your pack shipment</h3><p>Packages are generally dispatched within 2 days after receipt of payment and are shipped via UPS with tracking and drop-off without signature. If you prefer delivery by UPS Extra with required signature, an additional cost will be applied, so please contact us before choosing this method. Whichever shipment choice you make, we will provide you with a link to track your package online.</p><p>Shipping fees include handling and packing fees as well as postage costs. Handling fees are fixed, whereas transport fees vary according to total weight of the shipment. We advise you to group your items in one order. We cannot group two distinct orders placed separately, and shipping fees will apply to each of them. Your package will be dispatched at your own risk, but special care is taken to protect fragile objects.<br /><br />Boxes are amply sized and your items are well-protected.</p>', 'delivery'),
-(2, 1, 1, 'Legal Notice', 'Legal notice', 'notice, legal, credits', '<h2>Legal</h2><h3>Credits</h3><p>Concept and production:</p><p>This Web site was created using <a href=\"http://www.prestashop.com\">PrestaShop</a>&trade; open-source software.</p>', 'legal-notice'),
-(3, 1, 1, 'Terms and conditions of use', 'Our terms and conditions of use', 'conditions, terms, use, sell', '<h2>Your terms and conditions of use</h2><h3>Rule 1</h3><p>Here is the rule 1 content</p>\r\n<h3>Rule 2</h3><p>Here is the rule 2 content</p>\r\n<h3>Rule 3</h3><p>Here is the rule 3 content</p>', 'terms-and-conditions-of-use'),
-(4, 1, 1, 'About us', 'Learn more about us', 'about us, informations', '<h2>About us</h2>\r\n<h3>Our company</h3><p>Our company</p>\r\n<h3>Our team</h3><p>Our team</p>\r\n<h3>Informations</h3><p>Informations</p>', 'about-us'),
-(5, 1, 1, 'Secure payment', 'Our secure payment mean', 'secure payment, ssl, visa, mastercard, paypal', '<h2>Secure payment</h2>\r\n<h3>Our secure payment</h3><p>With SSL</p>\r\n<h3>Using Visa/Mastercard/Paypal</h3><p>About this services</p>', 'secure-payment');
+(1, 1, 1, 'Dostawa', 'Nasze warunki dostawy', 'conditions, delivery, delay, shipment, pack', '<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:13.999999999999998pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Dokąd wysyłamy zamówienia?</span></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><b style=\"font-weight:normal;\" id=\"docs-internal-guid-edaf886f-7fff-53cb-565a-8edbb6f2bece\"> </b></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Zamówienia złożone na stronie polskiego sklepu mogą zostać dostarczone tylko osobom, które ukończyły 18 lat i mieszkają w Polsce.</span></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\"> </span></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Dostawa następnego dnia jest dostępna niemal w całym kraju. Na etapie finalizacji zamówienia wyświetlane są wszystkie opcje dostępne dla danego adresu.</span></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><b style=\"font-weight:normal;\"><br /><br /></b></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:13.999999999999998pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Ile trwa dostawa?</span></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><b style=\"font-weight:normal;\"> </b></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Twoje zamówienie z dostawą standardową powinno zostać dostarczone w ciągu 3-6 dni roboczych od momentu mailowego potwierdzenia wysłania produktów.</span></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\"> </span></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Aby skorzystać z dostawy następnego dnia, musisz złożyć zamówienie przed 14:30. Dostarczamy paczki w dniach poniedziałek-piątek, z wyjątkiem świąt państwowych. Zamówienie złożone w dzień roboczy do 14:30, będzie doręczone w następny dzień roboczy. Zamówienie złożone w dzień roboczy po 14:30, będzie doręczone w ciągu 2 dni roboczych. Zamówienie złożone w piątek po 14:30 oraz w sobotę i niedzielę, będzie doręczone we wtorek.</span></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"></p>', 'dostawa'),
+(2, 1, 1, 'Legal Notice', 'Legal notice', 'notice, legal, credits', '<h2>Legal</h2>\r\n<h3>Credits</h3>\r\n<p>Concept and production:</p>\r\n<p>This Web site was created using <a href=\"http://www.prestashop.com\">PrestaShop</a>™ open-source software.</p>', 'legal-notice'),
+(3, 1, 1, 'Polityka Prywatności', 'Nasza polityka prywatności', 'conditions, terms, use, sell', '<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><strong><span style=\"font-size:14pt;font-family:Arial;color:#000000;background-color:#ffffff;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">POLITYKA PRYWATNOŚCI</span></strong></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Zachowanie poufności danych jest dla H&amp;M niezwykle ważne i chcemy, aby każdy klient wiedział, w jaki sposób je przetwarzamy. Dlatego sporządziliśmy Politykę prywatności, która opisuje sposób ochrony i przetwarzania danych osobowych.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><strong><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Kto kontroluje Twoje dane osobowe?</span></strong></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Przekazywane nam dane osobowe są kontrolowane przez szwedzką spółkę H &amp; M Hennes &amp; Mauritz GBC AB („H&amp;M”). Chroni ona także Twoje dane na mocy odpowiedniego prawa o ochronie danych osobowych. </span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">H &amp; M Hennes &amp; Mauritz GBC AB</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Mäster Samuelsgatan 46</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">106 38 Sztokholm</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Szwecja</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Rejestr firm: Bolagsverket/Szwedzki Urząd Rejestracji Przedsiębiorstw</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Numer rejestracji firmy: 556070-1715</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Autoryzowany przedstawiciel: Karl-Johan Persson</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Numer VAT: NR VAT SE556070171501</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Gdzie przechowujemy Twoje dane?</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Zebrane dane osobowe przechowujemy na terenie Europejskiego Obszaru Gospodarczego („EOG”), ale mogą one być także przesyłane do kraju spoza tego obszaru i tam przetwarzane. Każda operacja przesyłania danych osobowych jest wykonywana zgodnie z obowiązującym prawem. Jeśli dane są przekazywane poza obszar EOG, H&amp;M stosuje Standardowe klauzule umowne oraz Tarczę prywatności jako środki zabezpieczające w odniesieniu do krajów, w przypadku których Komisja Europejska nie stwierdziła odpowiedniego poziomu ochrony danych.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><strong><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Kto ma dostęp do Twoich danych?</span></strong></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Twoje dane mogą być udostępniane w ramach grupy H&amp;M (więcej informacji o firmach z grupy H&amp;M znajdziesz w naszym raporcie rocznym dostępnym na stronie about.hm.com). Lokalny oddział H&amp;M odpowiada jedynie za przetwarzanie danych osobowych i przetwarza je w imieniu spółki zarejestrowanej w Szwecji.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\"> Nigdy nie przekazujemy Twoich danych, nie sprzedajemy ich ani nie wymieniamy się nimi w celach marketingowych z podmiotami spoza Grupy H&amp;M. Dane przekazywane podmiotom zewnętrznym są używane tylko do świadczenia Ci naszych usług. Szczegółowe informacje na temat kategorii podmiotów zewnętrznych znajdziesz pod opisem procesów poniżej.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><strong><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Jakie są podstawy prawne przetwarzania danych?</span></strong></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">W przypadku przetwarzania uzyskanych od Ciebie danych osobowych każdorazowo poinformujemy Cię, czy zostały one przekazane w sposób regulaminowy, czy jest wymagane podpisanie umowy oraz czy masz obowiązek przekazać swoje dane osobowe i jakie są możliwe konsekwencje niewyrażenia na to zgody.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><strong><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Jakie masz prawa?</span></strong></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Prawo dostępu do danych:  </span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">W każdej chwili masz prawo zażądać informacji o tym, które Twoje dane osobowe przechowujemy. Aby to zrobić, skontaktuj się z H&amp;M – otrzymasz te informacje pocztą e-mail.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\"><strong>Prawo do przenoszenia:</strong> </span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Gdy H&amp;M przetwarza Twoje dane osobowe w sposób zautomatyzowany, na podstawie Twojej zgody lub zawartej umowy, masz prawo otrzymać kopię swoich danych w ustrukturyzowanym, powszechnie używanym i możliwym do odczytania formacie. Kopia ta może zostać przesłana do Ciebie lub do innego podmiotu. Dotyczy to wyłącznie danych osobowych, które zostały nam przekazane.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\"><strong>Prawo do poprawiania danych:</strong> </span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Masz prawo zażądać poprawienia swoich danych osobowych, jeśli są one niepoprawne, a także do uzupełnienia niekompletnych danych.  Jeśli masz konto H&amp;M lub konto w H&amp;M Club, możesz edytować swoje dane osobowe na stronie swojego konta H&amp;M lub w strefie H&amp;M Club.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\"><strong>Prawo do usunięcia danych:</strong> </span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Masz prawo w każdej chwili usunąć jakiekolwiek dane przetwarzane przez H&amp;M, z wyjątkiem następujących sytuacji:</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">* masz niezakończone postępowanie z Działem Obsługi Klienta</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">* masz otwarte zamówienie, które nie zostało jeszcze wysłane lub zostało wysłane tylko częściowo</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">* masz nieuregulowany dług wobec H&amp;M, niezależnie od metody płatności</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">* jeśli podejrzewamy lub mamy pewność, że w ciągu ostatnich czterech lat korzystałaś(eś) z naszych usług w niewłaściwy sposób</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">* Twój dług został sprzedany firmie zewnętrznej w ciągu ostatnich trzech lat lub jednego roku (w przypadku klientów, którzy zmarli)</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">* Twój wniosek kredytowy został odrzucony w ciągu ostatnich trzech miesięcy</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">* Jeśli dokonałaś(eś) jakikolwiek zakupów, zachowamy Twoje dane osobowe dotyczące transakcji w celach księgowych</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><strong><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Twoje prawo do niewyrażenia zgody na przetwarzanie danych na podstawie uzasadnionego interesu H&amp;M:  </span></strong></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Masz prawo do niewyrażenia zgody na przetwarzanie Twoich danych na podstawie uzasadnionego interesu H&amp;M. H&amp;M zaprzestanie przetwarzania Twoich danych osobowych, chyba że będziemy w stanie znaleźć zgodne z prawem uzasadnienie tego procesu, które unieważni Twój interes lub prawa; albo z powodu roszczeń prawnych.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><strong><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Prawo do niewyrażenia zgody na marketing bezpośredni:</span></strong></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Masz prawo nie zgodzić się na otrzymywanie materiałów marketingu bezpośredniego, w tym także na sporządzanie analizy Twojego profilu, która jest przygotowywana w celu przygotowania takich materiałów.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Możesz zrezygnować z otrzymywania materiałów marketingu bezpośredniego w następujący sposób:</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">* wykonując instrukcje zawarte w każdej takiej wiadomości e-mail</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">* edytując ustawienia swojego konta H&amp;M</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\"><strong>Prawo do ograniczenia:</strong> </span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Masz prawo zażądać, aby H&amp;M ograniczył przetwarzanie Twoich danych osobowych pod następującymi warunkami:</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">* jeśli nie zgodzisz się na przetwarzanie danych na podstawie uzasadnionego interesu H&amp;M, wtedy H&amp;M ograniczy jakiekolwiek przetwarzanie takich danych po zweryfikowaniu, czy istnieje taki uzasadniony interes.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">* jeśli zgłosisz, że Twoje dane osobowe są niepoprawne, wtedy H&amp;M musi ograniczyć jakiekolwiek przetwarzanie danych do momentu zweryfikowania ich poprawności.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">* jeśli przetwarzanie danych jest niezgodne z prawem, wtedy możesz nie zgodzić się na wykasowanie danych osobowych i zamiast tego zażądać ograniczenia używania Twoich danych osobowych.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">* jeśli H&amp;M nie potrzebuje już Twoich danych osobowych, ale są one wymagane do zgłoszenia lub oddalenia roszczenia.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><strong><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Jak możesz korzystać ze swoich praw?</span></strong></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Bardzo poważnie podchodzimy do ochrony danych, dlatego wyznaczyliśmy grupę pracowników, która będzie odpowiadać wyłącznie na pytania dotyczące powyższych kwestii. Aby się z nimi skontaktować, napisz na adres dataprotection.pl@hm.com.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><strong><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Inspektor Ochrony Danych Osobowych:</span></strong></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Aby zagwarantować, że Twoje dane zawsze będą przetwarzane wiernie, w sposób transparentny i zgodny z prawem, wyznaczyliśmy Inspektora Ochrony Danych Osobowych. Aby skontaktować się z Inspektorem Ochrony Danych Osobowych, napisz na adres dataprotection.pl@hm.com, a w temacie wiadomości wpisz „DPO”.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><strong><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Prawo zgłoszenia skargi w organie nadzorczym:  </span></strong></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Jeśli uważasz, że H&amp;M przetwarza Twoje dane osobowe w niewłaściwy sposób, możesz się z nami skontaktować. Masz też prawo zgłosić skargę w organie nadzorczym.</span></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"> </h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;background-color:#ffffff;\"><strong><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Uaktualnienia naszych Zasad prywatności:</span></strong></h2>\r\n<h2></h2>\r\n<h2 dir=\"ltr\" style=\"line-height:1.44;margin-top:0pt;margin-bottom:4pt;border-bottom:solid #dee2e6 .75pt;background-color:#ffffff;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">W przyszłości może zajść konieczność aktualizacji Zasad prywatności. Ich najnowsza wersja będzie zawsze dostępna na naszej stronie. Będziemy informować o każdej zmianie treści Zasad prywatności, na przykład o zmianach dotyczących celu, w jakim korzystamy z Twoich danych osobowych, tożsamości Inspektora Ochrony Danych Osobowych lub Twoich praw.</span></h2>', 'polityka-prywatnosci'),
+(4, 1, 1, 'O nas', 'Dowiedz się więcej o grupie H&M', 'about us, informations', '<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:13.999999999999998pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Grupa H&amp;M</span></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><b style=\"font-weight:normal;\" id=\"docs-internal-guid-b2ebbf7e-7fff-9a64-0af8-69511eb12596\"> </b></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Do grupy H&amp;M należy 9 unikalnych marek, zjednoczonych przez wspólną pasję: aby tworzyć modę dostępną dla wszystkich i aby prowadzić do bardziej złączonego oraz trwałego świata.</span></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><b style=\"font-weight:normal;\"><br /><br /><br /></b></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:13.999999999999998pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Nasze marki</span></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"></p>\r\n<p dir=\"ltr\" style=\"line-height:1.38;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:12pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;\">Grupa H &amp; M obejmuje dziewięć jasno zdefiniowanych marek - H&amp;M, COS, Monki, Weekday, &amp; Other Stories, Cheap Monday, H&amp;M Home, ARKET and Afound. Razem nasze marki oferują klientom bogactwo stylów i trendów w zakresie mody, urody, akcesoriów i artykułów domowych, a także nowoczesnej, zdrowej żywności. Każda marka ciągle pracuje, aby zawsze była na topie, podczas gdy inwestycje grupy H&amp;M w łańcuch dostaw, technologie, zaawansowane analizy i sztuczną inteligencję przyniosą korzyści także klientom wszystkich marek w grupie.</span></p>', 'o-nas'),
+(5, 1, 1, 'Secure payment', 'Our secure payment mean', 'secure payment, ssl, visa, mastercard, paypal', '<h2>Secure payment</h2>\r\n<h3>Our secure payment</h3>\r\n<p>With SSL</p>\r\n<h3>Using Visa/Mastercard/Paypal</h3>\r\n<p>About this services</p>', 'secure-payment');
 
 -- --------------------------------------------------------
 
@@ -3945,278 +3945,278 @@ CREATE TABLE `ps_condition` (
 --
 
 INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`, `operator`, `value`, `result`, `calculation_type`, `calculation_detail`, `validated`, `date_add`, `date_upd`) VALUES
-(1, 1, 'configuration', 'PS_REWRITING_SETTINGS', '==', '1', '1', 'hook', 'actionAdminMetaControllerUpdate_optionsAfter', 1, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(2, 2, 'configuration', 'PS_SMARTY_FORCE_COMPILE', '!=', '2', '1', 'hook', 'actionAdminPerformanceControllerSaveAfter', 1, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(3, 3, 'configuration', 'PS_CSS_THEME_CACHE', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(4, 4, 'configuration', 'PS_CIPHER_ALGORITHM', '==', '1', '1', 'hook', 'actionAdminPerformanceControllerSaveAfter', 1, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(5, 5, 'configuration', 'PS_MEDIA_SERVERS', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(6, 6, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '0', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(7, 7, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(8, 8, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '0', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(9, 9, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '1', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(10, 10, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '0', '0', 'hook', 'actionObjectProductAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(11, 11, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9', '0', 'hook', 'actionObjectProductAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(12, 12, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99', '0', 'hook', 'actionObjectProductAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(13, 13, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '999', '0', 'hook', 'actionObjectProductAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(14, 14, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9999', '0', 'hook', 'actionObjectProductAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(15, 15, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99999', '0', 'hook', 'actionObjectProductAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(16, 16, 'configuration', 'PS_SHOP_PHONE', '!=', '0', '', 'hook', 'actionAdminStoresControllerUpdate_optionsAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(17, 17, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '2', '2', 'hook', 'actionObjectContactAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(18, 18, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '4', '2', 'hook', 'actionObjectContactAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(19, 19, 'install', '', '>', '0', '1', 'time', '1', 1, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(20, 20, 'install', '', '>=', '7', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(21, 21, 'configuration', 'PS_LOGO', '!=', 'logo.jpg', '1', 'hook', 'actionAdminThemesControllerUpdate_optionsAfter', 1, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(22, 22, 'sql', 'SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"', '>', '0', '0', 'hook', 'actionObjectShopUpdateAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(24, 24, 'configuration', 'PS_MULTISHOP_FEATURE_ACTIVE', '==', '1', '', 'hook', 'actionAdminPreferencesControllerUpdate_optionsAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(25, 25, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '1', '1', 'hook', 'actionObjectShopAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '1', 'hook', 'actionObjectShopAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(27, 27, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '5', '1', 'hook', 'actionObjectShopGroupAddAfter 	', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(28, 28, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '1', '1', 'hook', 'actionObjectShopGroupAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(29, 29, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '2', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '500', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '5000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '50000', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(34, 34, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '500000', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(35, 35, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '5000000', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(36, 36, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '50000000', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(37, 37, 'install', '', '>=', '30', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '4', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '4', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '4', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '4', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '4', 'time', '3', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '3', 'time', '4', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(47, 47, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '2', '0', 'hook', 'actionObjectCartAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(48, 48, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10', '0', 'hook', 'actionObjectCartAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '0', 'hook', 'actionObjectCartAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '0', 'time', '4', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(52, 52, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100000', '0', 'time', '8', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(53, 53, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(54, 54, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(55, 55, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(56, 56, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(57, 57, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '0', 'time', '4', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(58, 58, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100000', '0', 'time', '8', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(59, 59, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1', '0', 'hook', 'actionObjectCustomerAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '0', 'hook', 'actionObjectCustomerAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '0', 'hook', 'actionObjectCustomerAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '0', 'time', '4', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '0', 'time', '8', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(71, 71, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\"BE\",\"DE\",\"FR\",\"FX\",\"GB\",\"IE\",\"LU\",\"MC\",\"NL\")', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(72, 72, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\"IT\",\r\n\"MT\",\r\n\"SM\",\r\n\"VA\",\r\n\"AD\",\r\n\"ES\",\r\n\"GI\",\r\n\"PT\")', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(73, 73, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BY\",\r\n\"EE\",\r\n\"LT\",\r\n\"LV\",\r\n\"MD\",\r\n\"PL\",\r\n\"UA\",\r\n\"AL\",\r\n\"BA\",\r\n\"BG\",\r\n\"GR\",\r\n\"HR\",\r\n\"MK\",\r\n\"RO\",\r\n\"SI\",\r\n\"YU\",\r\n\"RU\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(74, 74, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"AT\",\r\n\"CH\",\r\n\"CZ\",\r\n\"HU\",\r\n\"LI\",\r\n\"SK\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(75, 75, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DK\",\r\n\"FI\",\r\n\"FO\",\r\n\"IS\",\r\n\"NO\",\r\n\"SE\",\r\n\"SJ\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(76, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(77, 79, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(78, 85, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"KG\",\r\n\"KZ\",\r\n\"TJ\",\r\n\"TM\",\r\n\"UZ\",\r\n\"AE\",\r\n\"AM\",\r\n\"AZ\",\r\n\"BH\",\r\n\"CY\",\r\n\"GE\",\r\n\"IL\",\r\n\"IQ\",\r\n\"IR\",\r\n\"JO\",\r\n\"KW\",\r\n\"LB\",\r\n\"OM\",\r\n\"QA\",\r\n\"SA\",\r\n\"SY\",\r\n\"TR\",\r\n\"YE\",\r\n\"AF\",\r\n\"BD\",\r\n\"BT\",\r\n\"IN\",\r\n\"IO\",\r\n\"LK\",\r\n\"MV\",\r\n\"NP\",\r\n\"PK\",\r\n\"CN\",\r\n\"HK\",\r\n\"JP\",\r\n\"KP\",\r\n\"KR\",\r\n\"MO\",\r\n\"TW\",\r\n\"MN\",\r\n\"BN\",\r\n\"CC\",\r\n\"CX\",\r\n\"ID\",\r\n\"KH\",\r\n\"LA\",\r\n\"MM\",\r\n\"MY\",\r\n\"PH\",\r\n\"SG\",\r\n\"TH\",\r\n\"TP\",\r\n\"VN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(79, 86, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BZ\",\r\n\"CR\",\r\n\"GT\",\r\n\"HN\",\r\n\"MX\",\r\n\"NI\",\r\n\"PA\",\r\n\"SV\",\r\n\"AG\",\r\n\"AI\",\r\n\"AN\",\r\n\"AW\",\r\n\"BB\",\r\n\"BM\",\r\n\"BS\",\r\n\"CU\",\r\n\"DM\",\r\n\"DO\",\r\n\"GD\",\r\n\"GP\",\r\n\"HT\",\r\n\"JM\",\r\n\"KN\",\r\n\"KY\",\r\n\"LC\",\r\n\"MQ\",\r\n\"MS\",\r\n\"PR\",\r\n\"TC\",\r\n\"TT\",\r\n\"VC\",\r\n\"VG\",\r\n\"VI\",\r\n\"AR\",\r\n\"BO\",\r\n\"BR\",\r\n\"CL\",\r\n\"CO\",\r\n\"EC\",\r\n\"FK\",\r\n\"GF\",\r\n\"GY\",\r\n\"PE\",\r\n\"PY\",\r\n\"SR\",\r\n\"UY\",\r\n\"VE\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(80, 88, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BI\",\r\n\"CF\",\r\n\"CG\",\r\n\"RW\",\r\n\"TD\",\r\n\"ZR\",\r\n\"DJ\",\r\n\"ER\",\r\n\"ET\",\r\n\"KE\",\r\n\"SO\",\r\n\"TZ\",\r\n\"UG\",\r\n\"KM\",\r\n\"MG\",\r\n\"MU\",\r\n\"RE\",\r\n\"SC\",\r\n\"YT\",\r\n\"AO\",\r\n\"BW\",\r\n\"LS\",\r\n\"MW\",\r\n\"MZ\",\r\n\"NA\",\r\n\"SZ\",\r\n\"ZA\",\r\n\"ZM\",\r\n\"ZW\",\r\n\"BF\",\r\n\"BJ\",\r\n\"CI\",\r\n\"CM\",\r\n\"CV\",\r\n\"GA\",\r\n\"GH\",\r\n\"GM\",\r\n\"GN\",\r\n\"GQ\",\r\n\"GW\",\r\n\"LR\",\r\n\"ML\",\r\n\"MR\",\r\n\"NE\",\r\n\"NG\",\r\n\"SL\",\r\n\"SN\",\r\n\"ST\",\r\n\"TG\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(81, 89, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DZ\",\r\n\"EG\",\r\n\"EH\",\r\n\"LY\",\r\n\"MA\",\r\n\"SD\",\r\n\"TN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(82, 90, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '2', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(83, 91, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '3', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(84, 92, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '5', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(85, 93, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '10', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(86, 94, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '20', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(87, 95, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '40', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(88, 96, 'sql', 'SELECT id_image FROM PREFIX_image WHERE id_image > 26', '>', '0', '0', 'hook', 'actionObjectImageAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(89, 97, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50', '23', 'hook', 'actionObjectImageAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(90, 98, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '100', '23', 'hook', 'actionObjectImageAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(91, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '23', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(92, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '23', 'time', '4', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(93, 101, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50000', '23', 'time', '8', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(94, 102, 'sql', 'SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5', '>', '0', '0', 'hook', 'actionObjectCMSAddAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(95, 103, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(96, 104, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '10', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(97, 105, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '100', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(98, 106, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1000', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(99, 107, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '500', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(100, 108, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '5000', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(101, 109, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1', '0', 'hook', 'newOrder', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(102, 110, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(103, 111, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '100', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(104, 112, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(105, 113, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(106, 114, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '5000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(107, 121, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '==', '0', '0', 'time', '1', 1, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(108, 136, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(109, 137, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"hipay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(110, 140, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(111, 141, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ogone%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(112, 142, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(113, 147, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%hipay%\"', '==', '0', '0', 'time', '1', 1, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(114, 152, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '==', '0', '0', 'time', '1', 1, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(115, 155, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%trustly%\"', '==', '0', '0', 'time', '1', 1, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(116, 165, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '0', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(117, 166, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '1', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(118, 167, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '4', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(119, 168, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '9', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(120, 169, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '19', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(121, 170, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '49', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(122, 171, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '1', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(123, 172, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '2', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(124, 173, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '3', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(125, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(126, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(127, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(128, 225, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ferbuy%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(129, 227, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'FERBUY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'FERBUY_MODE\') AND ( value = \'live\'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(130, 246, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%globkurier%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(131, 248, 'configuration', 'GLOBKURIER_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(132, 252, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%gadwords%\" ', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(133, 255, 'configuration', 'HIPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(134, 291, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'OGONE_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'OGONE_MODE\') AND ( value = \'live\'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(135, 301, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPAL_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(136, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(137, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(138, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(139, 328, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%sofortbanking%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(140, 330, 'configuration', 'SOFORTBANKING_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(141, 332, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%textmaster%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(142, 334, 'configuration', 'TEXTMASTER_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(143, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(144, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(145, 360, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ferbuy%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(146, 361, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%globkurier%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(147, 362, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%hipay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(148, 363, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%hipay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(149, 369, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ogone%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(150, 371, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypal%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(151, 372, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypal%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(152, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(153, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(154, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(155, 379, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(156, 380, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(157, 381, 'sql', 'SELECT COUNT(*) FROM PREFIX_textmaster_project WHERE status = \"completed\"', '>=', '1', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(158, 388, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ferbuy%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(159, 389, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%globkurier%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(160, 391, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ogone%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(161, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(162, 396, 'sql', 'SELECT COUNT(*) FROM PREFIX_textmaster_project WHERE status = \"completed\"', '>=', '10', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(163, 416, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pigmbhpaymill%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(164, 418, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pigmbhpaymill%\" AND os.logable = 1', '>=', '1', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(165, 419, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pigmbhpaymill%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(166, 420, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%syspay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(167, 421, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SYSPAY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SYSPAY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(168, 422, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%syspay%\" AND os.logable = 1', '>=', '1', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(169, 423, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%syspay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(170, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(171, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(172, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(173, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(174, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(175, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(176, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(177, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(178, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(179, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(180, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(181, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(182, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(183, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(184, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(185, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(186, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(187, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(188, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(189, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(190, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(191, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(192, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(193, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(194, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(195, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(196, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(197, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(198, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(199, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(200, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(201, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(202, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(203, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(204, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19');
+(1, 1, 'configuration', 'PS_REWRITING_SETTINGS', '==', '1', '1', 'hook', 'actionAdminMetaControllerUpdate_optionsAfter', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(2, 2, 'configuration', 'PS_SMARTY_FORCE_COMPILE', '!=', '2', '1', 'hook', 'actionAdminPerformanceControllerSaveAfter', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(3, 3, 'configuration', 'PS_CSS_THEME_CACHE', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(4, 4, 'configuration', 'PS_CIPHER_ALGORITHM', '==', '1', '1', 'hook', 'actionAdminPerformanceControllerSaveAfter', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(5, 5, 'configuration', 'PS_MEDIA_SERVERS', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(6, 6, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '0', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(7, 7, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(8, 8, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '0', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(9, 9, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '1', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(10, 10, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '0', '0', 'hook', 'actionObjectProductAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(11, 11, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9', '0', 'hook', 'actionObjectProductAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(12, 12, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99', '0', 'hook', 'actionObjectProductAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(13, 13, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '999', '0', 'hook', 'actionObjectProductAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(14, 14, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9999', '0', 'hook', 'actionObjectProductAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(15, 15, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99999', '0', 'hook', 'actionObjectProductAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(16, 16, 'configuration', 'PS_SHOP_PHONE', '!=', '0', '', 'hook', 'actionAdminStoresControllerUpdate_optionsAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(17, 17, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '2', '2', 'hook', 'actionObjectContactAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(18, 18, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '4', '2', 'hook', 'actionObjectContactAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(19, 19, 'install', '', '>', '0', '1', 'time', '1', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(20, 20, 'install', '', '>=', '7', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(21, 21, 'configuration', 'PS_LOGO', '!=', 'logo.jpg', '1', 'hook', 'actionAdminThemesControllerUpdate_optionsAfter', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(22, 22, 'sql', 'SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"', '>', '0', '0', 'hook', 'actionObjectShopUpdateAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:33'),
+(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(24, 24, 'configuration', 'PS_MULTISHOP_FEATURE_ACTIVE', '==', '1', '', 'hook', 'actionAdminPreferencesControllerUpdate_optionsAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(25, 25, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '1', '1', 'hook', 'actionObjectShopAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '1', 'hook', 'actionObjectShopAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(27, 27, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '5', '1', 'hook', 'actionObjectShopGroupAddAfter 	', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(28, 28, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '1', '1', 'hook', 'actionObjectShopGroupAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(29, 29, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '2', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '0', 'hook', 'actionObjectCarrierAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '500', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '5000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '50000', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(34, 34, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '500000', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(35, 35, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '5000000', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(36, 36, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '50000000', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(37, 37, 'install', '', '>=', '30', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:57'),
+(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:58'),
+(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:58'),
+(41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '3', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '3', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '3', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '3', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:58'),
+(45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '3', 'time', '3', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '3', 'time', '4', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(47, 47, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '2', '0', 'hook', 'actionObjectCartAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(48, 48, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10', '0', 'hook', 'actionObjectCartAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '0', 'hook', 'actionObjectCartAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '0', 'time', '4', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(52, 52, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100000', '0', 'time', '8', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(53, 53, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(54, 54, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(55, 55, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '0', 'hook', 'actionObjectOrderAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(56, 56, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:58'),
+(57, 57, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '0', 'time', '4', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(58, 58, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100000', '0', 'time', '8', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(59, 59, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1', '0', 'hook', 'actionObjectCustomerAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '0', 'hook', 'actionObjectCustomerAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '0', 'hook', 'actionObjectCustomerAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:58'),
+(64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '0', 'time', '4', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:58'),
+(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '0', 'time', '8', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(71, 71, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\"BE\",\"DE\",\"FR\",\"FX\",\"GB\",\"IE\",\"LU\",\"MC\",\"NL\")', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(72, 72, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\"IT\",\r\n\"MT\",\r\n\"SM\",\r\n\"VA\",\r\n\"AD\",\r\n\"ES\",\r\n\"GI\",\r\n\"PT\")', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(73, 73, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BY\",\r\n\"EE\",\r\n\"LT\",\r\n\"LV\",\r\n\"MD\",\r\n\"PL\",\r\n\"UA\",\r\n\"AL\",\r\n\"BA\",\r\n\"BG\",\r\n\"GR\",\r\n\"HR\",\r\n\"MK\",\r\n\"RO\",\r\n\"SI\",\r\n\"YU\",\r\n\"RU\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(74, 74, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"AT\",\r\n\"CH\",\r\n\"CZ\",\r\n\"HU\",\r\n\"LI\",\r\n\"SK\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(75, 75, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DK\",\r\n\"FI\",\r\n\"FO\",\r\n\"IS\",\r\n\"NO\",\r\n\"SE\",\r\n\"SJ\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(76, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(77, 79, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(78, 85, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"KG\",\r\n\"KZ\",\r\n\"TJ\",\r\n\"TM\",\r\n\"UZ\",\r\n\"AE\",\r\n\"AM\",\r\n\"AZ\",\r\n\"BH\",\r\n\"CY\",\r\n\"GE\",\r\n\"IL\",\r\n\"IQ\",\r\n\"IR\",\r\n\"JO\",\r\n\"KW\",\r\n\"LB\",\r\n\"OM\",\r\n\"QA\",\r\n\"SA\",\r\n\"SY\",\r\n\"TR\",\r\n\"YE\",\r\n\"AF\",\r\n\"BD\",\r\n\"BT\",\r\n\"IN\",\r\n\"IO\",\r\n\"LK\",\r\n\"MV\",\r\n\"NP\",\r\n\"PK\",\r\n\"CN\",\r\n\"HK\",\r\n\"JP\",\r\n\"KP\",\r\n\"KR\",\r\n\"MO\",\r\n\"TW\",\r\n\"MN\",\r\n\"BN\",\r\n\"CC\",\r\n\"CX\",\r\n\"ID\",\r\n\"KH\",\r\n\"LA\",\r\n\"MM\",\r\n\"MY\",\r\n\"PH\",\r\n\"SG\",\r\n\"TH\",\r\n\"TP\",\r\n\"VN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(79, 86, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BZ\",\r\n\"CR\",\r\n\"GT\",\r\n\"HN\",\r\n\"MX\",\r\n\"NI\",\r\n\"PA\",\r\n\"SV\",\r\n\"AG\",\r\n\"AI\",\r\n\"AN\",\r\n\"AW\",\r\n\"BB\",\r\n\"BM\",\r\n\"BS\",\r\n\"CU\",\r\n\"DM\",\r\n\"DO\",\r\n\"GD\",\r\n\"GP\",\r\n\"HT\",\r\n\"JM\",\r\n\"KN\",\r\n\"KY\",\r\n\"LC\",\r\n\"MQ\",\r\n\"MS\",\r\n\"PR\",\r\n\"TC\",\r\n\"TT\",\r\n\"VC\",\r\n\"VG\",\r\n\"VI\",\r\n\"AR\",\r\n\"BO\",\r\n\"BR\",\r\n\"CL\",\r\n\"CO\",\r\n\"EC\",\r\n\"FK\",\r\n\"GF\",\r\n\"GY\",\r\n\"PE\",\r\n\"PY\",\r\n\"SR\",\r\n\"UY\",\r\n\"VE\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(80, 88, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BI\",\r\n\"CF\",\r\n\"CG\",\r\n\"RW\",\r\n\"TD\",\r\n\"ZR\",\r\n\"DJ\",\r\n\"ER\",\r\n\"ET\",\r\n\"KE\",\r\n\"SO\",\r\n\"TZ\",\r\n\"UG\",\r\n\"KM\",\r\n\"MG\",\r\n\"MU\",\r\n\"RE\",\r\n\"SC\",\r\n\"YT\",\r\n\"AO\",\r\n\"BW\",\r\n\"LS\",\r\n\"MW\",\r\n\"MZ\",\r\n\"NA\",\r\n\"SZ\",\r\n\"ZA\",\r\n\"ZM\",\r\n\"ZW\",\r\n\"BF\",\r\n\"BJ\",\r\n\"CI\",\r\n\"CM\",\r\n\"CV\",\r\n\"GA\",\r\n\"GH\",\r\n\"GM\",\r\n\"GN\",\r\n\"GQ\",\r\n\"GW\",\r\n\"LR\",\r\n\"ML\",\r\n\"MR\",\r\n\"NE\",\r\n\"NG\",\r\n\"SL\",\r\n\"SN\",\r\n\"ST\",\r\n\"TG\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(81, 89, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DZ\",\r\n\"EG\",\r\n\"EH\",\r\n\"LY\",\r\n\"MA\",\r\n\"SD\",\r\n\"TN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(82, 90, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '2', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(83, 91, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '3', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(84, 92, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '5', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(85, 93, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '10', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(86, 94, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '20', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(87, 95, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '40', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(88, 96, 'sql', 'SELECT id_image FROM PREFIX_image WHERE id_image > 26', '>', '0', '0', 'hook', 'actionObjectImageAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(89, 97, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50', '23', 'hook', 'actionObjectImageAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(90, 98, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '100', '23', 'hook', 'actionObjectImageAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(91, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '23', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:58'),
+(92, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '23', 'time', '4', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(93, 101, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50000', '23', 'time', '8', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(94, 102, 'sql', 'SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5', '>', '0', '0', 'hook', 'actionObjectCMSAddAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:33'),
+(95, 103, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(96, 104, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '10', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(97, 105, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '100', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(98, 106, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1000', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(99, 107, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '500', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(100, 108, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '5000', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(101, 109, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1', '0', 'hook', 'newOrder', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:31'),
+(102, 110, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(103, 111, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '100', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(104, 112, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(105, 113, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(106, 114, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '5000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(107, 121, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '==', '0', '0', 'time', '1', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(108, 136, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(109, 137, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"hipay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(110, 140, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(111, 141, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ogone%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(112, 142, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(113, 147, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%hipay%\"', '==', '0', '0', 'time', '1', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(114, 152, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '==', '0', '0', 'time', '1', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(115, 155, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%trustly%\"', '==', '0', '0', 'time', '1', 1, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(116, 165, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '0', '1', 'hook', 'actionAdminStoresControllerSaveAfter', 1, '2018-10-06 23:23:29', '2018-10-08 19:52:40'),
+(117, 166, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '1', '2', 'hook', 'actionAdminStoresControllerSaveAfter', 1, '2018-10-06 23:23:29', '2018-10-08 19:57:13'),
+(118, 167, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '4', '5', 'hook', 'actionAdminStoresControllerSaveAfter', 1, '2018-10-06 23:23:29', '2018-10-09 16:02:49'),
+(119, 168, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '9', '8', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2018-10-06 23:23:29', '2018-10-09 16:10:57'),
+(120, 169, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '19', '8', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2018-10-06 23:23:29', '2018-10-09 16:10:57'),
+(121, 170, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '49', '8', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2018-10-06 23:23:29', '2018-10-09 16:10:57'),
+(122, 171, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '1', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(123, 172, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '2', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(124, 173, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '3', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(125, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(126, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-05 23:23:29'),
+(127, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(128, 225, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ferbuy%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(129, 227, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'FERBUY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'FERBUY_MODE\') AND ( value = \'live\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(130, 246, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%globkurier%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(131, 248, 'configuration', 'GLOBKURIER_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(132, 252, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%gadwords%\" ', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:29'),
+(133, 255, 'configuration', 'HIPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(134, 291, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'OGONE_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'OGONE_MODE\') AND ( value = \'live\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(135, 301, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPAL_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(136, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(137, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(138, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(139, 328, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%sofortbanking%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(140, 330, 'configuration', 'SOFORTBANKING_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(141, 332, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%textmaster%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(142, 334, 'configuration', 'TEXTMASTER_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(143, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(144, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(145, 360, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ferbuy%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(146, 361, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%globkurier%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(147, 362, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%hipay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(148, 363, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%hipay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(149, 369, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ogone%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(150, 371, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypal%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(151, 372, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypal%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(152, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(153, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(154, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(155, 379, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(156, 380, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(157, 381, 'sql', 'SELECT COUNT(*) FROM PREFIX_textmaster_project WHERE status = \"completed\"', '>=', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(158, 388, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ferbuy%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(159, 389, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%globkurier%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(160, 391, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ogone%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(161, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(162, 396, 'sql', 'SELECT COUNT(*) FROM PREFIX_textmaster_project WHERE status = \"completed\"', '>=', '10', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(163, 416, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pigmbhpaymill%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(164, 418, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pigmbhpaymill%\" AND os.logable = 1', '>=', '1', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(165, 419, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pigmbhpaymill%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(166, 420, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%syspay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(167, 421, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SYSPAY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SYSPAY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(168, 422, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%syspay%\" AND os.logable = 1', '>=', '1', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(169, 423, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%syspay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(170, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(171, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(172, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(173, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(174, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(175, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(176, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(177, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(178, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(179, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(180, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(181, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(182, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(183, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(184, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(185, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(186, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(187, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(188, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(189, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(190, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(191, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(192, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(193, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(194, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(195, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(196, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(197, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(198, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(199, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(200, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(201, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(202, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(203, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(204, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32');
 INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`, `operator`, `value`, `result`, `calculation_type`, `calculation_detail`, `validated`, `date_add`, `date_upd`) VALUES
-(205, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(206, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(207, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(208, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(209, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(210, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(211, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(212, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(213, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(214, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(215, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(216, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(217, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(218, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(219, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(220, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(221, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(222, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(223, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(224, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(225, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(226, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(227, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(228, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(229, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(230, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(231, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(232, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(233, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(234, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(235, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(236, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(237, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(238, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(239, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(240, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(241, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(242, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(243, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(244, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(245, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(246, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(247, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(248, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(249, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(250, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(251, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(252, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(253, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(254, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(255, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(256, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(257, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(258, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(259, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(260, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(261, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(262, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(263, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(264, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(265, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(266, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(267, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(268, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(269, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(270, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19'),
-(271, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-10 18:36:19', '2018-10-10 18:36:19');
+(205, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(206, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(207, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(208, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(209, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(210, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(211, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(212, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(213, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(214, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(215, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(216, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(217, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(218, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(219, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(220, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(221, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(222, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(223, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(224, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(225, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(226, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(227, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(228, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(229, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(230, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(231, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(232, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(233, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(234, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(235, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(236, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(237, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(238, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(239, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(240, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(241, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(242, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(243, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(244, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(245, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(246, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(247, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(248, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(249, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(250, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(251, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(252, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(253, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(254, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(255, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(256, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(257, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(258, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2018-10-06 23:23:29', '2018-10-08 19:14:59'),
+(259, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(260, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(261, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(262, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(263, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(264, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(265, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(266, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(267, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(268, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(269, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2018-10-06 23:23:29', '2018-10-09 15:51:24'),
+(270, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32'),
+(271, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2018-10-06 23:23:29', '2018-10-06 23:23:32');
 
 -- --------------------------------------------------------
 
@@ -4627,7 +4627,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (6, NULL, NULL, 'PS_SEARCH_INDEXATION', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (7, NULL, NULL, 'PS_CURRENCY_DEFAULT', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (8, NULL, NULL, 'PS_COUNTRY_DEFAULT', '14', '0000-00-00 00:00:00', '2018-10-06 23:20:23'),
-(9, NULL, NULL, 'PS_REWRITING_SETTINGS', '1', '0000-00-00 00:00:00', '2018-10-06 23:20:23'),
+(9, NULL, NULL, 'PS_REWRITING_SETTINGS', '1', '0000-00-00 00:00:00', '2018-10-09 18:55:36'),
 (10, NULL, NULL, 'PS_ORDER_OUT_OF_STOCK', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (11, NULL, NULL, 'PS_LAST_QTIES', '3', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (12, NULL, NULL, 'PS_CONDITIONS', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4705,8 +4705,8 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (84, NULL, NULL, 'PS_SMARTY_FORCE_COMPILE', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (85, NULL, NULL, 'PS_DISTANCE_UNIT', 'km', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (86, NULL, NULL, 'PS_STORES_DISPLAY_CMS', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(87, NULL, NULL, 'SHOP_LOGO_WIDTH', '100', '0000-00-00 00:00:00', '2018-10-06 23:20:23'),
-(88, NULL, NULL, 'SHOP_LOGO_HEIGHT', '28', '0000-00-00 00:00:00', '2018-10-06 23:20:23'),
+(87, NULL, NULL, 'SHOP_LOGO_WIDTH', '223', '0000-00-00 00:00:00', '2018-10-09 16:25:29'),
+(88, NULL, NULL, 'SHOP_LOGO_HEIGHT', '147', '0000-00-00 00:00:00', '2018-10-09 16:25:29'),
 (89, NULL, NULL, 'EDITORIAL_IMAGE_WIDTH', '530', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (90, NULL, NULL, 'EDITORIAL_IMAGE_HEIGHT', '228', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (91, NULL, NULL, 'PS_STATSDATA_CUSTOMER_PAGESVIEWS', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4729,7 +4729,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (108, NULL, NULL, 'PS_COOKIE_CHECKIP', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (109, NULL, NULL, 'PS_USE_ECOTAX', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (110, NULL, NULL, 'PS_CANONICAL_REDIRECT', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(111, NULL, NULL, 'PS_IMG_UPDATE_TIME', '1324977642', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(111, NULL, NULL, 'PS_IMG_UPDATE_TIME', '1539096017', '0000-00-00 00:00:00', '2018-10-09 16:40:17'),
 (112, NULL, NULL, 'PS_BACKUP_DROP_TABLE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (113, NULL, NULL, 'PS_OS_CHEQUE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (114, NULL, NULL, 'PS_OS_PAYMENT', '2', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4847,13 +4847,13 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (226, NULL, NULL, 'HOMESLIDER_PAUSE', '7700', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (227, NULL, NULL, 'HOMESLIDER_LOOP', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (228, NULL, NULL, 'PS_BASE_DISTANCE_UNIT', 'm', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(229, NULL, NULL, 'PS_SHOP_DOMAIN', '127.0.0.1', '0000-00-00 00:00:00', '2018-10-06 23:20:23'),
-(230, NULL, NULL, 'PS_SHOP_DOMAIN_SSL', '127.0.0.1', '0000-00-00 00:00:00', '2018-10-06 23:20:23'),
+(229, NULL, NULL, 'PS_SHOP_DOMAIN', '127.0.0.1:8080', '0000-00-00 00:00:00', '2018-10-06 23:20:23'),
+(230, NULL, NULL, 'PS_SHOP_DOMAIN_SSL', '127.0.0.1:8080', '0000-00-00 00:00:00', '2018-10-06 23:20:23'),
 (231, NULL, NULL, 'PS_SHOP_NAME', 'HM', '0000-00-00 00:00:00', '2018-10-06 23:20:23'),
 (232, NULL, NULL, 'PS_SHOP_EMAIL', 'prestashop@hm.pl', '0000-00-00 00:00:00', '2018-10-06 23:20:24'),
 (233, NULL, NULL, 'PS_MAIL_METHOD', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (234, NULL, NULL, 'PS_SHOP_ACTIVITY', '9', '0000-00-00 00:00:00', '2018-10-06 23:20:23'),
-(235, NULL, NULL, 'PS_LOGO', 'logo.png', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(235, NULL, NULL, 'PS_LOGO', 'hm-logo-1539095128.jpg', '0000-00-00 00:00:00', '2018-10-09 16:25:28'),
 (236, NULL, NULL, 'PS_FAVICON', 'favicon.ico', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (237, NULL, NULL, 'PS_STORES_ICON', 'logo_stores.png', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (238, NULL, NULL, 'PS_ROOT_CATEGORY', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -4945,8 +4945,8 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (324, NULL, NULL, 'CONF_PS_WIREPAYMENT_VAR_FOREIGN', '2', '2018-10-06 23:20:35', '2018-10-06 23:20:35'),
 (325, NULL, NULL, 'GF_INSTALL_CALC', '1', '2018-10-06 23:20:41', '2018-10-06 23:23:32'),
 (326, NULL, NULL, 'GF_CURRENT_LEVEL', '1', '2018-10-06 23:20:41', '2018-10-06 23:20:41'),
-(327, NULL, NULL, 'GF_CURRENT_LEVEL_PERCENT', '30', '2018-10-06 23:20:41', '2018-10-06 23:23:33'),
-(328, NULL, NULL, 'GF_NOTIFICATION', '3', '2018-10-06 23:20:41', '2018-10-06 23:23:33'),
+(327, NULL, NULL, 'GF_CURRENT_LEVEL_PERCENT', '90', '2018-10-06 23:20:41', '2018-10-09 16:02:56'),
+(328, NULL, NULL, 'GF_NOTIFICATION', '6', '2018-10-06 23:20:41', '2018-10-09 16:02:56'),
 (329, NULL, NULL, 'CRONJOBS_ADMIN_DIR', 'c2d5c23959476a2eddad039239f47d95', '2018-10-06 23:20:41', '2018-10-06 23:23:24'),
 (330, NULL, NULL, 'CRONJOBS_MODE', 'webservice', '2018-10-06 23:20:41', '2018-10-06 23:20:41'),
 (331, NULL, NULL, 'CRONJOBS_MODULE_VERSION', '1.4.0', '2018-10-06 23:20:41', '2018-10-06 23:20:41'),
@@ -5084,9 +5084,7 @@ CREATE TABLE `ps_connections` (
 INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_guest`, `id_page`, `ip_address`, `date_add`, `http_referer`) VALUES
 (1, 1, 1, 1, 1, 2130706433, '2018-10-06 23:20:27', 'http://www.prestashop.com'),
 (2, 1, 1, 3, 1, 2130706433, '2018-10-06 23:21:52', ''),
-(3, 1, 1, 3, 2, 2130706433, '2018-10-07 20:08:54', ''),
-(4, 1, 1, 4, 1, 2130706433, '2018-10-09 17:48:42', ''),
-(5, 1, 1, 5, 1, 2130706433, '2018-10-10 18:37:14', '');
+(3, 1, 1, 3, 2, 2130706433, '2018-10-07 20:08:54', '');
 
 -- --------------------------------------------------------
 
@@ -5115,6 +5113,107 @@ CREATE TABLE `ps_connections_source` (
   `keywords` varchar(255) DEFAULT NULL,
   `date_add` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Zrzut danych tabeli `ps_connections_source`
+--
+
+INSERT INTO `ps_connections_source` (`id_connections_source`, `id_connections`, `http_referer`, `request_uri`, `keywords`, `date_add`) VALUES
+(1, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/10-ona', '', '2018-10-08 19:16:18'),
+(2, 4, 'http://127.0.0.1:8080/prestashop/10-ona', '127.0.0.1:8080/prestashop/', '', '2018-10-08 19:16:21'),
+(3, 4, 'http://127.0.0.1:8080/prestashop/10-ona', '127.0.0.1:8080/prestashop/', '', '2018-10-08 19:32:49'),
+(4, 4, 'http://127.0.0.1:8080/prestashop/10-ona', '127.0.0.1:8080/prestashop/', '', '2018-10-08 19:52:49'),
+(5, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/logowanie?back=addresses', '', '2018-10-08 19:52:55'),
+(6, 4, 'http://127.0.0.1:8080/prestashop/10-ona', '127.0.0.1:8080/prestashop/', '', '2018-10-08 19:52:58'),
+(7, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/nasze-sklepy', '', '2018-10-08 19:53:02'),
+(8, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/nasze-sklepy', '', '2018-10-08 19:53:37'),
+(9, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/nasze-sklepy', '', '2018-10-08 19:54:51'),
+(10, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/nasze-sklepy', '', '2018-10-08 19:57:18'),
+(11, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/nasze-sklepy', '', '2018-10-08 20:00:06'),
+(12, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/nasze-sklepy', '', '2018-10-08 20:01:13'),
+(13, 4, 'http://127.0.0.1:8080/prestashop/nasze-sklepy', '127.0.0.1:8080/prestashop/', '', '2018-10-09 16:12:30'),
+(14, 4, 'http://127.0.0.1:8080/prestashop/nasze-sklepy', '127.0.0.1:8080/prestashop/', '', '2018-10-09 16:14:03'),
+(15, 4, 'http://127.0.0.1:8080/prestashop/nasze-sklepy', '127.0.0.1:8080/prestashop/', '', '2018-10-09 16:18:20'),
+(16, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/kontakt', '', '2018-10-09 16:18:32'),
+(17, 4, 'http://127.0.0.1:8080/prestashop/nasze-sklepy', '127.0.0.1:8080/prestashop/', '', '2018-10-09 16:18:44'),
+(18, 4, 'http://127.0.0.1:8080/prestashop/nasze-sklepy', '127.0.0.1:8080/prestashop/', '', '2018-10-09 16:25:39'),
+(19, 4, 'http://127.0.0.1:8080/prestashop/nasze-sklepy', '127.0.0.1:8080/prestashop/', '', '2018-10-09 16:42:22'),
+(20, 4, 'http://127.0.0.1:8080/prestashop/nasze-sklepy', '127.0.0.1:8080/prestashop/', '', '2018-10-09 16:43:24'),
+(21, 4, 'http://127.0.0.1:8080/prestashop/nasze-sklepy', '127.0.0.1:8080/prestashop/', '', '2018-10-09 16:51:34'),
+(22, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/1-dostawa', '', '2018-10-09 16:51:40'),
+(23, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/1-dostawa', '', '2018-10-09 16:53:23'),
+(24, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/1-dostawa', '', '2018-10-09 16:55:07'),
+(25, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/1-dostawa', '', '2018-10-09 16:56:40'),
+(26, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/1-dostawa', '', '2018-10-09 16:56:51'),
+(27, 4, 'http://127.0.0.1:8080/prestashop/content/1-dostawa', '127.0.0.1:8080/prestashop/', '', '2018-10-09 16:56:54'),
+(28, 4, 'http://127.0.0.1:8080/prestashop/content/1-dostawa', '127.0.0.1:8080/prestashop/', '', '2018-10-09 16:59:19'),
+(29, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/', '', '2018-10-09 16:59:30'),
+(30, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/index.php?controller=404', '', '2018-10-09 16:59:49'),
+(31, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/', '', '2018-10-09 16:59:52'),
+(32, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/', '', '2018-10-09 17:00:38'),
+(33, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/', '', '2018-10-09 17:04:52'),
+(34, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '', '2018-10-09 17:04:57'),
+(35, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '', '2018-10-09 17:15:49'),
+(36, 4, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:15:56'),
+(37, 4, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:17:05'),
+(38, 4, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:17:26'),
+(39, 4, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:19:03'),
+(40, 4, 'http://127.0.0.1:8080/prestashop/content/4-o-nas', '127.0.0.1:8080/prestashop/', '', '2018-10-09 17:21:15'),
+(41, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:21:20'),
+(42, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:21:58'),
+(43, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:22:01'),
+(44, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:22:02'),
+(45, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:22:24'),
+(46, 7, 'http://127.0.0.1:8080/prestashop/content/1-dostawa', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:22:40'),
+(47, 7, 'http://127.0.0.1:8080/prestashop/content/4-o-nas', '127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '', '2018-10-09 17:22:45'),
+(48, 7, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/content/1-dostawa', '', '2018-10-09 17:23:55'),
+(49, 7, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/content/1-dostawa', '', '2018-10-09 17:26:38'),
+(50, 7, 'http://127.0.0.1:8080/prestashop/content/1-dostawa', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:26:44'),
+(51, 7, 'http://127.0.0.1:8080/prestashop/content/1-dostawa', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:30:26'),
+(52, 7, 'http://127.0.0.1:8080/prestashop/content/1-dostawa', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:31:26'),
+(53, 7, 'http://127.0.0.1:8080/prestashop/content/4-o-nas', '127.0.0.1:8080/prestashop/content/1-dostawa', '', '2018-10-09 17:33:21'),
+(54, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:34:24'),
+(55, 4, 'http://127.0.0.1:8080/prestashop/content/4-o-nas', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:34:31'),
+(56, 4, 'http://127.0.0.1:8080/prestashop/content/4-o-nas', '127.0.0.1:8080/prestashop/content/1-dostawa', '', '2018-10-09 17:34:33'),
+(57, 4, 'http://127.0.0.1:8080/prestashop/content/1-dostawa', '127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '', '2018-10-09 17:34:40'),
+(58, 4, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/', '', '2018-10-09 17:34:52'),
+(59, 4, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/', '', '2018-10-09 17:35:18'),
+(60, 4, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/', '', '2018-10-09 17:36:24'),
+(61, 4, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/', '', '2018-10-09 17:38:52'),
+(62, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 17:58:19'),
+(63, 4, 'http://127.0.0.1:8080/prestashop/content/4-o-nas', '127.0.0.1:8080/prestashop/kontakt', '', '2018-10-09 17:58:26'),
+(64, 4, 'http://127.0.0.1:8080/prestashop/kontakt', '127.0.0.1:8080/prestashop/', '', '2018-10-09 17:58:29'),
+(65, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/kontakt', '', '2018-10-09 17:58:40'),
+(66, 4, 'http://127.0.0.1:8080/prestashop/kontakt', '127.0.0.1:8080/prestashop/', '', '2018-10-09 17:58:43'),
+(67, 4, 'http://127.0.0.1:8080/prestashop/kontakt', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:33:02'),
+(68, 4, 'http://127.0.0.1:8080/prestashop/kontakt', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:44:07'),
+(69, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '', '2018-10-09 18:44:11'),
+(70, 4, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:44:14'),
+(71, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/4-o-nas', '', '2018-10-09 18:44:17'),
+(72, 4, 'http://127.0.0.1:8080/prestashop/content/4-o-nas', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:44:19'),
+(73, 4, 'http://127.0.0.1:8080/prestashop/admin2762mwbhm/index.php?controller=AdminCmsContent&token=0780297623e79bc882516e4db2815c3b', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:45:19'),
+(74, 7, 'http://127.0.0.1:8080/prestashop/content/4-o-nas', '127.0.0.1:8080/prestashop/content/1-dostawa', '', '2018-10-09 18:45:50'),
+(75, 4, 'http://127.0.0.1:8080/prestashop/content/4-o-nas', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:46:08'),
+(76, 4, 'http://127.0.0.1:8080/prestashop/content/4-o-nas', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:48:51'),
+(77, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '', '2018-10-09 18:49:03'),
+(78, 4, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:49:11'),
+(79, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/1-dostawa', '', '2018-10-09 18:49:19'),
+(80, 4, 'http://127.0.0.1:8080/prestashop/content/1-dostawa', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:49:21'),
+(81, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '', '2018-10-09 18:49:24'),
+(82, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '', '2018-10-09 18:49:57'),
+(83, 4, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:50:06'),
+(84, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/11-on', '', '2018-10-09 18:50:11'),
+(85, 4, 'http://127.0.0.1:8080/prestashop/11-on', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:50:14'),
+(86, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/2-strona-glowna', '', '2018-10-09 18:50:21'),
+(87, 4, 'http://127.0.0.1:8080/prestashop/2-strona-glowna', '127.0.0.1:8080/prestashop/men/1-1-hummingbird-printed-t-shirt.html', '', '2018-10-09 18:50:24'),
+(88, 4, 'http://127.0.0.1:8080/prestashop/men/1-1-hummingbird-printed-t-shirt.html', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:50:35'),
+(89, 4, 'http://127.0.0.1:8080/prestashop/men/1-1-hummingbird-printed-t-shirt.html', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:51:01'),
+(90, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '', '2018-10-09 18:51:06'),
+(91, 4, 'http://127.0.0.1:8080/prestashop/content/3-polityka-prywatnosci', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:51:26'),
+(92, 4, 'http://127.0.0.1:8080/prestashop/index.php', '127.0.0.1:8080/prestashop/index.php?id_category=10&controller=category', '', '2018-10-09 18:53:40'),
+(93, 4, 'http://127.0.0.1:8080/prestashop/index.php?id_category=10&controller=category', '127.0.0.1:8080/prestashop/index.php?id_cms=3&controller=cms', '', '2018-10-09 18:53:45'),
+(94, 4, 'http://127.0.0.1:8080/prestashop/index.php?id_cms=3&controller=cms', '127.0.0.1:8080/prestashop/index.php', '', '2018-10-09 18:55:02'),
+(95, 4, 'http://127.0.0.1:8080/prestashop/index.php', '127.0.0.1:8080/prestashop/', '', '2018-10-09 18:55:43');
 
 -- --------------------------------------------------------
 
@@ -6655,9 +6754,7 @@ CREATE TABLE `ps_guest` (
 INSERT INTO `ps_guest` (`id_guest`, `id_operating_system`, `id_web_browser`, `id_customer`, `javascript`, `screen_resolution_x`, `screen_resolution_y`, `screen_color`, `sun_java`, `adobe_flash`, `adobe_director`, `apple_quicktime`, `real_player`, `windows_media`, `accept_language`, `mobile_theme`) VALUES
 (1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0),
 (2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0),
-(3, 6, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0),
-(4, 6, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0),
-(5, 6, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0);
+(3, 6, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0);
 
 -- --------------------------------------------------------
 
@@ -7468,7 +7565,7 @@ CREATE TABLE `ps_info_lang` (
 --
 
 INSERT INTO `ps_info_lang` (`id_info`, `id_shop`, `id_lang`, `text`) VALUES
-(1, 1, 1, '<h2>Custom Text Block</h2>\n<p><strong class=\"dark\">Lorem ipsum dolor sit amet conse ctetu</strong></p>\n<p>Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>');
+(1, 1, 1, '<h2>H&amp;M Polska</h2>\r\n<p><span id=\"docs-internal-guid-77272dff-7fff-dff8-54d0-a520cfae0e27\"><span style=\"font-size:11.5pt;font-family:Arial;color:#1a1a1a;vertical-align:baseline;white-space:pre-wrap;\">H&amp;M oferuje modę najwyższej jakości, która jest przyjazna dla ludzi, środowiska i portfela. Od momentu założenia w 1947 roku nieustannie się rozwijamy – dziś H&amp;M jest jedną z największych na świecie firm odzieżowych. Zawartość tej strony jest chroniona prawem autorskim i należy do spółki H &amp; M Hennes &amp; Mauritz AB.</span></span></p>\r\n<p></p>');
 
 -- --------------------------------------------------------
 
@@ -7916,7 +8013,7 @@ CREATE TABLE `ps_link_block` (
 
 INSERT INTO `ps_link_block` (`id_link_block`, `id_hook`, `position`, `content`) VALUES
 (1, 35, 1, '{\"cms\":[false],\"product\":[\"prices-drop\",\"new-products\",\"best-sales\"],\"static\":[false]}'),
-(2, 35, 2, '{\"cms\":[\"1\",\"2\",\"3\",\"4\",\"5\"],\"product\":[false],\"static\":[\"contact\",\"sitemap\",\"stores\"]}');
+(2, 35, 2, '{\"cms\":[\"1\",\"3\",\"4\"],\"product\":[false],\"static\":[\"contact\",\"sitemap\",\"stores\"]}');
 
 -- --------------------------------------------------------
 
@@ -7937,7 +8034,7 @@ CREATE TABLE `ps_link_block_lang` (
 
 INSERT INTO `ps_link_block_lang` (`id_link_block`, `id_lang`, `name`, `custom_content`) VALUES
 (1, 1, 'Produkty', NULL),
-(2, 1, 'Nasza firma', NULL);
+(2, 1, 'Nasza firma', '[]');
 
 -- --------------------------------------------------------
 
@@ -7974,9 +8071,7 @@ CREATE TABLE `ps_log` (
 
 INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_type`, `object_id`, `id_employee`, `date_add`, `date_upd`) VALUES
 (1, 1, 0, 'Połączenie z panelem administracyjnym z 127.0.0.1', '', 0, 1, '2018-10-06 23:23:24', '2018-10-06 23:23:24'),
-(2, 1, 0, 'Połączenie z panelem administracyjnym z 127.0.0.1', '', 0, 1, '2018-10-07 20:10:13', '2018-10-07 20:10:13'),
-(3, 1, 0, 'Połączenie z panelem administracyjnym z 127.0.0.1', '', 0, 1, '2018-10-09 17:50:08', '2018-10-09 17:50:08'),
-(4, 1, 0, 'Połączenie z panelem administracyjnym z 127.0.0.1', '', 0, 1, '2018-10-10 18:35:52', '2018-10-10 18:35:52');
+(2, 1, 0, 'Połączenie z panelem administracyjnym z 127.0.0.1', '', 0, 1, '2018-10-07 20:10:13', '2018-10-07 20:10:13');
 
 -- --------------------------------------------------------
 
@@ -9487,7 +9582,9 @@ CREATE TABLE `ps_page` (
 
 INSERT INTO `ps_page` (`id_page`, `id_page_type`, `id_object`) VALUES
 (1, 1, NULL),
-(2, 2, NULL);
+(2, 2, NULL),
+(3, 3, NULL),
+(4, 4, NULL);
 
 -- --------------------------------------------------------
 
@@ -9520,8 +9617,10 @@ CREATE TABLE `ps_page_type` (
 --
 
 INSERT INTO `ps_page_type` (`id_page_type`, `name`) VALUES
+(4, 'cms'),
 (1, 'index'),
-(2, 'pagenotfound');
+(2, 'pagenotfound'),
+(3, 'stores');
 
 -- --------------------------------------------------------
 
@@ -11544,7 +11643,7 @@ CREATE TABLE `ps_shop_url` (
 --
 
 INSERT INTO `ps_shop_url` (`id_shop_url`, `id_shop`, `domain`, `domain_ssl`, `physical_uri`, `virtual_uri`, `main`, `active`) VALUES
-(1, 1, '127.0.0.1', '127.0.0.1', '/prestashop/', '', 1, 1);
+(1, 1, '127.0.0.1:8080', '127.0.0.1:8080', '/prestashop/', '', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -12255,11 +12354,14 @@ CREATE TABLE `ps_store` (
 --
 
 INSERT INTO `ps_store` (`id_store`, `id_country`, `id_state`, `city`, `postcode`, `latitude`, `longitude`, `phone`, `fax`, `email`, `active`, `date_add`, `date_upd`) VALUES
-(1, 21, 12, 'Miami', ' 33135', '25.76500500', '-80.24379700', '', '', '', 1, '2018-10-06 23:20:28', '2018-10-06 23:20:28'),
-(2, 21, 12, 'Miami', ' 33304', '26.13793600', '-80.13943500', '', '', '', 1, '2018-10-06 23:20:28', '2018-10-06 23:20:28'),
-(3, 21, 12, 'Miami', '33026', '26.00998700', '-80.29447200', '', '', '', 1, '2018-10-06 23:20:28', '2018-10-06 23:20:28'),
-(4, 21, 12, 'Miami', ' 33133', '25.73629600', '-80.24479700', '', '', '', 1, '2018-10-06 23:20:28', '2018-10-06 23:20:28'),
-(5, 21, 12, 'Miami', '33181', '25.88674000', '-80.16329200', '', '', '', 1, '2018-10-06 23:20:28', '2018-10-06 23:20:28');
+(6, 14, 0, 'Gdynia', '81-304', '54.50182600', '18.53250200', '+48 587790340', '', '', 1, '2018-10-08 19:52:40', '2018-10-09 15:56:23'),
+(7, 14, 0, 'Gdynia', '81-525', '54.47546500', '18.55194200', '+48 586685240', '', '', 1, '2018-10-08 19:57:13', '2018-10-09 15:55:46'),
+(8, 14, 0, 'Gdynia', '81-198', '54.56343900', '18.50528500', '+48 587147140', '', '', 1, '2018-10-09 15:54:14', '2018-10-09 15:55:32'),
+(9, 14, 0, 'Gdańsk', '80-264', '54.38319300', '18.60095500', '+48 585207640', '', '', 1, '2018-10-09 15:59:53', '2018-10-09 15:59:53'),
+(10, 14, 0, 'Gdańsk', '80-391', '54.40446900', '18.58772800', '+48 585116540', '', '', 1, '2018-10-09 16:02:49', '2018-10-09 16:02:49'),
+(11, 14, 0, 'Gdańsk', '80-252', '54.37731300', '18.60713100', '+48 583402540', '', '', 1, '2018-10-09 16:05:55', '2018-10-09 16:05:55'),
+(12, 14, 0, 'Gdańsk', '80-298', '54.37391000', '18.51676600', '+48 585226740', '', '', 1, '2018-10-09 16:08:18', '2018-10-09 16:08:18'),
+(13, 14, 0, 'Sopot', '81-704', '54.44428300', '18.56702200', '+48 585555040', '', '', 1, '2018-10-09 16:10:57', '2018-10-09 16:10:57');
 
 -- --------------------------------------------------------
 
@@ -12282,11 +12384,14 @@ CREATE TABLE `ps_store_lang` (
 --
 
 INSERT INTO `ps_store_lang` (`id_store`, `id_lang`, `name`, `address1`, `address2`, `hours`, `note`) VALUES
-(1, 1, 'Dade County', '3030 SW 8th St Miami', '', ' [[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"10:00AM - 04:00PM\"],[\"10:00AM - 04:00PM\"]]', ''),
-(2, 1, 'E Fort Lauderdale', '1000 Northeast 4th Ave Fort Lauderdale', '', ' [[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"10:00AM - 04:00PM\"],[\"10:00AM - 04:00PM\"]]', ''),
-(3, 1, 'Pembroke Pines', '11001 Pines Blvd Pembroke Pines', '', ' [[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"10:00AM - 04:00PM\"],[\"10:00AM - 04:00PM\"]]', ''),
-(4, 1, 'Coconut Grove', '2999 SW 32nd Avenue', '', ' [[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"10:00AM - 04:00PM\"],[\"10:00AM - 04:00PM\"]]', ''),
-(5, 1, 'N Miami/Biscayne', '12055 Biscayne Blvd', '', ' [[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"09:00AM - 07:00PM\"],[\"10:00AM - 04:00PM\"],[\"10:00AM - 04:00PM\"]]', '');
+(6, 1, 'H&M Gdynia Riviera', 'Kazimierza Górskiego 2', '', '[[\"10:00 - 21:00\"],[\"10:00 - 21:00\"],[\"10:00 - 21:00\"],[\"10:00 - 21:00\"],[\"10:00 - 21:00\"],[\"10:00 - 21:00\"],[\"10:00 - 20:00\"]]', ''),
+(7, 1, 'H&M CH Klif', 'Al. Zwyciestwa 256', '', '[[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"10:00 - 20:00\"]]', ''),
+(8, 1, 'H&M', 'Pułkownika Stanisława Dąbka 293', '', '[[\"9:00 - 21:00\"],[\"9:00 - 21:00\"],[\"9:00 - 21:00\"],[\"9:00 - 21:00\"],[\"9:00 - 21:00\"],[\"9:00 - 21:00\"],[\"Zamkni\\u0119te\"]]', ''),
+(9, 1, 'H&M Galeria Bałtycka', 'Grunwaldzka 141', '', '[[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"Zamkni\\u0119te\"]]', ''),
+(10, 1, 'H&M CH Alfa', 'Kołobrzeska 41c', '', '[[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"Zamkni\\u0119te\"]]', ''),
+(11, 1, 'H&M CH Manhattan', 'Grunwaldzka 82', '', '[[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"Zamkni\\u0119te\"]]', ''),
+(12, 1, 'H&M CH Matarnia', 'Złota Karczma 26', '', '[[\"10:00 - 21:00\"],[\"10:00 - 21:00\"],[\"10:00 - 21:00\"],[\"10:00 - 21:00\"],[\"10:00 - 21:00\"],[\"10:00 - 21:00\"],[\"Zamkni\\u0119te\"]]', ''),
+(13, 1, 'H&M', 'Bohaterów Monte Cassino 55/57', '', '[[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"9.00 \\u2013 21.00\"],[\"Zamkni\\u0119te\"]]', '');
 
 -- --------------------------------------------------------
 
@@ -12304,11 +12409,14 @@ CREATE TABLE `ps_store_shop` (
 --
 
 INSERT INTO `ps_store_shop` (`id_store`, `id_shop`) VALUES
-(1, 1),
-(2, 1),
-(3, 1),
-(4, 1),
-(5, 1);
+(6, 1),
+(7, 1),
+(8, 1),
+(9, 1),
+(10, 1),
+(11, 1),
+(12, 1),
+(13, 1);
 
 -- --------------------------------------------------------
 
@@ -15980,7 +16088,7 @@ ALTER TABLE `ps_condition`
 -- AUTO_INCREMENT dla tabeli `ps_configuration`
 --
 ALTER TABLE `ps_configuration`
-  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=338;
+  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=337;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_configuration_kpi`
@@ -15992,13 +16100,13 @@ ALTER TABLE `ps_configuration_kpi`
 -- AUTO_INCREMENT dla tabeli `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_connections_source`
 --
 ALTER TABLE `ps_connections_source`
-  MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_contact`
@@ -16112,7 +16220,7 @@ ALTER TABLE `ps_group_reduction`
 -- AUTO_INCREMENT dla tabeli `ps_guest`
 --
 ALTER TABLE `ps_guest`
-  MODIFY `id_guest` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_guest` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_homeslider`
@@ -16208,7 +16316,7 @@ ALTER TABLE `ps_link_block_shop`
 -- AUTO_INCREMENT dla tabeli `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_mail`
@@ -16340,7 +16448,7 @@ ALTER TABLE `ps_order_state`
 -- AUTO_INCREMENT dla tabeli `ps_page`
 --
 ALTER TABLE `ps_page`
-  MODIFY `id_page` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_page` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_pagenotfound`
@@ -16352,7 +16460,7 @@ ALTER TABLE `ps_pagenotfound`
 -- AUTO_INCREMENT dla tabeli `ps_page_type`
 --
 ALTER TABLE `ps_page_type`
-  MODIFY `id_page_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_page_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_product`
@@ -16454,7 +16562,7 @@ ALTER TABLE `ps_search_engine`
 -- AUTO_INCREMENT dla tabeli `ps_search_word`
 --
 ALTER TABLE `ps_search_word`
-  MODIFY `id_word` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1379;
+  MODIFY `id_word` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1365;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_sekeyword`
@@ -16550,7 +16658,7 @@ ALTER TABLE `ps_stock_mvt_reason`
 -- AUTO_INCREMENT dla tabeli `ps_store`
 --
 ALTER TABLE `ps_store`
-  MODIFY `id_store` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_store` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_supplier`

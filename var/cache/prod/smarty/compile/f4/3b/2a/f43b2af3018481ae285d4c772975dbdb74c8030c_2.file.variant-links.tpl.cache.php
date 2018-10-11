@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-06 23:21:52
+/* Smarty version 3.1.32, created on 2018-10-09 18:55:42
   from 'C:\xampp\htdocs\prestashop\themes\classic\templates\catalog\_partials\variant-links.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bb927700d8e24_21340885',
+  'unifunc' => 'content_5bbcdd8e9353d3_67180986',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f43b2af3018481ae285d4c772975dbdb74c8030c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\prestashop\\themes\\classic\\templates\\catalog\\_partials\\variant-links.tpl',
-      1 => 1537364655,
+      1 => 1538939846,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb927700d8e24_21340885 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '10320106495bb927700d2998_12973256';
+function content_5bbcdd8e9353d3_67180986 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '13113040305bbcdd8e92bf95_98311392';
 ?>
 <div class="variant-links">
   <?php
