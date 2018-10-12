@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 12 Paź 2018, 22:55
+-- Czas generowania: 12 Paź 2018, 23:28
 -- Wersja serwera: 10.1.36-MariaDB
 -- Wersja PHP: 7.2.10
 
@@ -2939,7 +2939,7 @@ INSERT INTO `ps_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `del
 (3, 1, 1, 2, '{\"3\":\"2,\"}', 1, 4, 4, 1, 1, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2018-10-06 23:20:26', '2018-10-06 23:20:26', NULL),
 (4, 1, 1, 2, '{\"3\":\"2,\"}', 1, 4, 4, 1, 1, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2018-10-06 23:20:26', '2018-10-06 23:20:26', NULL),
 (5, 1, 1, 2, '{\"3\":\"2,\"}', 1, 4, 4, 1, 1, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2018-10-06 23:20:26', '2018-10-06 23:20:26', NULL),
-(6, 1, 1, 0, '', 1, 5, 5, 1, 2, 6, '974946882c368b820e6bb1709542450c', 0, 0, '', 0, 0, '2018-10-12 22:43:17', '2018-10-12 22:44:23', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checkout-payment-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checksum\":\"678d09125d9bf9a506bd7b636a47d54098286fb1\"}');
+(6, 1, 1, 0, '', 1, 5, 5, 1, 2, 6, '974946882c368b820e6bb1709542450c', 0, 0, '', 0, 0, '2018-10-12 22:43:17', '2018-10-12 23:27:37', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checkout-payment-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checksum\":\"678d09125d9bf9a506bd7b636a47d54098286fb1\"}');
 
 -- --------------------------------------------------------
 
@@ -5021,7 +5021,9 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (334, NULL, NULL, 'BLOCKREASSURANCE_NBBLOCKS', '5', '2018-10-06 23:20:45', '2018-10-06 23:20:45'),
 (335, NULL, NULL, 'GF_NOT_VIEWED_BADGE', '212', '2018-10-06 23:23:33', '2018-10-12 22:44:30'),
 (336, NULL, NULL, 'ONBOARDINGV2_SHUT_DOWN', '1', '2018-10-06 23:23:37', '2018-10-06 23:23:37'),
-(337, NULL, NULL, 'ONBOARDINGV2_CURRENT_STEP', '12', '2018-10-10 18:48:43', '2018-10-10 18:48:43');
+(337, NULL, NULL, 'ONBOARDINGV2_CURRENT_STEP', '12', '2018-10-10 18:48:43', '2018-10-10 18:48:43'),
+(338, NULL, NULL, 'PS_CCCJS_VERSION', '1', '2018-10-12 23:26:12', '2018-10-12 23:26:12'),
+(339, NULL, NULL, 'PS_CCCCSS_VERSION', '1', '2018-10-12 23:26:12', '2018-10-12 23:26:12');
 
 -- --------------------------------------------------------
 
@@ -5151,7 +5153,8 @@ INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_
 (1, 1, 1, 1, 1, 2130706433, '2018-10-06 23:20:27', 'http://www.prestashop.com'),
 (2, 1, 1, 3, 1, 2130706433, '2018-10-06 23:21:52', ''),
 (3, 1, 1, 3, 2, 2130706433, '2018-10-07 20:08:54', ''),
-(4, 1, 1, 6, 1, 2130706433, '2018-10-12 22:35:15', '');
+(4, 1, 1, 6, 1, 2130706433, '2018-10-12 22:35:15', ''),
+(5, 1, 1, 6, 2, 2130706433, '2018-10-12 23:08:08', '');
 
 -- --------------------------------------------------------
 
@@ -5291,7 +5294,23 @@ INSERT INTO `ps_connections_source` (`id_connections_source`, `id_connections`, 
 (103, 4, 'http://127.0.0.1:8080/prestashop/zam%C3%B3wienie', '127.0.0.1:8080/prestashop/zam%C3%B3wienie', '', '2018-10-12 22:43:50'),
 (104, 4, 'http://127.0.0.1:8080/prestashop/zam%C3%B3wienie', '127.0.0.1:8080/prestashop/', '', '2018-10-12 22:44:19'),
 (105, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/koszyk?action=show', '', '2018-10-12 22:44:21'),
-(106, 4, 'http://127.0.0.1:8080/prestashop/koszyk?action=show', '127.0.0.1:8080/prestashop/', '', '2018-10-12 22:44:25');
+(106, 4, 'http://127.0.0.1:8080/prestashop/koszyk?action=show', '127.0.0.1:8080/prestashop/', '', '2018-10-12 22:44:25'),
+(107, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/strona-glowna/2-9-brown-bear-printed-sweater.html', '', '2018-10-12 23:02:09'),
+(108, 4, 'http://127.0.0.1:8080/prestashop/strona-glowna/2-9-brown-bear-printed-sweater.html', '127.0.0.1:8080/prestashop/strona-glowna/2-9-brown-bear-printed-sweater.html', '', '2018-10-12 23:02:13'),
+(109, 4, 'http://127.0.0.1:8080/prestashop/strona-glowna/2-9-brown-bear-printed-sweater.html', '127.0.0.1:8080/prestashop/koszyk?action=show', '', '2018-10-12 23:02:14'),
+(110, 4, 'http://127.0.0.1:8080/prestashop/koszyk?action=show', '127.0.0.1:8080/prestashop/zam%C3%B3wienie', '', '2018-10-12 23:02:25'),
+(111, 4, 'http://127.0.0.1:8080/prestashop/strona-glowna/2-9-brown-bear-printed-sweater.html', '127.0.0.1:8080/prestashop/koszyk?action=show', '', '2018-10-12 23:02:28'),
+(112, 4, 'http://127.0.0.1:8080/prestashop/koszyk?action=show', '127.0.0.1:8080/prestashop/zam%C3%B3wienie', '', '2018-10-12 23:08:06'),
+(113, 4, 'http://127.0.0.1:8080/prestashop/strona-glowna/2-9-brown-bear-printed-sweater.html', '127.0.0.1:8080/prestashop/koszyk?action=show', '', '2018-10-12 23:08:08'),
+(114, 4, 'http://127.0.0.1:8080/prestashop/strona-glowna/2-9-brown-bear-printed-sweater.html', '127.0.0.1:8080/prestashop/koszyk?action=show', '', '2018-10-12 23:13:56'),
+(115, 4, 'http://127.0.0.1:8080/prestashop/koszyk?action=show', '127.0.0.1:8080/prestashop/', '', '2018-10-12 23:14:02'),
+(116, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/koszyk?action=show', '', '2018-10-12 23:14:06'),
+(117, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/koszyk?action=show', '', '2018-10-12 23:16:27'),
+(118, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/koszyk?action=show', '', '2018-10-12 23:16:43'),
+(119, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/koszyk?action=show', '', '2018-10-12 23:17:11'),
+(120, 4, 'http://127.0.0.1:8080/prestashop/', '127.0.0.1:8080/prestashop/koszyk?action=show', '', '2018-10-12 23:26:35'),
+(121, 4, 'http://127.0.0.1:8080/prestashop/koszyk?action=show', '127.0.0.1:8080/prestashop/koszyk?action=show', '', '2018-10-12 23:27:36'),
+(122, 4, 'http://127.0.0.1:8080/prestashop/koszyk?action=show', '127.0.0.1:8080/prestashop/', '', '2018-10-12 23:27:40');
 
 -- --------------------------------------------------------
 
@@ -8156,7 +8175,8 @@ CREATE TABLE `ps_log` (
 INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_type`, `object_id`, `id_employee`, `date_add`, `date_upd`) VALUES
 (1, 1, 0, 'Połączenie z panelem administracyjnym z 127.0.0.1', '', 0, 1, '2018-10-06 23:23:24', '2018-10-06 23:23:24'),
 (2, 1, 0, 'Połączenie z panelem administracyjnym z 127.0.0.1', '', 0, 1, '2018-10-07 20:10:13', '2018-10-07 20:10:13'),
-(3, 1, 0, 'Połączenie z panelem administracyjnym z 127.0.0.1', '', 0, 1, '2018-10-12 22:35:38', '2018-10-12 22:35:38');
+(3, 1, 0, 'Połączenie z panelem administracyjnym z 127.0.0.1', '', 0, 1, '2018-10-12 22:35:38', '2018-10-12 22:35:38'),
+(4, 1, 0, 'Połączenie z panelem administracyjnym z 127.0.0.1', '', 0, 1, '2018-10-12 23:20:44', '2018-10-12 23:20:44');
 
 -- --------------------------------------------------------
 
@@ -16205,7 +16225,7 @@ ALTER TABLE `ps_condition`
 -- AUTO_INCREMENT dla tabeli `ps_configuration`
 --
 ALTER TABLE `ps_configuration`
-  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=338;
+  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=340;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_configuration_kpi`
@@ -16217,13 +16237,13 @@ ALTER TABLE `ps_configuration_kpi`
 -- AUTO_INCREMENT dla tabeli `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_connections_source`
 --
 ALTER TABLE `ps_connections_source`
-  MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
+  MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_contact`
@@ -16433,7 +16453,7 @@ ALTER TABLE `ps_link_block_shop`
 -- AUTO_INCREMENT dla tabeli `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT dla tabeli `ps_mail`
