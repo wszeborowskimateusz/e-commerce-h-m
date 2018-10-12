@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-06 23:22:50
+/* Smarty version 3.1.32, created on 2018-10-12 16:17:26
   from 'C:\xampp\htdocs\prestashop\admin2762mwbhm\themes\default\template\controllers\login\content.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bb927aa007ff5_78403372',
+  'unifunc' => 'content_5bc0acf6908555_10989281',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fe60d85ffbf4527ff6b836c3aad041a5dd3b2c54' => 
     array (
       0 => 'C:\\xampp\\htdocs\\prestashop\\admin2762mwbhm\\themes\\default\\template\\controllers\\login\\content.tpl',
-      1 => 1537364655,
+      1 => 1539349872,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb927aa007ff5_78403372 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bc0acf6908555_10989281 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\prestashop\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?><div id="login-panel">
 	<div id="login-header">

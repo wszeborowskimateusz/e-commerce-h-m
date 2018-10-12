@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-10-06 23:23:25
+/* Smarty version 3.1.32, created on 2018-10-12 16:17:51
   from 'C:\xampp\htdocs\prestashop\modules\dashactivity\views\templates\hook\dashboard_zone_one.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bb927cd9e7ed5_78158703',
+  'unifunc' => 'content_5bc0ad0f755d93_72792655',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b4aa56af4cb6ce5f78721519bf13f13e337bcc76' => 
     array (
       0 => 'C:\\xampp\\htdocs\\prestashop\\modules\\dashactivity\\views\\templates\\hook\\dashboard_zone_one.tpl',
-      1 => 1512731161,
+      1 => 1539349885,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb927cd9e7ed5_78158703 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bc0ad0f755d93_72792655 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section id="dashactivity" class="panel widget<?php if ($_smarty_tpl->tpl_vars['allow_push']->value) {?> allow_push<?php }?>">
 	<div class="panel-heading">
 		<i class="icon-time"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Activity overview','d'=>'Modules.Dashactivity.Admin'),$_smarty_tpl ) );?>
