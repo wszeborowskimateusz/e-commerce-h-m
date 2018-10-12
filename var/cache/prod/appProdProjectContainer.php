@@ -16,6 +16,6 @@ if (!\class_exists(appProdProjectContainer::class, false)) {
 
 return new \ContainerJyuxhat\appProdProjectContainer(array(
     'container.build_hash' => 'Jyuxhat',
-    'container.build_id' => '860e545a',
-    'container.build_time' => 1539104140,
+    'container.build_id' => 'b3e0d212',
+    'container.build_time' => 1539376532,
 ), __DIR__.\DIRECTORY_SEPARATOR.'ContainerJyuxhat');
