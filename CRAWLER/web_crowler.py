@@ -237,7 +237,7 @@ def get_sub_categorie(categories, general_cat):
 
 
 class Product:
-    def __init__(self, name, categories, price, description, imgs):
+    def __init__(self, name, categories, price, description, imgs, sizes):
         self.active = "1"
         self.name = name
         self.categories = categories
@@ -245,6 +245,7 @@ class Product:
         self.imgs = imgs
         self.price = price
         self.amount = "100"
+        self.sizes = sizes
 
 
 def convert_to_csv(products):
@@ -263,6 +264,21 @@ def convert_to_csv(products):
         output = output + ";" + product.amount + "\n"
         f.write(output)
     f.close()
+
+
+def generate_combination(products):
+    f_combination = open('kombinacje.csv', 'w+', encoding='utf-8')
+    f_combination.write("Identyfikator Produktu (ID);Atrybut (Nazwa:Typ:Pozycja);Wartość (Wartość:Pozycja)\n")
+    i = 1
+    for product in products:
+        output = ""
+        if len(product.sizes) == 0:
+            continue
+        for size in product.sizes:
+            output += str(i) + ";Rozmiar:rozmiar:0;" + size.replace("\"", "") + ":0" + "\n"
+        i += 1
+        f_combination.write(output)
+    f_combination.close()
 
 
 def extract_info(url, name, categories, img_url):
@@ -303,8 +319,14 @@ def extract_info(url, name, categories, img_url):
                 m = re.search("category\[(.*)\],", img_url)
                 if m is not None:
                     categories = categories + get_sub_categorie(m.group(0).split(',')[0].split('[')[1][:-1], general_categorie)
-                    print(categories)
-            return Product(name, categories, price, description, imgs)
+
+            sizes = ""
+            m = re.findall('"name":(.*)\r', data)
+            if len(m) > 0:
+                m = list(filter(lambda x: 'P' not in x, sorted(list(set(m)))))
+                sizes = m
+            print(categories)
+            return Product(name, categories, price, description, imgs, sizes)
 
 
 def get_main_category(url):
@@ -341,5 +363,5 @@ products = []
 for url in URLS:
     products += web(url)
 
-convert_to_csv(products)
-
+#convert_to_csv(products)
+generate_combination(products)
