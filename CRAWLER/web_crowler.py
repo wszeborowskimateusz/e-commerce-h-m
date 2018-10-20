@@ -251,33 +251,36 @@ class Product:
 def convert_to_csv(products):
     f = open('produkty.csv', 'w+', encoding='utf-8')
     f.write('"Aktywny (0 lub 1)";"Nazwa";"Kategorie (x,y,z...)";"Cena zawiera podatek. (brutto)";"Opis";"Adresy URL zdjęcia (x,y,z...)";"Ilosc"\n')
+    print(products)
     for product in products:
-        output = product.active + ";" + product.name + ";"
-        for category in product.categories:
-            output += category + "$"
-        output = output[:-1]
-        output += ";"
-        output += product.price + ";" + product.description + ";"
-        for img in product.imgs:
-            output += img + "$"
-        output = output[:-1]
-        output = output + ";" + product.amount + "\n"
-        f.write(output)
+        if product is not None:
+            output = product.active + ";" + product.name + ";"
+            for category in product.categories:
+                output += category + "$"
+            output = output[:-1]
+            output += ";"
+            output += product.price + ";" + product.description + ";"
+            for img in product.imgs:
+                output += img + "$"
+            output = output[:-1]
+            output = output + ";" + product.amount + "\n"
+            f.write(output)
     f.close()
 
 
 def generate_combination(products):
     f_combination = open('kombinacje.csv', 'w+', encoding='utf-8')
-    f_combination.write("Identyfikator Produktu (ID);Atrybut (Nazwa:Typ:Pozycja);Wartość (Wartość:Pozycja)\n")
+    f_combination.write("Identyfikator Produktu (ID);Atrybut (Nazwa:Typ:Pozycja);Wartość (Wartość:Pozycja);Ilość\n")
     i = 1
     for product in products:
-        output = ""
-        if len(product.sizes) == 0:
-            continue
-        for size in product.sizes:
-            output += str(i) + ";Rozmiar:rozmiar:0;" + size.replace("\"", "") + ":0" + "\n"
-        i += 1
-        f_combination.write(output)
+        if product is not None:
+            output = ""
+            if len(product.sizes) == 0:
+                continue
+            for size in product.sizes:
+                output += str(i) + ";Rozmiar:rozmiar:0;" + size.replace("\"", "") + ":0;100" + "\n"
+            i += 1
+            f_combination.write(output)
     f_combination.close()
 
 
@@ -303,7 +306,10 @@ def extract_info(url, name, categories, img_url):
             price = json.dumps(json.loads('"' + price + '"'), ensure_ascii=False)
 
             imgs = []
-            m = re.findall("'image': isDesktop \? '(.*)' :", data)
+            product_id = url.split(".")[-2]
+            m = re.findall("'" + product_id + "': {[\s\S]*'sizes':\[", data)
+            m = re.findall("'image': isDesktop \? '(.*)' :", m[0])
+
             for i in range(0, 3):
                 if i <= len(m) - 1:
                     img = m[i]
@@ -313,7 +319,6 @@ def extract_info(url, name, categories, img_url):
                     img = json.dumps(json.loads('"' + img + '"'), ensure_ascii=False)
                     imgs.append(img)
 
-            # TODO Add specific categories
             general_categorie = categories[0]
             if img_url is not None:
                 m = re.search("category\[(.*)\],", img_url)
@@ -321,10 +326,12 @@ def extract_info(url, name, categories, img_url):
                     categories = categories + get_sub_categorie(m.group(0).split(',')[0].split('[')[1][:-1], general_categorie)
 
             sizes = ""
-            m = re.findall('"name":(.*)\r', data)
+            m = re.findall("'" + product_id + "': {[\s\S]*'whitePrice':", data)
+            m = re.findall('"name":(.*)\r', m[0])
             if len(m) > 0:
                 m = list(filter(lambda x: 'P' not in x, sorted(list(set(m)))))
                 sizes = m
+
             print(categories)
             return Product(name, categories, price, description, imgs, sizes)
 
@@ -363,5 +370,6 @@ products = []
 for url in URLS:
     products += web(url)
 
-#convert_to_csv(products)
+
+convert_to_csv(products)
 generate_combination(products)
