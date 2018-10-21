@@ -249,7 +249,7 @@ class Ps_Banner extends Module implements WidgetInterface
         }
 
         return array(
-            'banner_link' => $this->updateUrl($banner_link),
+            'banner_link' => $banner_link,
             'banner_desc' => Configuration::get('BANNER_DESC', $this->context->language->id)
         );
     }
