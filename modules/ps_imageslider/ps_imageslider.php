@@ -652,7 +652,7 @@ class Ps_ImageSlider extends Module implements WidgetInterface
 
         foreach ($slides as &$slide) {
             $slide['image_url'] = $this->context->link->getMediaLink(_MODULE_DIR_.'ps_imageslider/images/'.$slide['image']);
-            $slide['url'] = $this->updateUrl($slide['url']);
+            //$slide['url'] = $this->updateUrl($slide['url']);
         }
 
         return $slides;
