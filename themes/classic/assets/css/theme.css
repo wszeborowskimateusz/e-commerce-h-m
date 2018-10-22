@@ -11198,3 +11198,9 @@ li.product-flag:not(.discount):not(.on-sale)~li.product-flag {
     padding-right: 0!important;
   }
 }
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
