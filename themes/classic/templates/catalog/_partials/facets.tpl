@@ -113,9 +113,9 @@
           {else}
 
             {block name='facet_item_dropdown'}
-              <ul id="facet_{$_expand_id}" class="collapse{if !$_collapse} in{/if}">
+              <ul id="facet_{$_expand_id}" class="collapse{if !$_collapse} in{/if} ">
                 <li>
-                  <div class="col-sm-12 col-xs-12 col-md-12 facet-dropdown dropdown">
+                  <div class="col-sm-12 col-xs-12 col-md-12 facet-dropdown dropdown ">
                     <a class="select-title" rel="nofollow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       {$active_found = false}
                       <span>
@@ -134,7 +134,7 @@
                       </span>
                       <i class="material-icons float-xs-right">&#xE5C5;</i>
                     </a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu scrollable-menu">
                       {foreach from=$facet.filters item="filter"}
                         {if !$filter.active}
                           <a
