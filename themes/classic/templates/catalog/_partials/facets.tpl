@@ -118,36 +118,50 @@
                   <div class="col-sm-12 col-xs-12 col-md-12 facet-dropdown dropdown ">
                     <a class="select-title" rel="nofollow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       {$active_found = false}
+					  {$facet.multipleSelectionAllowed = true}
                       <span>
                         {foreach from=$facet.filters item="filter"}
                           {if $filter.active}
-                            {$filter.label}
-                            {if $filter.magnitude}
-                              ({$filter.magnitude})
-                            {/if}
+                            
                             {$active_found = true}
                           {/if}
                         {/foreach}
                         {if !$active_found}
                           {l s='(no filter)' d='Shop.Theme.Global'}
+						 {else}
+						 Filtracja aktywna
                         {/if}
                       </span>
                       <i class="material-icons float-xs-right">&#xE5C5;</i>
                     </a>
                     <div class="dropdown-menu scrollable-menu">
                       {foreach from=$facet.filters item="filter"}
-                        {if !$filter.active}
                           <a
                             rel="nofollow"
                             href="{$filter.nextEncodedFacetsURL}"
                             class="select-list"
                           >
+						   <span class="custom-checkbox">
+                            <input
+                              id="facet_input_{$_expand_id}_{$filter_key}"
+                              data-search-url="{$filter.nextEncodedFacetsURL}"
+                              type="checkbox"
+                              {if $filter.active } checked {/if}
+                            >
+                            {if isset($filter.properties.color)}
+                              <span class="color" style="background-color:{$filter.properties.color}"></span>
+                              {elseif isset($filter.properties.texture)}
+                                <span class="color texture" style="background-image:url({$filter.properties.texture})"></span>
+                              {else}
+                              <span {if !$js_enabled} class="ps-shown-by-js" {/if}><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
+                            {/if}
+                          </span>
+						  
                             {$filter.label}
                             {if $filter.magnitude}
                               ({$filter.magnitude})
                             {/if}
                           </a>
-                        {/if}
                       {/foreach}
                     </div>
                   </div>
