@@ -94,7 +94,10 @@ class Ps_FacetedsearchFiltersConverter
                     $facet->setWidgetType('dropdown');
                     break;
             }
-
+			if($facetArray['type'] == 'price'){
+				$facet->setWidgetType('checkboxes');
+				$facet->setMultipleSelectionAllowed(true);
+			}
             $facets[] = $facet;
         }
 
