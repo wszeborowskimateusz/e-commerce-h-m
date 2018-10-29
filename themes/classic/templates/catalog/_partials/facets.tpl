@@ -60,12 +60,78 @@
 
             {block name='facet_item_other'}
               <ul id="facet_{$_expand_id}" class="collapse{if !$_collapse} in{/if}">
-                {foreach from=$facet.filters key=filter_key item="filter"}
-                  {if $filter.displayed}
-                    <li>
-                      <label class="facet-label{if $filter.active} active {/if}" for="facet_input_{$_expand_id}_{$filter_key}">
-                        {if $facet.multipleSelectionAllowed}
-                          <span class="custom-checkbox">
+                <li>
+                  <div class="col-sm-12 col-xs-12 col-md-12 facet-dropdown dropdown ">
+                    <a class="select-title" rel="nofollow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      {$active_found = false}
+                      <span>
+                        {foreach from=$facet.filters item="filter"}
+                          {if $filter.active}
+                            
+                            {$active_found = true}
+                          {/if}
+                        {/foreach}
+                        {if !$active_found}
+                          {l s='(no filter)' d='Shop.Theme.Global'}
+						 {else}
+						 Filtracja aktywna
+                        {/if}
+                      </span>
+                      <i class="material-icons float-xs-right">&#xE5C5;</i>
+                    </a>
+                    <div class="dropdown-menu scrollable-menu">
+                      {foreach from=$facet.filters item="filter"}
+                          <a
+                            rel="nofollow"
+                            href="{$filter.nextEncodedFacetsURL}"
+                            class="select-list"
+                          >
+						   
+						  
+                            {$filter.label}
+                            {if $filter.magnitude}
+                              ({$filter.magnitude})
+                            {/if}
+                          </a>
+                      {/foreach}
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            {/block}
+
+          {else}
+
+            {block name='facet_item_dropdown'}
+              <ul id="facet_{$_expand_id}" class="collapse{if !$_collapse} in{/if} ">
+                <li>
+                  <div class="col-sm-12 col-xs-12 col-md-12 facet-dropdown dropdown ">
+                    <a class="select-title" rel="nofollow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      {$active_found = false}
+					  {$facet.multipleSelectionAllowed = true}
+                      <span>
+                        {foreach from=$facet.filters item="filter"}
+                          {if $filter.active}
+                            
+                            {$active_found = true}
+                          {/if}
+                        {/foreach}
+                        {if !$active_found}
+                          {l s='(no filter)' d='Shop.Theme.Global'}
+						 {else}
+						 Filtracja aktywna
+                        {/if}
+                      </span>
+                      <i class="material-icons float-xs-right">&#xE5C5;</i>
+                    </a>
+                    <div class="dropdown-menu scrollable-menu">
+                      {foreach from=$facet.filters item="filter"}
+                          <a
+                            rel="nofollow"
+                            href="{$filter.nextEncodedFacetsURL}"
+                            class="select-list"
+                          >
+						   <span class="custom-checkbox">
                             <input
                               id="facet_input_{$_expand_id}_{$filter_key}"
                               data-search-url="{$filter.nextEncodedFacetsURL}"
@@ -80,74 +146,12 @@
                               <span {if !$js_enabled} class="ps-shown-by-js" {/if}><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
                             {/if}
                           </span>
-                        {else}
-                          <span class="custom-radio">
-                            <input
-                              id="facet_input_{$_expand_id}_{$filter_key}"
-                              data-search-url="{$filter.nextEncodedFacetsURL}"
-                              type="radio"
-                              name="filter {$facet.label}"
-                              {if $filter.active } checked {/if}
-                            >
-                            <span {if !$js_enabled} class="ps-shown-by-js" {/if}></span>
-                          </span>
-                        {/if}
-
-                        <a
-                          href="{$filter.nextEncodedFacetsURL}"
-                          class="_gray-darker search-link js-search-link"
-                          rel="nofollow"
-                        >
-                          {$filter.label}
-                          {if $filter.magnitude}
-                            <span class="magnitude">({$filter.magnitude})</span>
-                          {/if}
-                        </a>
-                      </label>
-                    </li>
-                  {/if}
-                {/foreach}
-              </ul>
-            {/block}
-
-          {else}
-
-            {block name='facet_item_dropdown'}
-              <ul id="facet_{$_expand_id}" class="collapse{if !$_collapse} in{/if}">
-                <li>
-                  <div class="col-sm-12 col-xs-12 col-md-12 facet-dropdown dropdown">
-                    <a class="select-title" rel="nofollow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      {$active_found = false}
-                      <span>
-                        {foreach from=$facet.filters item="filter"}
-                          {if $filter.active}
-                            {$filter.label}
-                            {if $filter.magnitude}
-                              ({$filter.magnitude})
-                            {/if}
-                            {$active_found = true}
-                          {/if}
-                        {/foreach}
-                        {if !$active_found}
-                          {l s='(no filter)' d='Shop.Theme.Global'}
-                        {/if}
-                      </span>
-                      <i class="material-icons float-xs-right">&#xE5C5;</i>
-                    </a>
-                    <div class="dropdown-menu">
-                      {foreach from=$facet.filters item="filter"}
-                        {if !$filter.active}
-                          <a
-                            rel="nofollow"
-                            href="{$filter.nextEncodedFacetsURL}"
-                            class="select-list"
-                          >
+						  
                             {$filter.label}
                             {if $filter.magnitude}
                               ({$filter.magnitude})
                             {/if}
                           </a>
-                        {/if}
                       {/foreach}
                     </div>
                   </div>
